@@ -6,7 +6,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
-    <import index="egop" ref="r:4eaf696e-4f44-440f-8f0e-a73a464808a2(SecondLevelInstanceLanguage.firstlevel.InteractionDomain)" />
+    <import index="egop" ref="r:4eaf696e-4f44-440f-8f0e-a73a464808a2(SecondLevelInstance.firstlevel.InteractionDomain)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
