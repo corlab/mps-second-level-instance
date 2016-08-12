@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4eaf696e-4f44-440f-8f0e-a73a464808a2(SecondLevelInstanceLanguage.firstlevel.InteractionDomain)">
+<model ref="r:4eaf696e-4f44-440f-8f0e-a73a464808a2(SecondLevelInstance.firstlevel.InteractionDomain)">
   <persistence version="9" />
   <languages>
-    <use id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstanceLanguage" version="0" />
+    <use id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstance" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports />
@@ -19,14 +19,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstanceLanguage">
-      <concept id="7127626337630447816" name="SecondLevelInstanceLanguage.structure.EntityCollection" flags="ng" index="28L0aF">
+    <language id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstance">
+      <concept id="7127626337630447816" name="SecondLevelInstance.structure.EntityCollection" flags="ng" index="28L0aF">
         <child id="7127626337630520597" name="entities" index="28LuXQ" />
       </concept>
-      <concept id="7127626337630513541" name="SecondLevelInstanceLanguage.structure.Entity" flags="ng" index="28LgfA">
+      <concept id="7127626337630513541" name="SecondLevelInstance.structure.Entity" flags="ng" index="28LgfA">
         <child id="7127626337630513546" name="property" index="28LgfD" />
       </concept>
-      <concept id="7127626337630513550" name="SecondLevelInstanceLanguage.structure.EntityPropery" flags="ng" index="28LgfH">
+      <concept id="7127626337630513550" name="SecondLevelInstance.structure.EntityPropery" flags="ng" index="28LgfH">
         <child id="7127626337630513555" name="type" index="28LgfK" />
       </concept>
     </language>

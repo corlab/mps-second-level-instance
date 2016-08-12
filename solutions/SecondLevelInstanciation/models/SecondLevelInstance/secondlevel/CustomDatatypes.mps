@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b2d8c0f0-7f1b-4d59-9d64-9f05264ba328(SecondLevelInstanceLanguage.secondlevel.CustomDatatypes)">
+<model ref="r:b2d8c0f0-7f1b-4d59-9d64-9f05264ba328(SecondLevelInstance.secondlevel.CustomDatatypes)">
   <persistence version="9" />
   <languages>
-    <use id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstanceLanguage" version="0" />
+    <use id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstance" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -25,12 +25,12 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstanceLanguage">
-      <concept id="7127626337630538483" name="SecondLevelInstanceLanguage.structure.EntityInstance" flags="ng" index="28Lq2g">
+    <language id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstance">
+      <concept id="7127626337630538483" name="SecondLevelInstance.structure.EntityInstance" flags="ng" index="28Lq2g">
         <reference id="7127626337630538486" name="entity" index="28Lq2l" />
         <child id="7127626337630538488" name="propertyInstaces" index="28Lq2r" />
       </concept>
-      <concept id="7127626337630538491" name="SecondLevelInstanceLanguage.structure.EntityPropertyInstance" flags="ng" index="28Lq2o">
+      <concept id="7127626337630538491" name="SecondLevelInstance.structure.EntityPropertyInstance" flags="ng" index="28Lq2o">
         <reference id="7127626337630538492" name="property" index="28Lq2v" />
         <child id="7127626337630538494" name="value" index="28Lq2t" />
       </concept>
