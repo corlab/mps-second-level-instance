@@ -35,7 +35,7 @@
         <child id="7127626337630538494" name="value" index="28Lq2t" />
       </concept>
       <concept id="8299425155407941544" name="SecondLevelInstance.structure.EntityInstanceCollection" flags="ng" index="2n9nis">
-        <child id="8299425155407941546" name="instances" index="2n9niu" />
+        <child id="8299425155407941546" name="entetyInstances" index="2n9niu" />
       </concept>
     </language>
   </registry>
@@ -55,11 +55,24 @@
     <node concept="28Lq2g" id="7cHuNj$231D" role="2n9niu">
       <property role="TrG5h" value="aperson" />
       <ref role="28Lq2l" to="egop:7cHuNj$1suX" resolve="Person" />
-      <node concept="28Lq2o" id="7cHuNj$231F" role="28Lq2r">
+      <node concept="28Lq2o" id="7cYVBOT0EMy" role="28Lq2r">
         <ref role="28Lq2v" to="egop:7cHuNj$1suZ" resolve="name" />
-        <node concept="Xl_RD" id="7cHuNj$231J" role="28Lq2t">
-          <property role="Xl_RC" value="asdad" />
+        <node concept="Xl_RD" id="7cYVBOT0EME" role="28Lq2t">
+          <property role="Xl_RC" value="asdfas" />
         </node>
+      </node>
+    </node>
+    <node concept="28Lq2g" id="7cYVBOT5fOq" role="2n9niu">
+      <property role="TrG5h" value="aaa" />
+      <ref role="28Lq2l" to="egop:7cHuNj$1svm" resolve="Location" />
+      <node concept="28Lq2o" id="7cYVBOT5fOv" role="28Lq2r">
+        <ref role="28Lq2v" to="egop:7cHuNj$1svr" resolve="x" />
+      </node>
+      <node concept="28Lq2o" id="7cYVBOT5fOB" role="28Lq2r">
+        <ref role="28Lq2v" to="egop:7cHuNj$1F9g" resolve="y" />
+      </node>
+      <node concept="28Lq2o" id="7cYVBOT5fOM" role="28Lq2r">
+        <ref role="28Lq2v" to="egop:7cHuNj$1HdX" resolve="z" />
       </node>
     </node>
   </node>
