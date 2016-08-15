@@ -69,14 +69,14 @@
     <node concept="1TJgyj" id="6bEqAfEbQAa" role="1TKVEi">
       <property role="IQ2ns" value="7127626337630513546" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="property" />
+      <property role="20kJfa" value="properties" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6bEqAfEbQAe" resolve="EntityPropery" />
+      <ref role="20lvS9" node="6bEqAfEbQAe" resolve="EntityProperty" />
     </node>
   </node>
   <node concept="1TIwiD" id="6bEqAfEbQAe">
     <property role="EcuMT" value="7127626337630513550" />
-    <property role="TrG5h" value="EntityPropery" />
+    <property role="TrG5h" value="EntityProperty" />
     <property role="3GE5qa" value="Entity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6bEqAfEbQAj" role="1TKVEi">
@@ -131,7 +131,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="property" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6bEqAfEbQAe" resolve="EntityPropery" />
+      <ref role="20lvS9" node="6bEqAfEbQAe" resolve="EntityProperty" />
     </node>
   </node>
   <node concept="1TIwiD" id="7cHuNj$20YC">
@@ -146,7 +146,7 @@
     <node concept="1TJgyj" id="7cHuNj$20YE" role="1TKVEi">
       <property role="IQ2ns" value="8299425155407941546" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="instances" />
+      <property role="20kJfa" value="entetyInstances" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6bEqAfEbWFN" resolve="EntityInstance" />
     </node>
