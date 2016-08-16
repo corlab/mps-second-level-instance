@@ -35,7 +35,7 @@
         <child id="7127626337630538494" name="value" index="28Lq2t" />
       </concept>
       <concept id="8299425155407941544" name="SecondLevelInstance.structure.EntityInstanceCollection" flags="ng" index="2n9nis">
-        <child id="8299425155407941546" name="entetyInstances" index="2n9niu" />
+        <child id="8299425155407941546" name="entityInstances" index="2n9niu" />
       </concept>
     </language>
   </registry>
