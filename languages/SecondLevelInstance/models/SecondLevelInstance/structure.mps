@@ -227,5 +227,28 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1HHyIiEM7EL">
+    <property role="EcuMT" value="1976388526207957681" />
+    <property role="TrG5h" value="EntityRelationshipCollection" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1HHyIiEM7EM" role="1TKVEi">
+      <property role="IQ2ns" value="1976388526207957682" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="entityCollection" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6bEqAfEbAz8" resolve="EntityCollection" />
+    </node>
+    <node concept="1TJgyj" id="1HHyIiEM7ES" role="1TKVEi">
+      <property role="IQ2ns" value="1976388526207957688" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="relationshipCollection" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4hbwAHVb4om" resolve="RelationshipCollection" />
+    </node>
+    <node concept="PrWs8" id="1HHyIiENbBM" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
