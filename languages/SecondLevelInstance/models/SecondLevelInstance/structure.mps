@@ -146,7 +146,7 @@
     <node concept="1TJgyj" id="7cHuNj$20YE" role="1TKVEi">
       <property role="IQ2ns" value="8299425155407941546" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="entetyInstances" />
+      <property role="20kJfa" value="entityInstances" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6bEqAfEbWFN" resolve="EntityInstance" />
     </node>
