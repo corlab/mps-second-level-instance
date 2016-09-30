@@ -8,6 +8,7 @@
   <imports>
     <import index="mmsd" ref="r:9484be06-7105-4e31-8b3b-25c055bd5c2a(SecondLevelInstance.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -15,20 +16,26 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -40,13 +47,18 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
         <property id="1225456424731" name="value" index="1iTho6" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
@@ -102,9 +114,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -296,6 +316,7 @@
     <ref role="1XX52x" to="mmsd:6bEqAfEbWFN" resolve="EntityInstance" />
     <node concept="3EZMnI" id="6bEqAfEbZd8" role="2wV5jI">
       <node concept="3EZMnI" id="7cHuNj$2592" role="3EZMnx">
+        <node concept="3F0ifn" id="IlMDKrbC9L" role="3EZMnx" />
         <node concept="3EZMnI" id="7cHuNj$1Kk4" role="3EZMnx">
           <node concept="3EZMnI" id="4rRUFLv8600" role="3EZMnx">
             <node concept="VPM3Z" id="4rRUFLv8602" role="3F10Kt">
@@ -327,6 +348,7 @@
               <node concept="1sVBvm" id="6bEqAfEbZeD" role="1sWHZn">
                 <node concept="3F0A7n" id="6bEqAfEbZeL" role="2wV5jI">
                   <property role="1Intyy" value="true" />
+                  <property role="1cu_pB" value="0" />
                   <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
@@ -363,6 +385,7 @@
           </node>
         </node>
         <node concept="2iRfu4" id="7cHuNj$25af" role="2iSdaV" />
+        <node concept="3F0ifn" id="IlMDKrbCdC" role="3EZMnx" />
       </node>
       <node concept="2iRkQZ" id="6bEqAfEbZdb" role="2iSdaV" />
     </node>
@@ -828,6 +851,13 @@
           <node concept="2iRkQZ" id="4rRUFLuEa92" role="2iSdaV" />
         </node>
         <node concept="2iRfu4" id="4rRUFLuEa93" role="2iSdaV" />
+        <node concept="3XFhqQ" id="IlMDKrMd$A" role="3EZMnx" />
+        <node concept="3EZMnI" id="IlMDKrMdCU" role="3EZMnx">
+          <node concept="3F1sOY" id="IlMDKrMdDM" role="3EZMnx">
+            <ref role="1NtTu8" to="mmsd:IlMDKrMdy4" resolve="lol" />
+          </node>
+          <node concept="2iRkQZ" id="IlMDKrMdCX" role="2iSdaV" />
+        </node>
       </node>
     </node>
   </node>
@@ -910,6 +940,241 @@
         </node>
       </node>
       <node concept="VPM3Z" id="4rRUFLuS8XX" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="IlMDKr3Zft">
+    <property role="3GE5qa" value="RelationshipInstanceBinary" />
+    <ref role="1XX52x" to="mmsd:IlMDKr3YY_" resolve="BinaryRelationshipInstance" />
+    <node concept="3EZMnI" id="IlMDKr3ZfC" role="2wV5jI">
+      <node concept="3EZMnI" id="IlMDKr8ZOO" role="3EZMnx">
+        <node concept="2iRfu4" id="IlMDKr8ZOP" role="2iSdaV" />
+        <node concept="3F0ifn" id="IlMDKr900v" role="3EZMnx">
+          <ref role="1k5W1q" node="IlMDKr9u2A" resolve="immutable" />
+        </node>
+        <node concept="3EZMnI" id="IlMDKr3ZfD" role="3EZMnx">
+          <ref role="1k5W1q" node="IlMDKr8UHY" resolve="relationship_instance_outer_surround" />
+          <node concept="3EZMnI" id="IlMDKr3ZfE" role="3EZMnx">
+            <ref role="1k5W1q" node="IlMDKr8Pru" resolve="relationship_instance_lr_surround" />
+            <node concept="3EZMnI" id="IlMDKr9tYN" role="3EZMnx">
+              <node concept="2iRfu4" id="IlMDKr9tYO" role="2iSdaV" />
+              <node concept="3F1sOY" id="IlMDKr3Zkq" role="3EZMnx">
+                <ref role="1NtTu8" to="tpee:fJuHU4s" resolve="leftExpression" />
+              </node>
+              <node concept="3F0ifn" id="IlMDKr9tZz" role="3EZMnx">
+                <property role="3F0ifm" value="━━━ " />
+                <ref role="1k5W1q" node="IlMDKr9u2A" resolve="immutable" />
+              </node>
+            </node>
+            <node concept="2iRkQZ" id="IlMDKr3ZfK" role="2iSdaV" />
+          </node>
+          <node concept="3EZMnI" id="IlMDKr3ZfO" role="3EZMnx">
+            <ref role="1k5W1q" node="IlMDKr8Uzk" resolve="relationship_instance_inner_surround" />
+            <node concept="3F0ifn" id="IlMDKr3ZfP" role="3EZMnx">
+              <property role="3F0ifm" value="Relationship Instance" />
+              <node concept="VPM3Z" id="IlMDKr3ZfQ" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+            </node>
+            <node concept="3EZMnI" id="IlMDKr3ZfR" role="3EZMnx">
+              <node concept="VPM3Z" id="IlMDKr3ZfS" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+              <node concept="3F0ifn" id="IlMDKr3ZfT" role="3EZMnx">
+                <property role="3F0ifm" value="Name" />
+                <node concept="VPM3Z" id="IlMDKr3ZfU" role="3F10Kt">
+                  <property role="VOm3f" value="false" />
+                </node>
+              </node>
+              <node concept="3F0A7n" id="IlMDKr3ZfV" role="3EZMnx">
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+              <node concept="2iRfu4" id="IlMDKr3ZfW" role="2iSdaV" />
+            </node>
+            <node concept="3EZMnI" id="IlMDKr3ZfX" role="3EZMnx">
+              <node concept="3F0ifn" id="IlMDKr3ZfY" role="3EZMnx">
+                <property role="3F0ifm" value="Instance" />
+                <node concept="VPM3Z" id="IlMDKr3ZfZ" role="3F10Kt">
+                  <property role="VOm3f" value="false" />
+                </node>
+              </node>
+              <node concept="1iCGBv" id="IlMDKr3Zg0" role="3EZMnx">
+                <ref role="1NtTu8" to="mmsd:IlMDKr3ZSD" resolve="relationship" />
+                <node concept="1sVBvm" id="IlMDKr3Zg1" role="1sWHZn">
+                  <node concept="3F0A7n" id="IlMDKr3Zg2" role="2wV5jI">
+                    <property role="1Intyy" value="true" />
+                    <property role="1cu_pB" value="1" />
+                    <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="Veino" id="IlMDKr3Zg3" role="3F10Kt">
+                      <property role="Vb096" value="lightGray" />
+                      <node concept="1iSF2X" id="IlMDKr3Zg4" role="VblUZ">
+                        <property role="1iTho6" value="efefef" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2iRfu4" id="IlMDKr3Zg5" role="2iSdaV" />
+            </node>
+            <node concept="3F0ifn" id="IlMDKr3Zg6" role="3EZMnx">
+              <node concept="VPM3Z" id="IlMDKr3Zg7" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+            </node>
+            <node concept="3EZMnI" id="IlMDKr3Zg8" role="3EZMnx">
+              <node concept="3F0ifn" id="IlMDKr3Zg9" role="3EZMnx">
+                <property role="3F0ifm" value="Properties:" />
+                <node concept="VPM3Z" id="IlMDKr3Zga" role="3F10Kt">
+                  <property role="VOm3f" value="false" />
+                </node>
+              </node>
+              <node concept="3EZMnI" id="IlMDKr3Zgb" role="3EZMnx">
+                <node concept="3XFhqQ" id="IlMDKr3Zgc" role="3EZMnx" />
+                <node concept="3XFhqQ" id="IlMDKr3Zgd" role="3EZMnx" />
+                <node concept="3F2HdR" id="IlMDKr3Zge" role="3EZMnx">
+                  <ref role="1NtTu8" to="mmsd:IlMDKr3ZSI" resolve="propertyInstances" />
+                  <node concept="2iRkQZ" id="IlMDKr3Zgf" role="2czzBx" />
+                </node>
+                <node concept="2iRfu4" id="IlMDKr3Zgg" role="2iSdaV" />
+              </node>
+              <node concept="2iRkQZ" id="IlMDKr3Zgh" role="2iSdaV" />
+            </node>
+            <node concept="2iRkQZ" id="IlMDKr3Zgi" role="2iSdaV" />
+          </node>
+          <node concept="2iRfu4" id="IlMDKr3Zgl" role="2iSdaV" />
+          <node concept="3EZMnI" id="IlMDKr3Zgo" role="3EZMnx">
+            <ref role="1k5W1q" node="IlMDKr8Pru" resolve="relationship_instance_lr_surround" />
+            <node concept="3EZMnI" id="IlMDKr9u7a" role="3EZMnx">
+              <node concept="3F0ifn" id="IlMDKr9u7H" role="3EZMnx">
+                <property role="3F0ifm" value=" ━━━" />
+                <ref role="1k5W1q" node="IlMDKr9u2A" resolve="immutable" />
+              </node>
+              <node concept="2iRfu4" id="IlMDKr9u7b" role="2iSdaV" />
+              <node concept="3F1sOY" id="IlMDKr5woc" role="3EZMnx">
+                <ref role="1NtTu8" to="tpee:fJuHU4r" resolve="rightExpression" />
+              </node>
+            </node>
+            <node concept="2iRkQZ" id="IlMDKr3Zgu" role="2iSdaV" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="IlMDKr906e" role="3EZMnx">
+          <ref role="1k5W1q" node="IlMDKr9u2A" resolve="immutable" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="IlMDKr3Zgw" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="IlMDKr5_t5">
+    <property role="3GE5qa" value="RelationshipInstanceBinary" />
+    <ref role="1XX52x" to="mmsd:IlMDKr5_fD" resolve="BinarySecondLevelInstanceExpression" />
+    <node concept="3EZMnI" id="IlMDKr7pbk" role="2wV5jI">
+      <node concept="2iRkQZ" id="IlMDKr7pbl" role="2iSdaV" />
+      <node concept="3EZMnI" id="IlMDKr5_tp" role="3EZMnx">
+        <node concept="3F0A7n" id="IlMDKr5_vw" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="IlMDKr5_vJ" role="3EZMnx">
+          <property role="3F0ifm" value="=" />
+        </node>
+        <node concept="3F1sOY" id="IlMDKr5_xR" role="3EZMnx">
+          <ref role="1NtTu8" to="mmsd:IlMDKr5_w6" resolve="expression" />
+        </node>
+        <node concept="2iRfu4" id="IlMDKr5_ts" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="IlMDKr5B7g">
+    <property role="3GE5qa" value="RelationshipInstanceBinary" />
+    <ref role="1XX52x" to="mmsd:IlMDKr5B1g" resolve="BinaryRelationshipInstanceCollection" />
+    <node concept="3F2HdR" id="IlMDKr5B7H" role="2wV5jI">
+      <property role="2czwfO" value="," />
+      <ref role="1NtTu8" to="mmsd:IlMDKr5B3o" resolve="relationshipInstanceExpressions" />
+      <node concept="tppnM" id="IlMDKr7a_q" role="sWeuL">
+        <node concept="ljvvj" id="EIHw1Bollx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="IlMDKr7kos" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="IlMDKr7THS">
+    <property role="3GE5qa" value="RelationshipInstanceBinary" />
+    <ref role="1XX52x" to="mmsd:IlMDKr7TFt" resolve="BinaryRelationShipInstanceReference" />
+    <node concept="1iCGBv" id="IlMDKr7TI3" role="2wV5jI">
+      <ref role="1NtTu8" to="mmsd:IlMDKr7TFG" resolve="binaryRelationshipInstance" />
+      <node concept="1sVBvm" id="IlMDKr7TI5" role="1sWHZn">
+        <node concept="3F0A7n" id="IlMDKr7TIl" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="IlMDKr80xB">
+    <property role="3GE5qa" value="RelationshipInstanceBinary" />
+    <ref role="1XX52x" to="mmsd:IlMDKr80vc" resolve="BinaryEntityInstanceReference" />
+    <node concept="3EZMnI" id="IlMDKrc70_" role="2wV5jI">
+      <node concept="2iRfu4" id="IlMDKrc70A" role="2iSdaV" />
+      <node concept="3F0ifn" id="IlMDKrc7f3" role="3EZMnx" />
+      <node concept="3EZMnI" id="IlMDKr8Ksl" role="3EZMnx">
+        <ref role="1k5W1q" node="IlMDKr8PqD" resolve="entity_instance_surround" />
+        <node concept="1iCGBv" id="IlMDKr80xM" role="3EZMnx">
+          <ref role="1NtTu8" to="mmsd:IlMDKr80vr" resolve="binaryEntityInstanceReference" />
+          <node concept="1sVBvm" id="IlMDKr80xO" role="1sWHZn">
+            <node concept="3F0A7n" id="IlMDKr80y4" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="IlMDKr8Pqj" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="IlMDKrc7gS" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="V5hpn" id="IlMDKr8Pqq">
+    <property role="TrG5h" value="secondlevelstyles" />
+    <node concept="14StLt" id="IlMDKr8PqD" role="V601i">
+      <property role="TrG5h" value="entity_instance_surround" />
+      <node concept="3vyZuw" id="IlMDKr8PqO" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VLuvy" id="IlMDKr8Pr3" role="3F10Kt">
+        <property role="Vb096" value="DARK_GREEN" />
+      </node>
+    </node>
+    <node concept="14StLt" id="IlMDKr8Uzk" role="V601i">
+      <property role="TrG5h" value="relationship_instance_inner_surround" />
+      <node concept="3vyZuw" id="IlMDKr8Uzl" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VLuvy" id="IlMDKr8Uzm" role="3F10Kt">
+        <property role="Vb096" value="DARK_MAGENTA" />
+      </node>
+    </node>
+    <node concept="14StLt" id="IlMDKr8UHY" role="V601i">
+      <property role="TrG5h" value="relationship_instance_outer_surround" />
+      <node concept="VPXOz" id="IlMDKr8UHZ" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="14StLt" id="IlMDKr8Pru" role="V601i">
+      <property role="TrG5h" value="relationship_instance_lr_surround" />
+      <node concept="1X3_iC" id="IlMDKrago6" role="lGtFl">
+        <property role="3V$3am" value="styleItem" />
+        <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
+        <node concept="VPXOz" id="IlMDKr8U$j" role="8Wnug">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="IlMDKr9u2A" role="V601i">
+      <property role="TrG5h" value="immutable" />
+      <node concept="VPxyj" id="IlMDKr9u3C" role="3F10Kt">
+        <property role="VOm3f" value="false" />
+      </node>
+      <node concept="VPM3Z" id="IlMDKr9u3p" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>
     </node>

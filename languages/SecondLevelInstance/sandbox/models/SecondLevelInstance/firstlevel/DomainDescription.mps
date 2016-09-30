@@ -98,10 +98,23 @@
     </node>
     <node concept="ZpWhX" id="1HHyIiEMu3B" role="2LDv1s">
       <property role="TrG5h" value="myRelationships" />
+      <node concept="ZmOi_" id="IlMDKr$JnG" role="ZpWju">
+        <property role="TrG5h" value="rel__l-r" />
+        <ref role="ZmR5Q" node="1HHyIiEM$gd" resolve="Location" />
+        <ref role="ZmR5a" node="1HHyIiEM$hP" resolve="Room" />
+        <node concept="omD1l" id="IlMDKr$Jo9" role="omD1w">
+          <property role="TrG5h" value="something" />
+          <node concept="17QB3L" id="IlMDKr$Joj" role="omD1j" />
+        </node>
+      </node>
       <node concept="ZmOi_" id="4rRUFLuJFzi" role="ZpWju">
         <property role="TrG5h" value="rel__p-l" />
         <ref role="ZmR5Q" node="1HHyIiEMu3A" resolve="Person" />
         <ref role="ZmR5a" node="1HHyIiEM$gd" resolve="Location" />
+        <node concept="omD1l" id="IlMDKrn5JD" role="omD1w">
+          <property role="TrG5h" value="test" />
+          <node concept="17QB3L" id="IlMDKrn5WI" role="omD1j" />
+        </node>
       </node>
       <node concept="ZmOi_" id="4rRUFLuIsmR" role="ZpWju">
         <property role="TrG5h" value="contains" />

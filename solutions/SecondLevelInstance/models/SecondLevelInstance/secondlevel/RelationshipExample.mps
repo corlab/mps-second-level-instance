@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="555j" ref="r:394036bf-3733-476c-bfe4-e8dfb489255b(SecondLevelInstance.firstlevel.RelationshipExample)" />
+    <import index="eorr" ref="f:diff_old#r:54e2561f-4dda-4cb3-9dec-83ef487e6fba(SecondLevelInstance.secondlevel.RelationshipExample@old)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -160,8 +161,8 @@
     <property role="3GE5qa" value="RelationshipInstance" />
     <property role="TrG5h" value="RelationshipInstance_S1" />
     <ref role="ohrQd" to="555j:4rRUFLuHOY5" resolve="Relationship_C2" />
-    <ref role="ZmI8g" node="1LQakf0z0l" resolve="EntityInstance_C2" />
-    <ref role="ZmI8k" node="4hbwAHVmxqk" resolve="EntityInstance_C1" />
+    <ref role="ZmI8g" to="eorr:1LQakf0z0l" resolve="EntityInstance_C2" />
+    <ref role="ZmI8k" to="eorr:4hbwAHVmxqk" resolve="EntityInstance_C1" />
   </node>
 </model>
 
