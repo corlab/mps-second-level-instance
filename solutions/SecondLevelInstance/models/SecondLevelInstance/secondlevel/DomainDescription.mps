@@ -236,6 +236,12 @@
         <node concept="28Lq2g" id="IlMDKrHgMy" role="3uHU7B">
           <property role="TrG5h" value="aconvo" />
           <ref role="28Lq2l" to="ygzy:1HHyIiEM$iH" resolve="Conversation" />
+          <node concept="28Lq2o" id="1JVY6CxD5ss" role="28Lq2r">
+            <ref role="28Lq2v" to="ygzy:4rRUFLuKO0Q" resolve="id" />
+            <node concept="Xl_RD" id="1JVY6CxD60n" role="28Lq2t">
+              <property role="Xl_RC" value="teststring" />
+            </node>
+          </node>
         </node>
         <node concept="28Lq2g" id="IlMDKrHgMJ" role="3uHU7w">
           <property role="TrG5h" value="atopic" />
