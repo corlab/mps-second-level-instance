@@ -261,7 +261,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="7cHuNj$0Pu9">
-    <property role="3GE5qa" value="EntityInstance" />
+    <property role="3GE5qa" value="entities.Entity" />
     <ref role="1M2myG" to="mmsd:6bEqAfEbWFV" resolve="EntityPropertyInstance" />
     <node concept="EnEH3" id="2kuPcAvj1uD" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -827,7 +827,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4hbwAHV4JT5">
-    <property role="3GE5qa" value="RelationshipInstance" />
+    <property role="3GE5qa" value="Relationships.RelationshipInstance" />
     <ref role="1M2myG" to="mmsd:4hbwAHV4llX" resolve="RelationshipInstance" />
     <node concept="1N5Pfh" id="4hbwAHV4Kg3" role="1Mr941">
       <ref role="1N5Vy1" to="mmsd:4hbwAHV4m1V" resolve="sourceInstance" />
@@ -1387,7 +1387,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4hbwAHVh$Zi">
-    <property role="3GE5qa" value="Relationship" />
+    <property role="3GE5qa" value="Relationships.Relationship" />
     <ref role="1M2myG" to="mmsd:4hbwAHV4cre" resolve="Relationship" />
     <node concept="1X3_iC" id="4rRUFLuFvoi" role="lGtFl">
       <property role="3V$3am" value="referent" />
@@ -2423,7 +2423,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4hbwAHVlCTj">
-    <property role="3GE5qa" value="EntityInstance" />
+    <property role="3GE5qa" value="entities.EntityInstance" />
     <ref role="1M2myG" to="mmsd:6bEqAfEbWFN" resolve="EntityInstance" />
     <node concept="EnEH3" id="IlMDKr4YSg" role="1MhHOB">
       <ref role="EomxK" to="tpck:gOOYy9I" resolve="alias" />
@@ -2717,7 +2717,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1HHyIiEKDj7">
-    <property role="3GE5qa" value="Entity" />
+    <property role="3GE5qa" value="entities.Entity" />
     <ref role="1M2myG" to="mmsd:6bEqAfEbAz8" resolve="EntityCollection" />
     <node concept="nKS2y" id="1HHyIiEKDjY" role="1MLUbF">
       <node concept="3clFbS" id="1HHyIiEKDjZ" role="2VODD2">
@@ -2794,7 +2794,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4rRUFLuTkZJ">
-    <property role="3GE5qa" value="RelationshipInstance" />
+    <property role="3GE5qa" value="Relationships.RelationshipInstance" />
     <ref role="1M2myG" to="mmsd:4rRUFLuGcZe" resolve="RelationshipPropertyInstance" />
     <node concept="1N5Pfh" id="4rRUFLuTllD" role="1Mr941">
       <ref role="1N5Vy1" to="mmsd:4rRUFLuGd2G" resolve="property" />
@@ -2912,7 +2912,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="IlMDKrchIU">
-    <property role="3GE5qa" value="RelationshipInstanceBinary" />
+    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
     <ref role="1M2myG" to="mmsd:IlMDKr3YY_" resolve="BinaryRelationshipInstance" />
     <node concept="1X3_iC" id="IlMDKr_hY4" role="lGtFl">
       <property role="3V$3am" value="canBeParent" />

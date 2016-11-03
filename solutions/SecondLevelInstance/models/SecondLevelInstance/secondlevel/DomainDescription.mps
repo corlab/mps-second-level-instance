@@ -47,7 +47,7 @@
       <concept id="834796077764833189" name="SecondLevelInstance.structure.BinaryRelationshipInstance" flags="ng" index="gAykT">
         <reference id="834796077764836905" name="relationship" index="gAziP" />
       </concept>
-      <concept id="834796077765887948" name="SecondLevelInstance.structure.BinaryEntityInstanceReference" flags="ng" index="gHsPg">
+      <concept id="834796077765887948" name="SecondLevelInstance.structure.EntityInstanceReference" flags="ng" index="gHsPg">
         <reference id="834796077765887963" name="binaryEntityInstanceReference" index="gHsP7" />
       </concept>
       <concept id="8299425155407941544" name="SecondLevelInstance.structure.EntityInstanceCollection" flags="ng" index="2n9nis">
@@ -225,6 +225,19 @@
           </node>
         </node>
       </node>
+      <node concept="gwT_P" id="70qrR2Av8lU" role="gwVD4">
+        <property role="TrG5h" value="fifth" />
+        <node concept="gAykT" id="70qrR2Av8ns" role="gwTaq">
+          <property role="TrG5h" value="aa" />
+          <ref role="gAziP" to="ygzy:4rRUFLuJFzi" resolve="rel__p-l" />
+          <node concept="gHsPg" id="70qrR2AweE3" role="3uHU7w">
+            <ref role="gHsP7" node="IlMDKrHh3v" resolve="aloc" />
+          </node>
+          <node concept="gHsPg" id="70qrR2Av8mG" role="3uHU7B">
+            <ref role="gHsP7" node="IlMDKrHh3u" resolve="aperson" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="gwVFc" id="IlMDKr6otf">
@@ -305,7 +318,7 @@
         <property role="TrG5h" value="test" />
         <ref role="gAziP" to="ygzy:4rRUFLuIsmR" resolve="contains" />
         <node concept="gHsPg" id="1JVY6CxBu18" role="3uHU7w">
-          <ref role="gHsP7" node="IlMDKrHh3u" resolve="aperson" />
+          <ref role="gHsP7" node="IlMDKrHgMJ" resolve="atopic" />
         </node>
         <node concept="gHsPg" id="1JVY6CxBt1o" role="3uHU7B">
           <ref role="gHsP7" node="IlMDKrHgMy" resolve="aconvo" />

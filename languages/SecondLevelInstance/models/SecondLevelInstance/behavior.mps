@@ -201,7 +201,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="IlMDKr5pvt">
-    <property role="3GE5qa" value="RelationshipInstanceBinary" />
+    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
     <ref role="13h7C2" to="mmsd:IlMDKr3YY_" resolve="BinaryRelationshipInstance" />
     <node concept="13hLZK" id="IlMDKr5pvu" role="13h7CW">
       <node concept="3clFbS" id="IlMDKr5pvv" role="2VODD2" />
@@ -459,7 +459,7 @@
             <node concept="3K4zz7" id="IlMDKrGlXG" role="37vLTx">
               <node concept="2OqwBi" id="IlMDKrGlXH" role="3K4E3e">
                 <node concept="1PxgMI" id="IlMDKrGlXI" role="2Oq$k0">
-                  <ref role="1m5ApE" to="mmsd:IlMDKr80vc" resolve="BinaryEntityInstanceReference" />
+                  <ref role="1m5ApE" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
                   <node concept="37vLTw" id="IlMDKrGlXJ" role="1m5AlR">
                     <ref role="3cqZAo" node="IlMDKrGlX1" resolve="currentleft" />
                   </node>
@@ -477,7 +477,7 @@
                 </node>
                 <node concept="1mIQ4w" id="IlMDKrGlXO" role="2OqNvi">
                   <node concept="chp4Y" id="IlMDKrGlXP" role="cj9EA">
-                    <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="BinaryEntityInstanceReference" />
+                    <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
                   </node>
                 </node>
               </node>
@@ -695,7 +695,7 @@
             <node concept="3K4zz7" id="IlMDKrGhMV" role="37vLTx">
               <node concept="2OqwBi" id="IlMDKrGhMW" role="3K4E3e">
                 <node concept="1PxgMI" id="IlMDKrGhMX" role="2Oq$k0">
-                  <ref role="1m5ApE" to="mmsd:IlMDKr80vc" resolve="BinaryEntityInstanceReference" />
+                  <ref role="1m5ApE" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
                   <node concept="37vLTw" id="IlMDKrGhMY" role="1m5AlR">
                     <ref role="3cqZAo" node="IlMDKrGhMj" resolve="currentright" />
                   </node>
@@ -713,7 +713,7 @@
                 </node>
                 <node concept="1mIQ4w" id="IlMDKrGhN3" role="2OqNvi">
                   <node concept="chp4Y" id="IlMDKrGhN4" role="cj9EA">
-                    <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="BinaryEntityInstanceReference" />
+                    <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
                   </node>
                 </node>
               </node>
@@ -933,7 +933,7 @@
             <node concept="3K4zz7" id="IlMDKrCcBd" role="37vLTx">
               <node concept="2OqwBi" id="IlMDKrCcBe" role="3K4E3e">
                 <node concept="1PxgMI" id="IlMDKrCcBf" role="2Oq$k0">
-                  <ref role="1m5ApE" to="mmsd:IlMDKr80vc" resolve="BinaryEntityInstanceReference" />
+                  <ref role="1m5ApE" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
                   <node concept="37vLTw" id="IlMDKrCg2s" role="1m5AlR">
                     <ref role="3cqZAo" node="IlMDKrC6oV" resolve="currentright" />
                   </node>
@@ -951,7 +951,7 @@
                 </node>
                 <node concept="1mIQ4w" id="IlMDKrCcBl" role="2OqNvi">
                   <node concept="chp4Y" id="IlMDKrCcBm" role="cj9EA">
-                    <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="BinaryEntityInstanceReference" />
+                    <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
                   </node>
                 </node>
               </node>
@@ -1154,7 +1154,7 @@
             <node concept="3K4zz7" id="IlMDKrBeSB" role="37vLTx">
               <node concept="2OqwBi" id="IlMDKrBfpr" role="3K4E3e">
                 <node concept="1PxgMI" id="IlMDKrBf7D" role="2Oq$k0">
-                  <ref role="1m5ApE" to="mmsd:IlMDKr80vc" resolve="BinaryEntityInstanceReference" />
+                  <ref role="1m5ApE" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
                   <node concept="37vLTw" id="IlMDKrBeXN" role="1m5AlR">
                     <ref role="3cqZAo" node="IlMDKrANRu" resolve="currentleft" />
                   </node>
@@ -1172,7 +1172,7 @@
                 </node>
                 <node concept="1mIQ4w" id="IlMDKrBemN" role="2OqNvi">
                   <node concept="chp4Y" id="IlMDKrBeuj" role="cj9EA">
-                    <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="BinaryEntityInstanceReference" />
+                    <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
                   </node>
                 </node>
               </node>
