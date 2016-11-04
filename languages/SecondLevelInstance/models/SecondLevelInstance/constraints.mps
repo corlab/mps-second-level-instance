@@ -261,7 +261,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="7cHuNj$0Pu9">
-    <property role="3GE5qa" value="entities.Entity" />
+    <property role="3GE5qa" value="Entities.Entity" />
     <ref role="1M2myG" to="mmsd:6bEqAfEbWFV" resolve="EntityPropertyInstance" />
     <node concept="EnEH3" id="2kuPcAvj1uD" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -875,7 +875,7 @@
                       <node concept="2OqwBi" id="4rRUFLuMK_7" role="2Oq$k0">
                         <node concept="1Q6Npb" id="4rRUFLuMKbD" role="2Oq$k0" />
                         <node concept="2RRcyG" id="4rRUFLuML0r" role="2OqNvi">
-                          <ref role="2RRcyH" to="mmsd:4rRUFLuEa21" resolve="EntityRelationshipInstanceCollection" />
+                          <ref role="2RRcyH" to="mmsd:4rRUFLuEa21" resolve="DomainInstantiation" />
                         </node>
                       </node>
                       <node concept="13MTOL" id="4rRUFLuMODx" role="2OqNvi">
@@ -927,7 +927,7 @@
                       <node concept="2OqwBi" id="4rRUFLuMSKq" role="2Oq$k0">
                         <node concept="1Q6Npb" id="4rRUFLuMSnB" role="2Oq$k0" />
                         <node concept="2RRcyG" id="4rRUFLuMTb3" role="2OqNvi">
-                          <ref role="2RRcyH" to="mmsd:4rRUFLuEa21" resolve="EntityRelationshipInstanceCollection" />
+                          <ref role="2RRcyH" to="mmsd:4rRUFLuEa21" resolve="DomainInstantiation" />
                         </node>
                       </node>
                       <node concept="13MTOL" id="4rRUFLuMWMt" role="2OqNvi">
@@ -1181,7 +1181,7 @@
                       <node concept="2OqwBi" id="4rRUFLuNDmH" role="2Oq$k0">
                         <node concept="1Q6Npb" id="4rRUFLuNDmI" role="2Oq$k0" />
                         <node concept="2RRcyG" id="4rRUFLuNDmJ" role="2OqNvi">
-                          <ref role="2RRcyH" to="mmsd:4rRUFLuEa21" resolve="EntityRelationshipInstanceCollection" />
+                          <ref role="2RRcyH" to="mmsd:4rRUFLuEa21" resolve="DomainInstantiation" />
                         </node>
                       </node>
                       <node concept="13MTOL" id="4rRUFLuNDmK" role="2OqNvi">
@@ -1233,7 +1233,7 @@
                       <node concept="2OqwBi" id="4rRUFLuNE4Q" role="2Oq$k0">
                         <node concept="1Q6Npb" id="4rRUFLuNE4R" role="2Oq$k0" />
                         <node concept="2RRcyG" id="4rRUFLuNE4S" role="2OqNvi">
-                          <ref role="2RRcyH" to="mmsd:4rRUFLuEa21" resolve="EntityRelationshipInstanceCollection" />
+                          <ref role="2RRcyH" to="mmsd:4rRUFLuEa21" resolve="DomainInstantiation" />
                         </node>
                       </node>
                       <node concept="13MTOL" id="4rRUFLuNE4T" role="2OqNvi">
@@ -1612,7 +1612,7 @@
                           <node concept="liA8E" id="1HHyIiEPEQH" role="2OqNvi">
                             <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
                             <node concept="35c_gC" id="1HHyIiEPH1k" role="37wK5m">
-                              <ref role="35c_gD" to="mmsd:1HHyIiEM7EL" resolve="EntityRelationshipCollection" />
+                              <ref role="35c_gD" to="mmsd:1HHyIiEM7EL" resolve="DomainDeclaration" />
                             </node>
                           </node>
                         </node>
@@ -1626,7 +1626,7 @@
                                 <node concept="2OqwBi" id="1HHyIiEQbws" role="3uHU7w">
                                   <node concept="2OqwBi" id="1HHyIiEQauf" role="2Oq$k0">
                                     <node concept="1PxgMI" id="1HHyIiEPNt_" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="mmsd:1HHyIiEM7EL" resolve="EntityRelationshipCollection" />
+                                      <ref role="1m5ApE" to="mmsd:1HHyIiEM7EL" resolve="DomainDeclaration" />
                                       <node concept="2GrUjf" id="1HHyIiEPN8Y" role="1m5AlR">
                                         <ref role="2Gs0qQ" node="1HHyIiEOLcd" resolve="amodel2" />
                                       </node>
@@ -1655,7 +1655,7 @@
                                   <node concept="2OqwBi" id="1HHyIiESvhg" role="576Qk">
                                     <node concept="2OqwBi" id="1HHyIiEStVX" role="2Oq$k0">
                                       <node concept="1PxgMI" id="1HHyIiESsNU" role="2Oq$k0">
-                                        <ref role="1m5ApE" to="mmsd:1HHyIiEM7EL" resolve="EntityRelationshipCollection" />
+                                        <ref role="1m5ApE" to="mmsd:1HHyIiEM7EL" resolve="DomainDeclaration" />
                                         <node concept="2GrUjf" id="1HHyIiESrbl" role="1m5AlR">
                                           <ref role="2Gs0qQ" node="1HHyIiEOLcd" resolve="amodel2" />
                                         </node>
@@ -2291,7 +2291,7 @@
                           <node concept="liA8E" id="1HHyIiETnVh" role="2OqNvi">
                             <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
                             <node concept="35c_gC" id="1HHyIiETnVi" role="37wK5m">
-                              <ref role="35c_gD" to="mmsd:1HHyIiEM7EL" resolve="EntityRelationshipCollection" />
+                              <ref role="35c_gD" to="mmsd:1HHyIiEM7EL" resolve="DomainDeclaration" />
                             </node>
                           </node>
                         </node>
@@ -2305,7 +2305,7 @@
                                 <node concept="2OqwBi" id="1HHyIiETnVn" role="3uHU7w">
                                   <node concept="2OqwBi" id="1HHyIiETnVo" role="2Oq$k0">
                                     <node concept="1PxgMI" id="1HHyIiETnVp" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="mmsd:1HHyIiEM7EL" resolve="EntityRelationshipCollection" />
+                                      <ref role="1m5ApE" to="mmsd:1HHyIiEM7EL" resolve="DomainDeclaration" />
                                       <node concept="2GrUjf" id="1HHyIiETnVq" role="1m5AlR">
                                         <ref role="2Gs0qQ" node="1HHyIiETnUd" resolve="amodel2" />
                                       </node>
@@ -2334,7 +2334,7 @@
                                   <node concept="2OqwBi" id="1HHyIiETnVz" role="576Qk">
                                     <node concept="2OqwBi" id="1HHyIiETnV$" role="2Oq$k0">
                                       <node concept="1PxgMI" id="1HHyIiETnV_" role="2Oq$k0">
-                                        <ref role="1m5ApE" to="mmsd:1HHyIiEM7EL" resolve="EntityRelationshipCollection" />
+                                        <ref role="1m5ApE" to="mmsd:1HHyIiEM7EL" resolve="DomainDeclaration" />
                                         <node concept="2GrUjf" id="1HHyIiETnVA" role="1m5AlR">
                                           <ref role="2Gs0qQ" node="1HHyIiETnUd" resolve="amodel2" />
                                         </node>
@@ -2423,7 +2423,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4hbwAHVlCTj">
-    <property role="3GE5qa" value="entities.EntityInstance" />
+    <property role="3GE5qa" value="Entities.EntityInstance" />
     <ref role="1M2myG" to="mmsd:6bEqAfEbWFN" resolve="EntityInstance" />
     <node concept="EnEH3" id="IlMDKr4YSg" role="1MhHOB">
       <ref role="EomxK" to="tpck:gOOYy9I" resolve="alias" />
@@ -2717,7 +2717,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1HHyIiEKDj7">
-    <property role="3GE5qa" value="entities.Entity" />
+    <property role="3GE5qa" value="Entities.Entity" />
     <ref role="1M2myG" to="mmsd:6bEqAfEbAz8" resolve="EntityCollection" />
     <node concept="nKS2y" id="1HHyIiEKDjY" role="1MLUbF">
       <node concept="3clFbS" id="1HHyIiEKDjZ" role="2VODD2">

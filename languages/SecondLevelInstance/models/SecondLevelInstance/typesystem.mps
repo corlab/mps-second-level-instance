@@ -182,7 +182,7 @@
   </registry>
   <node concept="1YbPZF" id="6bEqAfEca4h">
     <property role="TrG5h" value="typeof_EntityPropertyInstance" />
-    <property role="3GE5qa" value="entities.Entity" />
+    <property role="3GE5qa" value="Entities.Entity" />
     <node concept="3clFbS" id="6bEqAfEca4i" role="18ibNy">
       <node concept="1Z5TYs" id="6bEqAfEcab9" role="3cqZAp">
         <node concept="mw_s8" id="6bEqAfEcabo" role="1ZfhKB">
@@ -257,7 +257,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="7cYVBOT0jLy">
-    <property role="3GE5qa" value="entities.EntityInstance" />
+    <property role="3GE5qa" value="Entities.EntityInstance" />
     <property role="TrG5h" value="unique_prop_EntityInstance" />
     <node concept="3clFbS" id="7cYVBOT0jLz" role="18ibNy">
       <node concept="2Gpval" id="7cYVBOSZEfW" role="3cqZAp">
@@ -385,7 +385,7 @@
   </node>
   <node concept="18kY7G" id="4hbwAHVf7GH">
     <property role="TrG5h" value="unique_name_EntityName" />
-    <property role="3GE5qa" value="entities.Entity" />
+    <property role="3GE5qa" value="Entities.Entity" />
     <node concept="3clFbS" id="4hbwAHVf7GI" role="18ibNy">
       <node concept="3clFbJ" id="4hbwAHVgkyW" role="3cqZAp">
         <node concept="3clFbS" id="4hbwAHVgkyY" role="3clFbx">
@@ -1098,7 +1098,7 @@
   </node>
   <node concept="18kY7G" id="4rRUFLv50ZX">
     <property role="TrG5h" value="notempty_prop_EntityInstance" />
-    <property role="3GE5qa" value="entities.EntityInstance" />
+    <property role="3GE5qa" value="Entities.EntityInstance" />
     <node concept="3clFbS" id="4rRUFLv50ZY" role="18ibNy">
       <node concept="3clFbF" id="4rRUFLv51$Z" role="3cqZAp">
         <node concept="2OqwBi" id="4rRUFLv53lq" role="3clFbG">
@@ -1637,6 +1637,24 @@
     <node concept="1YaCAy" id="70qrR2AweUJ" role="1YuTPh">
       <property role="TrG5h" value="relationshipInstance" />
       <ref role="1YaFvo" to="mmsd:4hbwAHV4llX" resolve="RelationshipInstance" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="70qrR2AGIDc">
+    <property role="TrG5h" value="check_BinaryRelationShipInstanceReference" />
+    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
+    <node concept="3clFbS" id="70qrR2AGIDd" role="18ibNy">
+      <node concept="a7r0C" id="70qrR2AGIVv" role="3cqZAp">
+        <node concept="Xl_RD" id="70qrR2AGIVU" role="a7wSD">
+          <property role="Xl_RC" value="Relationship Checks for Relationship Instance References not yet implemented. Use with caution!" />
+        </node>
+        <node concept="1YBJjd" id="70qrR2AGIZq" role="2OEOjV">
+          <ref role="1YBMHb" node="70qrR2AGIDf" resolve="binaryRelationShipInstanceReference" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="70qrR2AGIDf" role="1YuTPh">
+      <property role="TrG5h" value="binaryRelationShipInstanceReference" />
+      <ref role="1YaFvo" to="mmsd:IlMDKr7TFt" resolve="BinaryRelationShipInstanceReference" />
     </node>
   </node>
 </model>

@@ -44,7 +44,7 @@
     <property role="EcuMT" value="7127626337630447816" />
     <property role="TrG5h" value="EntityCollection" />
     <property role="19KtqR" value="true" />
-    <property role="3GE5qa" value="entities.Entity" />
+    <property role="3GE5qa" value="Entities.Entity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6bEqAfEbAz9" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -60,7 +60,7 @@
   <node concept="1TIwiD" id="6bEqAfEbQA5">
     <property role="EcuMT" value="7127626337630513541" />
     <property role="TrG5h" value="Entity" />
-    <property role="3GE5qa" value="entities.Entity" />
+    <property role="3GE5qa" value="Entities.Entity" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6bEqAfEbQA6" role="PzmwI">
@@ -77,7 +77,7 @@
   <node concept="1TIwiD" id="6bEqAfEbQAe">
     <property role="EcuMT" value="7127626337630513550" />
     <property role="TrG5h" value="EntityProperty" />
-    <property role="3GE5qa" value="entities.Entity" />
+    <property role="3GE5qa" value="Entities.Entity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6bEqAfEbQAj" role="1TKVEi">
       <property role="IQ2ns" value="7127626337630513555" />
@@ -93,7 +93,7 @@
   <node concept="1TIwiD" id="6bEqAfEbWFN">
     <property role="EcuMT" value="7127626337630538483" />
     <property role="TrG5h" value="EntityInstance" />
-    <property role="3GE5qa" value="entities.EntityInstance" />
+    <property role="3GE5qa" value="Entities.EntityInstance" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="6bEqAfEbWFQ" role="1TKVEi">
@@ -116,7 +116,7 @@
   </node>
   <node concept="1TIwiD" id="6bEqAfEbWFV">
     <property role="EcuMT" value="7127626337630538491" />
-    <property role="3GE5qa" value="entities.Entity" />
+    <property role="3GE5qa" value="Entities.Entity" />
     <property role="TrG5h" value="EntityPropertyInstance" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="6bEqAfEbWFY" role="1TKVEi">
@@ -139,7 +139,7 @@
   </node>
   <node concept="1TIwiD" id="7cHuNj$20YC">
     <property role="EcuMT" value="8299425155407941544" />
-    <property role="3GE5qa" value="entities.EntityInstance" />
+    <property role="3GE5qa" value="Entities.EntityInstance" />
     <property role="TrG5h" value="EntityInstanceCollection" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -259,9 +259,9 @@
   </node>
   <node concept="1TIwiD" id="1HHyIiEM7EL">
     <property role="EcuMT" value="1976388526207957681" />
-    <property role="TrG5h" value="EntityRelationshipCollection" />
+    <property role="TrG5h" value="DomainDeclaration" />
     <property role="19KtqR" value="true" />
-    <property role="3GE5qa" value="collections" />
+    <property role="3GE5qa" value="Collections" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1HHyIiEM7EM" role="1TKVEi">
       <property role="IQ2ns" value="1976388526207957682" />
@@ -283,9 +283,9 @@
   </node>
   <node concept="1TIwiD" id="4rRUFLuEa21">
     <property role="EcuMT" value="5113813996665348225" />
-    <property role="TrG5h" value="EntityRelationshipInstanceCollection" />
+    <property role="TrG5h" value="DomainInstantiation" />
     <property role="19KtqR" value="true" />
-    <property role="3GE5qa" value="collections" />
+    <property role="3GE5qa" value="Collections" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4rRUFLuEa5v" role="1TKVEi">
       <property role="IQ2ns" value="5113813996665348447" />
@@ -294,17 +294,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7cHuNj$20YC" resolve="EntityInstanceCollection" />
     </node>
-    <node concept="1TJgyj" id="4rRUFLuEa5Y" role="1TKVEi">
-      <property role="IQ2ns" value="5113813996665348478" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="relationshipInstanceCollection" />
-      <ref role="20lvS9" node="4hbwAHV57Qf" resolve="RelationshipInstanceCollection" />
-    </node>
     <node concept="1TJgyj" id="IlMDKrMdy4" role="1TKVEi">
       <property role="IQ2ns" value="834796077776951428" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="lol" />
+      <property role="20kJfa" value="relationshipInstanceCollection" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="IlMDKr5B1g" resolve="BinaryRelationshipInstanceCollection" />
     </node>
@@ -354,7 +347,6 @@
     <property role="EcuMT" value="834796077764833189" />
     <property role="TrG5h" value="BinaryRelationshipInstance" />
     <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
-    <property role="19KtqR" value="true" />
     <property role="34LRSv" value="---" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
     <node concept="1TJgyj" id="IlMDKr3ZSI" role="1TKVEi">
@@ -407,12 +399,16 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="IlMDKr5_fD" resolve="BinarySecondLevelInstanceExpression" />
     </node>
+    <node concept="PrWs8" id="70qrR2A_2oq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="IlMDKr7TFt">
     <property role="EcuMT" value="834796077765860061" />
     <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
     <property role="TrG5h" value="BinaryRelationShipInstanceReference" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <property role="34LRSv" value="___" />
+    <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
     <node concept="1TJgyj" id="IlMDKr7TFG" role="1TKVEi">
       <property role="IQ2ns" value="834796077765860076" />
       <property role="20lmBu" value="reference" />
@@ -420,13 +416,10 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="IlMDKr3YY_" resolve="BinaryRelationshipInstance" />
     </node>
-    <node concept="PrWs8" id="IlMDKr7TFB" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="IlMDKr80vc">
     <property role="EcuMT" value="834796077765887948" />
-    <property role="3GE5qa" value="entities.EntityInstance" />
+    <property role="3GE5qa" value="Entities.EntityInstance" />
     <property role="TrG5h" value="EntityInstanceReference" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="IlMDKr80vr" role="1TKVEi">
@@ -437,6 +430,30 @@
       <ref role="20lvS9" node="6bEqAfEbWFN" resolve="EntityInstance" />
     </node>
     <node concept="PrWs8" id="IlMDKr80vm" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="70qrR2Ay9f_">
+    <property role="EcuMT" value="8077891411263394789" />
+    <property role="3GE5qa" value="Collections" />
+    <property role="TrG5h" value="Domain" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="70qrR2Ay9ji" role="1TKVEi">
+      <property role="IQ2ns" value="8077891411263395026" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="declaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1HHyIiEM7EL" resolve="DomainDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="70qrR2Ay9jm" role="1TKVEi">
+      <property role="IQ2ns" value="8077891411263395030" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4rRUFLuEa21" resolve="DomainInstantiation" />
+    </node>
+    <node concept="PrWs8" id="70qrR2Ay9hz" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
