@@ -16,6 +16,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -67,12 +70,21 @@
       <ref role="28Lq2l" to="egop:7cHuNj$1svm" resolve="Location" />
       <node concept="28Lq2o" id="7cYVBOT5fOv" role="28Lq2r">
         <ref role="28Lq2v" to="egop:7cHuNj$1svr" resolve="x" />
+        <node concept="3cmrfG" id="4rRUFLv5qiQ" role="28Lq2t">
+          <property role="3cmrfH" value="9" />
+        </node>
       </node>
       <node concept="28Lq2o" id="7cYVBOT5fOB" role="28Lq2r">
         <ref role="28Lq2v" to="egop:7cHuNj$1F9g" resolve="y" />
+        <node concept="3cmrfG" id="4rRUFLv5qkx" role="28Lq2t">
+          <property role="3cmrfH" value="3" />
+        </node>
       </node>
       <node concept="28Lq2o" id="7cYVBOT5fOM" role="28Lq2r">
         <ref role="28Lq2v" to="egop:7cHuNj$1HdX" resolve="z" />
+        <node concept="3cmrfG" id="4rRUFLv5qmc" role="28Lq2t">
+          <property role="3cmrfH" value="4" />
+        </node>
       </node>
     </node>
   </node>
