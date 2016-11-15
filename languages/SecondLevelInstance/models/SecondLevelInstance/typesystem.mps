@@ -75,6 +75,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -1330,7 +1331,6 @@
     <property role="TrG5h" value="check_BinaryRelationshipInstance" />
     <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
     <node concept="3clFbS" id="IlMDKrvm4Y" role="18ibNy">
-      <node concept="3clFbH" id="70qrR2ApShP" role="3cqZAp" />
       <node concept="3SKdUt" id="70qrR2ApUhH" role="3cqZAp">
         <node concept="3SKdUq" id="70qrR2ApUhI" role="3SKWNk">
           <property role="3SKdUp" value="This rule ensures that the referenced nodes on the left and right of the bianry " />
@@ -1384,103 +1384,107 @@
             <node concept="1YBJjd" id="IlMDKrBo2J" role="2Oq$k0">
               <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
             </node>
-            <node concept="2qgKlT" id="IlMDKrBp1N" role="2OqNvi">
-              <ref role="37wK5l" to="7w2z:IlMDKrALS7" resolve="getEntityToLeft" />
+            <node concept="2qgKlT" id="m8YdCcHWwo" role="2OqNvi">
+              <ref role="37wK5l" to="7w2z:m8YdCcG$1t" resolve="getEntityToLeftName" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3clFbH" id="IlMDKrFH73" role="3cqZAp" />
-      <node concept="3clFbJ" id="IlMDKrFHYN" role="3cqZAp">
-        <node concept="3clFbS" id="IlMDKrFHYP" role="3clFbx">
-          <node concept="3clFbJ" id="IlMDKrEeZb" role="3cqZAp">
-            <node concept="3clFbS" id="IlMDKrEeZd" role="3clFbx">
-              <node concept="1X3_iC" id="IlMDKrJgjR" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="2MkqsV" id="IlMDKrEgBW" role="8Wnug">
-                  <node concept="3cpWs3" id="IlMDKrEgBX" role="2MkJ7o">
-                    <node concept="Xl_RD" id="IlMDKrEgBY" role="3uHU7w">
-                      <property role="Xl_RC" value="' was provided" />
-                    </node>
-                    <node concept="3cpWs3" id="IlMDKrEgBZ" role="3uHU7B">
-                      <node concept="3cpWs3" id="IlMDKrEgC0" role="3uHU7B">
-                        <node concept="3cpWs3" id="IlMDKrEgC1" role="3uHU7B">
-                          <node concept="Xl_RD" id="IlMDKrEgC2" role="3uHU7B">
-                            <property role="Xl_RC" value="Wrong Entity type: Expected '" />
+      <node concept="1X3_iC" id="m8YdCcJydW" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="3clFbJ" id="IlMDKrFHYN" role="8Wnug">
+          <node concept="3clFbS" id="IlMDKrFHYP" role="3clFbx">
+            <node concept="3clFbJ" id="IlMDKrEeZb" role="3cqZAp">
+              <node concept="3clFbS" id="IlMDKrEeZd" role="3clFbx">
+                <node concept="1X3_iC" id="IlMDKrJgjR" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="2MkqsV" id="IlMDKrEgBW" role="8Wnug">
+                    <node concept="3cpWs3" id="IlMDKrEgBX" role="2MkJ7o">
+                      <node concept="Xl_RD" id="IlMDKrEgBY" role="3uHU7w">
+                        <property role="Xl_RC" value="' was provided" />
+                      </node>
+                      <node concept="3cpWs3" id="IlMDKrEgBZ" role="3uHU7B">
+                        <node concept="3cpWs3" id="IlMDKrEgC0" role="3uHU7B">
+                          <node concept="3cpWs3" id="IlMDKrEgC1" role="3uHU7B">
+                            <node concept="Xl_RD" id="IlMDKrEgC2" role="3uHU7B">
+                              <property role="Xl_RC" value="Wrong Entity type: Expected '" />
+                            </node>
+                            <node concept="37vLTw" id="IlMDKrGT8H" role="3uHU7w">
+                              <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
+                            </node>
                           </node>
-                          <node concept="37vLTw" id="IlMDKrGT8H" role="3uHU7w">
+                          <node concept="Xl_RD" id="IlMDKrEgCa" role="3uHU7w">
+                            <property role="Xl_RC" value="' but '" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="IlMDKrEjtp" role="3uHU7w">
+                          <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="IlMDKrEgCj" role="2OEOjV">
+                      <node concept="1YBJjd" id="IlMDKrEgCk" role="2Oq$k0">
+                        <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+                      </node>
+                      <node concept="3TrEf2" id="IlMDKrEgCl" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpee:fJuHU4s" resolve="leftExpression" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2MkqsV" id="IlMDKrI7Ti" role="3cqZAp">
+                  <node concept="3cpWs3" id="IlMDKrI7Tj" role="2MkJ7o">
+                    <node concept="Xl_RD" id="IlMDKrI7Tk" role="3uHU7w">
+                      <property role="Xl_RC" value="' :(" />
+                    </node>
+                    <node concept="3cpWs3" id="IlMDKrI7Tl" role="3uHU7B">
+                      <node concept="3cpWs3" id="IlMDKrI7Tm" role="3uHU7B">
+                        <node concept="3cpWs3" id="IlMDKrI7Tn" role="3uHU7B">
+                          <node concept="Xl_RD" id="IlMDKrI7To" role="3uHU7B">
+                            <property role="Xl_RC" value="Wrong Entity type on left side: Expected Entity of type '" />
+                          </node>
+                          <node concept="37vLTw" id="IlMDKrI8gv" role="3uHU7w">
                             <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
                           </node>
                         </node>
-                        <node concept="Xl_RD" id="IlMDKrEgCa" role="3uHU7w">
-                          <property role="Xl_RC" value="' but '" />
+                        <node concept="Xl_RD" id="IlMDKrI7Tq" role="3uHU7w">
+                          <property role="Xl_RC" value="' but found '" />
                         </node>
                       </node>
-                      <node concept="37vLTw" id="IlMDKrEjtp" role="3uHU7w">
+                      <node concept="37vLTw" id="IlMDKrI8lW" role="3uHU7w">
                         <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="IlMDKrEgCj" role="2OEOjV">
-                    <node concept="1YBJjd" id="IlMDKrEgCk" role="2Oq$k0">
-                      <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
-                    </node>
-                    <node concept="3TrEf2" id="IlMDKrEgCl" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpee:fJuHU4s" resolve="leftExpression" />
-                    </node>
+                  <node concept="1YBJjd" id="IlMDKrI7Ts" role="2OEOjV">
+                    <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
                   </node>
                 </node>
               </node>
-              <node concept="2MkqsV" id="IlMDKrI7Ti" role="3cqZAp">
-                <node concept="3cpWs3" id="IlMDKrI7Tj" role="2MkJ7o">
-                  <node concept="Xl_RD" id="IlMDKrI7Tk" role="3uHU7w">
-                    <property role="Xl_RC" value="' :(" />
+              <node concept="3fqX7Q" id="IlMDKrFLO6" role="3clFbw">
+                <node concept="2OqwBi" id="IlMDKrFLO8" role="3fr31v">
+                  <node concept="37vLTw" id="IlMDKrFLO9" role="2Oq$k0">
+                    <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
                   </node>
-                  <node concept="3cpWs3" id="IlMDKrI7Tl" role="3uHU7B">
-                    <node concept="3cpWs3" id="IlMDKrI7Tm" role="3uHU7B">
-                      <node concept="3cpWs3" id="IlMDKrI7Tn" role="3uHU7B">
-                        <node concept="Xl_RD" id="IlMDKrI7To" role="3uHU7B">
-                          <property role="Xl_RC" value="Wrong Entity type on left side: Expected Entity of type '" />
-                        </node>
-                        <node concept="37vLTw" id="IlMDKrI8gv" role="3uHU7w">
-                          <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="IlMDKrI7Tq" role="3uHU7w">
-                        <property role="Xl_RC" value="' but found '" />
-                      </node>
+                  <node concept="liA8E" id="IlMDKrFLOa" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="37vLTw" id="IlMDKrGSPO" role="37wK5m">
+                      <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
                     </node>
-                    <node concept="37vLTw" id="IlMDKrI8lW" role="3uHU7w">
-                      <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="1YBJjd" id="IlMDKrI7Ts" role="2OEOjV">
-                  <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
-                </node>
-              </node>
-            </node>
-            <node concept="3fqX7Q" id="IlMDKrFLO6" role="3clFbw">
-              <node concept="2OqwBi" id="IlMDKrFLO8" role="3fr31v">
-                <node concept="37vLTw" id="IlMDKrFLO9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
-                </node>
-                <node concept="liA8E" id="IlMDKrFLOa" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="37vLTw" id="IlMDKrGSPO" role="37wK5m">
-                    <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="2OqwBi" id="IlMDKrFIEK" role="3clFbw">
-          <node concept="37vLTw" id="IlMDKrFIpO" role="2Oq$k0">
-            <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+          <node concept="2OqwBi" id="IlMDKrFIEK" role="3clFbw">
+            <node concept="37vLTw" id="IlMDKrFIpO" role="2Oq$k0">
+              <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+            </node>
+            <node concept="17RvpY" id="IlMDKrFJ5Z" role="2OqNvi" />
           </node>
-          <node concept="17RvpY" id="IlMDKrFJ5Z" role="2OqNvi" />
         </node>
       </node>
       <node concept="3clFbH" id="IlMDKrHluJ" role="3cqZAp" />
@@ -1516,103 +1520,352 @@
             <node concept="1YBJjd" id="IlMDKrGOB3" role="2Oq$k0">
               <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
             </node>
-            <node concept="2qgKlT" id="IlMDKrGPMS" role="2OqNvi">
-              <ref role="37wK5l" to="7w2z:IlMDKrGfn1" resolve="getEntityToRight" />
+            <node concept="2qgKlT" id="m8YdCcDY5j" role="2OqNvi">
+              <ref role="37wK5l" to="7w2z:m8YdCcDMyO" resolve="getEntityToRightName" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3clFbH" id="IlMDKrGTjS" role="3cqZAp" />
-      <node concept="3clFbJ" id="IlMDKrGOB6" role="3cqZAp">
-        <node concept="3clFbS" id="IlMDKrGOB7" role="3clFbx">
-          <node concept="3clFbJ" id="IlMDKrGOB8" role="3cqZAp">
-            <node concept="3clFbS" id="IlMDKrGOB9" role="3clFbx">
-              <node concept="1X3_iC" id="IlMDKrJfL$" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="2MkqsV" id="IlMDKrGOBa" role="8Wnug">
-                  <node concept="3cpWs3" id="IlMDKrGOBb" role="2MkJ7o">
-                    <node concept="Xl_RD" id="IlMDKrGOBc" role="3uHU7w">
-                      <property role="Xl_RC" value="' was provided" />
-                    </node>
-                    <node concept="3cpWs3" id="IlMDKrGOBd" role="3uHU7B">
-                      <node concept="3cpWs3" id="IlMDKrGOBe" role="3uHU7B">
-                        <node concept="3cpWs3" id="IlMDKrGOBf" role="3uHU7B">
-                          <node concept="Xl_RD" id="IlMDKrGOBg" role="3uHU7B">
-                            <property role="Xl_RC" value="Wrong Entity type: ReExpected '" />
+      <node concept="1X3_iC" id="m8YdCcJxFj" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="3clFbJ" id="IlMDKrGOB6" role="8Wnug">
+          <node concept="3clFbS" id="IlMDKrGOB7" role="3clFbx">
+            <node concept="3clFbJ" id="IlMDKrGOB8" role="3cqZAp">
+              <node concept="3clFbS" id="IlMDKrGOB9" role="3clFbx">
+                <node concept="1X3_iC" id="IlMDKrJfL$" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="2MkqsV" id="IlMDKrGOBa" role="8Wnug">
+                    <node concept="3cpWs3" id="IlMDKrGOBb" role="2MkJ7o">
+                      <node concept="Xl_RD" id="IlMDKrGOBc" role="3uHU7w">
+                        <property role="Xl_RC" value="' was provided" />
+                      </node>
+                      <node concept="3cpWs3" id="IlMDKrGOBd" role="3uHU7B">
+                        <node concept="3cpWs3" id="IlMDKrGOBe" role="3uHU7B">
+                          <node concept="3cpWs3" id="IlMDKrGOBf" role="3uHU7B">
+                            <node concept="Xl_RD" id="IlMDKrGOBg" role="3uHU7B">
+                              <property role="Xl_RC" value="Wrong Entity type: ReExpected '" />
+                            </node>
+                            <node concept="37vLTw" id="IlMDKrGRoc" role="3uHU7w">
+                              <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
+                            </node>
                           </node>
-                          <node concept="37vLTw" id="IlMDKrGRoc" role="3uHU7w">
+                          <node concept="Xl_RD" id="IlMDKrGOBo" role="3uHU7w">
+                            <property role="Xl_RC" value="' but '" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="IlMDKrGOBp" role="3uHU7w">
+                          <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="IlMDKrGOBq" role="2OEOjV">
+                      <node concept="1YBJjd" id="IlMDKrGOBr" role="2Oq$k0">
+                        <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+                      </node>
+                      <node concept="3TrEf2" id="IlMDKrGRD8" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpee:fJuHU4r" resolve="rightExpression" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2MkqsV" id="IlMDKrHmuQ" role="3cqZAp">
+                  <node concept="3cpWs3" id="IlMDKrHmuR" role="2MkJ7o">
+                    <node concept="Xl_RD" id="IlMDKrHmuS" role="3uHU7w">
+                      <property role="Xl_RC" value="' :(" />
+                    </node>
+                    <node concept="3cpWs3" id="IlMDKrHmuT" role="3uHU7B">
+                      <node concept="3cpWs3" id="IlMDKrHmuU" role="3uHU7B">
+                        <node concept="3cpWs3" id="IlMDKrHmuV" role="3uHU7B">
+                          <node concept="Xl_RD" id="IlMDKrHmuW" role="3uHU7B">
+                            <property role="Xl_RC" value="Wrong Entity type on right side: Expected Entity of type '" />
+                          </node>
+                          <node concept="37vLTw" id="IlMDKrHmuX" role="3uHU7w">
                             <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
                           </node>
                         </node>
-                        <node concept="Xl_RD" id="IlMDKrGOBo" role="3uHU7w">
-                          <property role="Xl_RC" value="' but '" />
+                        <node concept="Xl_RD" id="IlMDKrHmuY" role="3uHU7w">
+                          <property role="Xl_RC" value="' but found '" />
                         </node>
                       </node>
-                      <node concept="37vLTw" id="IlMDKrGOBp" role="3uHU7w">
+                      <node concept="37vLTw" id="IlMDKrHmuZ" role="3uHU7w">
                         <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="IlMDKrGOBq" role="2OEOjV">
-                    <node concept="1YBJjd" id="IlMDKrGOBr" role="2Oq$k0">
-                      <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
-                    </node>
-                    <node concept="3TrEf2" id="IlMDKrGRD8" role="2OqNvi">
-                      <ref role="3Tt5mk" to="tpee:fJuHU4r" resolve="rightExpression" />
+                  <node concept="1YBJjd" id="IlMDKrHmv1" role="2OEOjV">
+                    <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="IlMDKrGOBt" role="3clFbw">
+                <node concept="2OqwBi" id="IlMDKrGOBu" role="3fr31v">
+                  <node concept="37vLTw" id="IlMDKrGOBv" role="2Oq$k0">
+                    <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+                  </node>
+                  <node concept="liA8E" id="IlMDKrGOBw" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="37vLTw" id="IlMDKrGR2M" role="37wK5m">
+                      <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="2MkqsV" id="IlMDKrHmuQ" role="3cqZAp">
-                <node concept="3cpWs3" id="IlMDKrHmuR" role="2MkJ7o">
-                  <node concept="Xl_RD" id="IlMDKrHmuS" role="3uHU7w">
+            </node>
+          </node>
+          <node concept="2OqwBi" id="IlMDKrGOBC" role="3clFbw">
+            <node concept="37vLTw" id="IlMDKrGOBD" role="2Oq$k0">
+              <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+            </node>
+            <node concept="17RvpY" id="IlMDKrGOBE" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="m8YdCcJeHg" role="3cqZAp" />
+      <node concept="3clFbH" id="m8YdCcJeZ$" role="3cqZAp" />
+      <node concept="3clFbJ" id="m8YdCcJfnC" role="3cqZAp">
+        <node concept="3clFbS" id="m8YdCcJfnE" role="3clFbx">
+          <node concept="3SKdUt" id="m8YdCcJsQq" role="3cqZAp">
+            <node concept="3SKdUq" id="m8YdCcJsQs" role="3SKWNk">
+              <property role="3SKdUp" value="is the node even possible anywhere?" />
+            </node>
+          </node>
+          <node concept="3clFbJ" id="m8YdCcJgLn" role="3cqZAp">
+            <node concept="3clFbS" id="m8YdCcJgLp" role="3clFbx">
+              <node concept="2MkqsV" id="m8YdCcJm9G" role="3cqZAp">
+                <node concept="3cpWs3" id="m8YdCcJm9H" role="2MkJ7o">
+                  <node concept="Xl_RD" id="m8YdCcJm9I" role="3uHU7w">
                     <property role="Xl_RC" value="' :(" />
                   </node>
-                  <node concept="3cpWs3" id="IlMDKrHmuT" role="3uHU7B">
-                    <node concept="3cpWs3" id="IlMDKrHmuU" role="3uHU7B">
-                      <node concept="3cpWs3" id="IlMDKrHmuV" role="3uHU7B">
-                        <node concept="Xl_RD" id="IlMDKrHmuW" role="3uHU7B">
-                          <property role="Xl_RC" value="Wrong Entity type on right side: Expected Entity of type '" />
+                  <node concept="3cpWs3" id="m8YdCcJm9J" role="3uHU7B">
+                    <node concept="3cpWs3" id="m8YdCcJmH$" role="3uHU7B">
+                      <node concept="Xl_RD" id="m8YdCcJm9O" role="3uHU7w">
+                        <property role="Xl_RC" value="' but found '" />
+                      </node>
+                      <node concept="3cpWs3" id="m8YdCcJnN4" role="3uHU7B">
+                        <node concept="3cpWs3" id="m8YdCcJm9K" role="3uHU7B">
+                          <node concept="3cpWs3" id="m8YdCcJm9L" role="3uHU7B">
+                            <node concept="Xl_RD" id="m8YdCcJm9M" role="3uHU7B">
+                              <property role="Xl_RC" value="Wrong referenced Entity on left side: Expected Entity of type '" />
+                            </node>
+                            <node concept="37vLTw" id="m8YdCcJm9N" role="3uHU7w">
+                              <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="m8YdCcJmN6" role="3uHU7w">
+                            <property role="Xl_RC" value="' or '" />
+                          </node>
                         </node>
-                        <node concept="37vLTw" id="IlMDKrHmuX" role="3uHU7w">
+                        <node concept="37vLTw" id="m8YdCcJo2X" role="3uHU7w">
                           <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="IlMDKrHmuY" role="3uHU7w">
-                        <property role="Xl_RC" value="' but found '" />
-                      </node>
                     </node>
-                    <node concept="37vLTw" id="IlMDKrHmuZ" role="3uHU7w">
-                      <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+                    <node concept="37vLTw" id="m8YdCcJm9P" role="3uHU7w">
+                      <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
                     </node>
                   </node>
                 </node>
-                <node concept="1YBJjd" id="IlMDKrHmv1" role="2OEOjV">
+                <node concept="1YBJjd" id="m8YdCcJm9Q" role="2OEOjV">
                   <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
                 </node>
               </node>
             </node>
-            <node concept="3fqX7Q" id="IlMDKrGOBt" role="3clFbw">
-              <node concept="2OqwBi" id="IlMDKrGOBu" role="3fr31v">
-                <node concept="37vLTw" id="IlMDKrGOBv" role="2Oq$k0">
-                  <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+            <node concept="1Wc70l" id="m8YdCcJl86" role="3clFbw">
+              <node concept="3fqX7Q" id="m8YdCcJidb" role="3uHU7B">
+                <node concept="2OqwBi" id="m8YdCcJidd" role="3fr31v">
+                  <node concept="37vLTw" id="m8YdCcJide" role="2Oq$k0">
+                    <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+                  </node>
+                  <node concept="liA8E" id="m8YdCcJidf" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="37vLTw" id="m8YdCcJidg" role="37wK5m">
+                      <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="liA8E" id="IlMDKrGOBw" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="37vLTw" id="IlMDKrGR2M" role="37wK5m">
-                    <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
+              </node>
+              <node concept="3fqX7Q" id="m8YdCcJldQ" role="3uHU7w">
+                <node concept="2OqwBi" id="m8YdCcJl_L" role="3fr31v">
+                  <node concept="37vLTw" id="m8YdCcJlft" role="2Oq$k0">
+                    <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+                  </node>
+                  <node concept="liA8E" id="m8YdCcJm2k" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="37vLTw" id="m8YdCcJm61" role="37wK5m">
+                      <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="m8YdCcJsZb" role="3cqZAp" />
         </node>
-        <node concept="2OqwBi" id="IlMDKrGOBC" role="3clFbw">
-          <node concept="37vLTw" id="IlMDKrGOBD" role="2Oq$k0">
+        <node concept="2OqwBi" id="m8YdCcJfZg" role="3clFbw">
+          <node concept="37vLTw" id="m8YdCcJfEl" role="2Oq$k0">
+            <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+          </node>
+          <node concept="17RvpY" id="m8YdCcJgd5" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="m8YdCcJqFl" role="3cqZAp" />
+      <node concept="3clFbJ" id="m8YdCcJrod" role="3cqZAp">
+        <node concept="3clFbS" id="m8YdCcJrof" role="3clFbx">
+          <node concept="3clFbJ" id="m8YdCcJsom" role="3cqZAp">
+            <node concept="3clFbS" id="m8YdCcJson" role="3clFbx">
+              <node concept="2MkqsV" id="m8YdCcJsoo" role="3cqZAp">
+                <node concept="3cpWs3" id="m8YdCcJsop" role="2MkJ7o">
+                  <node concept="Xl_RD" id="m8YdCcJsoq" role="3uHU7w">
+                    <property role="Xl_RC" value="' :(" />
+                  </node>
+                  <node concept="3cpWs3" id="m8YdCcJsor" role="3uHU7B">
+                    <node concept="3cpWs3" id="m8YdCcJsos" role="3uHU7B">
+                      <node concept="Xl_RD" id="m8YdCcJsot" role="3uHU7w">
+                        <property role="Xl_RC" value="' but found '" />
+                      </node>
+                      <node concept="3cpWs3" id="m8YdCcJsou" role="3uHU7B">
+                        <node concept="3cpWs3" id="m8YdCcJsov" role="3uHU7B">
+                          <node concept="3cpWs3" id="m8YdCcJsow" role="3uHU7B">
+                            <node concept="Xl_RD" id="m8YdCcJsox" role="3uHU7B">
+                              <property role="Xl_RC" value="Wrong referenced Entity on right side: Expected Entity of type '" />
+                            </node>
+                            <node concept="37vLTw" id="m8YdCcJsoy" role="3uHU7w">
+                              <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="m8YdCcJsoz" role="3uHU7w">
+                            <property role="Xl_RC" value="' or '" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="m8YdCcJso$" role="3uHU7w">
+                          <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="m8YdCcJsHU" role="3uHU7w">
+                      <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1YBJjd" id="m8YdCcJsoA" role="2OEOjV">
+                  <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="m8YdCcJsoB" role="3cqZAp" />
+            </node>
+            <node concept="1Wc70l" id="m8YdCcJsoC" role="3clFbw">
+              <node concept="3fqX7Q" id="m8YdCcJsoD" role="3uHU7B">
+                <node concept="2OqwBi" id="m8YdCcJsoE" role="3fr31v">
+                  <node concept="37vLTw" id="m8YdCcJs$U" role="2Oq$k0">
+                    <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+                  </node>
+                  <node concept="liA8E" id="m8YdCcJsoG" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="37vLTw" id="m8YdCcJsoH" role="37wK5m">
+                      <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="m8YdCcJsoI" role="3uHU7w">
+                <node concept="2OqwBi" id="m8YdCcJsoJ" role="3fr31v">
+                  <node concept="37vLTw" id="m8YdCcJsAO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+                  </node>
+                  <node concept="liA8E" id="m8YdCcJsoL" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <node concept="37vLTw" id="m8YdCcJsoM" role="37wK5m">
+                      <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="m8YdCcJroe" role="3cqZAp" />
+        </node>
+        <node concept="2OqwBi" id="m8YdCcJs3S" role="3clFbw">
+          <node concept="37vLTw" id="m8YdCcJrIX" role="2Oq$k0">
             <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
           </node>
-          <node concept="17RvpY" id="IlMDKrGOBE" role="2OqNvi" />
+          <node concept="17RvpY" id="m8YdCcJshH" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="m8YdCcKrWF" role="3cqZAp" />
+      <node concept="3clFbJ" id="m8YdCcKsmn" role="3cqZAp">
+        <node concept="3clFbS" id="m8YdCcKsmp" role="3clFbx">
+          <node concept="3clFbJ" id="m8YdCcKuYn" role="3cqZAp">
+            <node concept="3clFbS" id="m8YdCcKuYp" role="3clFbx">
+              <node concept="2MkqsV" id="m8YdCcKvO5" role="3cqZAp">
+                <node concept="3cpWs3" id="m8YdCcKvO6" role="2MkJ7o">
+                  <node concept="Xl_RD" id="m8YdCcKvO7" role="3uHU7w">
+                    <property role="Xl_RC" value="' :(" />
+                  </node>
+                  <node concept="3cpWs3" id="m8YdCcKvOb" role="3uHU7B">
+                    <node concept="3cpWs3" id="m8YdCcK$C7" role="3uHU7B">
+                      <node concept="Xl_RD" id="m8YdCcK$Hc" role="3uHU7w">
+                        <property role="Xl_RC" value="' with a '" />
+                      </node>
+                      <node concept="3cpWs3" id="m8YdCcK$8k" role="3uHU7B">
+                        <node concept="Xl_RD" id="m8YdCcKvOe" role="3uHU7B">
+                          <property role="Xl_RC" value="Found identical types on both sides. This relationship needs to reference a '" />
+                        </node>
+                        <node concept="37vLTw" id="m8YdCcK$iw" role="3uHU7w">
+                          <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="m8YdCcKvOh" role="3uHU7w">
+                      <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1YBJjd" id="m8YdCcKvOj" role="2OEOjV">
+                  <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="m8YdCcKuYo" role="3cqZAp" />
+            </node>
+            <node concept="2OqwBi" id="m8YdCcKvjG" role="3clFbw">
+              <node concept="37vLTw" id="m8YdCcKuYL" role="2Oq$k0">
+                <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+              </node>
+              <node concept="liA8E" id="m8YdCcKvIQ" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="37vLTw" id="m8YdCcKvL5" role="37wK5m">
+                  <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="m8YdCcKsmo" role="3cqZAp" />
+        </node>
+        <node concept="1Wc70l" id="m8YdCcKAZC" role="3clFbw">
+          <node concept="3y3z36" id="m8YdCcKBnV" role="3uHU7w">
+            <node concept="37vLTw" id="m8YdCcKBoU" role="3uHU7w">
+              <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
+            </node>
+            <node concept="37vLTw" id="m8YdCcKB2n" role="3uHU7B">
+              <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
+            </node>
+          </node>
+          <node concept="1Wc70l" id="m8YdCcKupw" role="3uHU7B">
+            <node concept="2OqwBi" id="m8YdCcKsZE" role="3uHU7B">
+              <node concept="37vLTw" id="m8YdCcKsEJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+              </node>
+              <node concept="17RvpY" id="m8YdCcKtdv" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="m8YdCcKuJy" role="3uHU7w">
+              <node concept="37vLTw" id="m8YdCcKuqk" role="2Oq$k0">
+                <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+              </node>
+              <node concept="17RvpY" id="m8YdCcKuXE" role="2OqNvi" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
