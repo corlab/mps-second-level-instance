@@ -407,8 +407,7 @@
     <property role="EcuMT" value="834796077765860061" />
     <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
     <property role="TrG5h" value="BinaryRelationShipInstanceReference" />
-    <property role="34LRSv" value="___" />
-    <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="IlMDKr7TFG" role="1TKVEi">
       <property role="IQ2ns" value="834796077765860076" />
       <property role="20lmBu" value="reference" />

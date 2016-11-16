@@ -128,6 +128,12 @@
       </concept>
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
@@ -1624,7 +1630,57 @@
         </node>
       </node>
       <node concept="3clFbH" id="m8YdCcJeHg" role="3cqZAp" />
-      <node concept="3clFbH" id="m8YdCcJeZ$" role="3cqZAp" />
+      <node concept="1X3_iC" id="m8YdCd2WVp" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="34ab3g" id="m8YdCd2wQJ" role="8Wnug">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="m8YdCd2zd$" role="34bqiv">
+            <node concept="37vLTw" id="m8YdCd2ziI" role="3uHU7w">
+              <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+            </node>
+            <node concept="3cpWs3" id="m8YdCd2yJ2" role="3uHU7B">
+              <node concept="3cpWs3" id="m8YdCd2xZ1" role="3uHU7B">
+                <node concept="Xl_RD" id="m8YdCd2wQL" role="3uHU7B">
+                  <property role="Xl_RC" value="----CHECK INFO:" />
+                </node>
+                <node concept="37vLTw" id="m8YdCd2znn" role="3uHU7w">
+                  <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="m8YdCd2yNQ" role="3uHU7w">
+                <property role="Xl_RC" value="-" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1X3_iC" id="m8YdCd2WVq" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="34ab3g" id="m8YdCd2zs0" role="8Wnug">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="m8YdCd2zs1" role="34bqiv">
+            <node concept="37vLTw" id="m8YdCd2zXS" role="3uHU7w">
+              <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
+            </node>
+            <node concept="3cpWs3" id="m8YdCd2zs3" role="3uHU7B">
+              <node concept="3cpWs3" id="m8YdCd2zs4" role="3uHU7B">
+                <node concept="Xl_RD" id="m8YdCd2zs5" role="3uHU7B">
+                  <property role="Xl_RC" value="----CHECK INFO2:" />
+                </node>
+                <node concept="37vLTw" id="m8YdCd2zTf" role="3uHU7w">
+                  <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="m8YdCd2zs7" role="3uHU7w">
+                <property role="Xl_RC" value="-" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="m8YdCd2xdD" role="3cqZAp" />
       <node concept="3clFbJ" id="m8YdCcJfnC" role="3cqZAp">
         <node concept="3clFbS" id="m8YdCcJfnE" role="3clFbx">
           <node concept="3SKdUt" id="m8YdCcJsQq" role="3cqZAp">
@@ -1802,7 +1858,7 @@
               <node concept="2MkqsV" id="m8YdCcKvO5" role="3cqZAp">
                 <node concept="3cpWs3" id="m8YdCcKvO6" role="2MkJ7o">
                   <node concept="Xl_RD" id="m8YdCcKvO7" role="3uHU7w">
-                    <property role="Xl_RC" value="' :(" />
+                    <property role="Xl_RC" value="' (" />
                   </node>
                   <node concept="3cpWs3" id="m8YdCcKvOb" role="3uHU7B">
                     <node concept="3cpWs3" id="m8YdCcK$C7" role="3uHU7B">
@@ -1890,24 +1946,6 @@
     <node concept="1YaCAy" id="70qrR2AweUJ" role="1YuTPh">
       <property role="TrG5h" value="relationshipInstance" />
       <ref role="1YaFvo" to="mmsd:4hbwAHV4llX" resolve="RelationshipInstance" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="70qrR2AGIDc">
-    <property role="TrG5h" value="check_BinaryRelationShipInstanceReference" />
-    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
-    <node concept="3clFbS" id="70qrR2AGIDd" role="18ibNy">
-      <node concept="a7r0C" id="70qrR2AGIVv" role="3cqZAp">
-        <node concept="Xl_RD" id="70qrR2AGIVU" role="a7wSD">
-          <property role="Xl_RC" value="Relationship Checks for Relationship Instance References not yet implemented. Use with caution!" />
-        </node>
-        <node concept="1YBJjd" id="70qrR2AGIZq" role="2OEOjV">
-          <ref role="1YBMHb" node="70qrR2AGIDf" resolve="binaryRelationShipInstanceReference" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="70qrR2AGIDf" role="1YuTPh">
-      <property role="TrG5h" value="binaryRelationShipInstanceReference" />
-      <ref role="1YaFvo" to="mmsd:IlMDKr7TFt" resolve="BinaryRelationShipInstanceReference" />
     </node>
   </node>
 </model>

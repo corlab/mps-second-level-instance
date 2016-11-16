@@ -156,6 +156,10 @@
           <property role="TrG5h" value="partOf" />
           <ref role="ZmR5Q" node="70qrR2ADAl4" resolve="Pizza" />
           <ref role="ZmR5a" node="70qrR2ADAlT" resolve="Order" />
+          <node concept="omD1l" id="m8YdCcNFYf" role="omD1w">
+            <property role="TrG5h" value="something" />
+            <node concept="17QB3L" id="m8YdCcNFYn" role="omD1j" />
+          </node>
         </node>
       </node>
     </node>
@@ -239,10 +243,10 @@
           <node concept="gAykT" id="70qrR2ADAPn" role="gwTaq">
             <property role="TrG5h" value="participation" />
             <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
-            <node concept="gHsPg" id="70qrR2ADAPV" role="3uHU7w">
+            <node concept="gHsPg" id="m8YdCd2uBv" role="3uHU7B">
               <ref role="gHsP7" node="70qrR2ADAMZ" resolve="order_1" />
             </node>
-            <node concept="gHsPg" id="70qrR2ADAPN" role="3uHU7B">
+            <node concept="gHsPg" id="m8YdCd2uBw" role="3uHU7w">
               <ref role="gHsP7" node="70qrR2ADAth" resolve="margherita" />
             </node>
           </node>
@@ -252,30 +256,48 @@
           <node concept="gAykT" id="70qrR2ADAQQ" role="gwTaq">
             <property role="TrG5h" value="participation2" />
             <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
-            <node concept="gHsPg" id="70qrR2ADARA" role="3uHU7w">
-              <ref role="gHsP7" node="70qrR2ADAMZ" resolve="order_1" />
-            </node>
             <node concept="gHsPg" id="70qrR2ADARa" role="3uHU7B">
               <ref role="gHsP7" node="70qrR2ADAvQ" resolve="vegeterian" />
             </node>
+            <node concept="gHsPg" id="70qrR2ADARA" role="3uHU7w">
+              <ref role="gHsP7" node="70qrR2ADAMZ" resolve="order_1" />
+            </node>
           </node>
         </node>
-        <node concept="gwT_P" id="70qrR2AF5Mf" role="gwVD4">
-          <property role="TrG5h" value="qqq" />
-          <node concept="gy_11" id="70qrR2AGIAU" role="gwTaq">
-            <ref role="gy_1K" node="70qrR2ADAMA" resolve="placed_1" />
-            <node concept="gHsPg" id="70qrR2AGIBD" role="3uHU7w">
-              <ref role="gHsP7" node="70qrR2ADAth" resolve="margherita" />
-            </node>
-            <node concept="gy_11" id="70qrR2AFaP$" role="3uHU7B">
-              <ref role="gy_1K" node="70qrR2ADAPn" resolve="participation" />
-              <node concept="gHsPg" id="70qrR2AFaQC" role="3uHU7B">
-                <ref role="gHsP7" node="70qrR2ADAth" resolve="margherita" />
+        <node concept="gwT_P" id="m8YdCcGuaz" role="gwVD4">
+          <property role="TrG5h" value="test" />
+          <node concept="gAykT" id="m8YdCcIPJd" role="gwTaq">
+            <property role="TrG5h" value="orderrr" />
+            <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
+            <node concept="gAykT" id="m8YdCcIPK1" role="3uHU7B">
+              <property role="TrG5h" value="pppp" />
+              <ref role="gAziP" node="70qrR2ADArw" resolve="placed" />
+              <node concept="28Lq2g" id="m8YdCcIPKm" role="3uHU7B">
+                <property role="TrG5h" value="cc2" />
+                <ref role="28Lq2l" node="70qrR2ADAmq" resolve="Customer" />
               </node>
-              <node concept="28Lq2g" id="70qrR2AFaQK" role="3uHU7w">
-                <property role="TrG5h" value="o2" />
+              <node concept="28Lq2g" id="m8YdCcIPJw" role="3uHU7w">
+                <property role="TrG5h" value="ooo" />
                 <ref role="28Lq2l" node="70qrR2ADAlT" resolve="Order" />
               </node>
+            </node>
+            <node concept="28Lq2g" id="m8YdCcIPIW" role="3uHU7w">
+              <property role="TrG5h" value="ccc" />
+              <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
+            </node>
+          </node>
+        </node>
+        <node concept="gwT_P" id="m8YdCcZOHk" role="gwVD4">
+          <property role="TrG5h" value="test2" />
+          <node concept="gAykT" id="m8YdCd1A9J" role="gwTaq">
+            <property role="TrG5h" value="placed_2" />
+            <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
+            <node concept="gy_11" id="m8YdCd2uAJ" role="3uHU7B">
+              <ref role="gy_1K" node="70qrR2ADAMA" resolve="placed_1" />
+            </node>
+            <node concept="28Lq2g" id="m8YdCd2uBF" role="3uHU7w">
+              <property role="TrG5h" value="pppp" />
+              <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
             </node>
           </node>
         </node>
