@@ -11,6 +11,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="7w2z" ref="r:d72ae6d7-d4df-4521-8bd8-8234c02dece9(SecondLevelInstance.behavior)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -135,9 +136,16 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -1841,6 +1849,7 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="m8YdCdj2aP" role="3cqZAp" />
           <node concept="3clFbH" id="m8YdCcJroe" role="3cqZAp" />
         </node>
         <node concept="2OqwBi" id="m8YdCcJs3S" role="3clFbw">
@@ -1920,6 +1929,112 @@
                 <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
               </node>
               <node concept="17RvpY" id="m8YdCcKuXE" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="m8YdCdj3Hl" role="3cqZAp" />
+      <node concept="3clFbJ" id="m8YdCdj4_d" role="3cqZAp">
+        <node concept="3clFbS" id="m8YdCdj4_f" role="3clFbx">
+          <node concept="a7r0C" id="m8YdCdo7a2" role="3cqZAp">
+            <node concept="1YBJjd" id="m8YdCdo7a3" role="2OEOjV">
+              <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+            </node>
+            <node concept="3cpWs3" id="m8YdCdo7a4" role="a7wSD">
+              <node concept="Xl_RD" id="m8YdCdo7a5" role="3uHU7w">
+                <property role="Xl_RC" value="' Unable to fully verify this relationship!" />
+              </node>
+              <node concept="3cpWs3" id="m8YdCdo7a6" role="3uHU7B">
+                <node concept="Xl_RD" id="m8YdCdo7a7" role="3uHU7B">
+                  <property role="Xl_RC" value="Left node is of unknown type '" />
+                </node>
+                <node concept="2OqwBi" id="m8YdCdo7a8" role="3uHU7w">
+                  <node concept="2OqwBi" id="m8YdCdo7a9" role="2Oq$k0">
+                    <node concept="2OqwBi" id="m8YdCdo7aa" role="2Oq$k0">
+                      <node concept="1YBJjd" id="m8YdCdo7ab" role="2Oq$k0">
+                        <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+                      </node>
+                      <node concept="3TrEf2" id="m8YdCdodDc" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpee:fJuHU4s" resolve="leftExpression" />
+                      </node>
+                    </node>
+                    <node concept="2yIwOk" id="m8YdCdo7ad" role="2OqNvi" />
+                  </node>
+                  <node concept="liA8E" id="m8YdCdo7ae" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="m8YdCdj6Az" role="3clFbw">
+          <node concept="2OqwBi" id="m8YdCdj6A_" role="3fr31v">
+            <node concept="2OqwBi" id="m8YdCdj6AA" role="2Oq$k0">
+              <node concept="1YBJjd" id="m8YdCdj6AB" role="2Oq$k0">
+                <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+              </node>
+              <node concept="2qgKlT" id="m8YdCdpZlx" role="2OqNvi">
+                <ref role="37wK5l" to="7w2z:IlMDKrALS7" resolve="getEntityToLeft" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="m8YdCdj6AD" role="2OqNvi">
+              <node concept="chp4Y" id="m8YdCdo6Wx" role="cj9EA">
+                <ref role="cht4Q" to="mmsd:m8YdCdn8jA" resolve="IEntityInstance" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="m8YdCdlbLG" role="3cqZAp" />
+      <node concept="3clFbJ" id="m8YdCdj74Q" role="3cqZAp">
+        <node concept="3clFbS" id="m8YdCdj74R" role="3clFbx">
+          <node concept="a7r0C" id="m8YdCdmdb9" role="3cqZAp">
+            <node concept="1YBJjd" id="m8YdCdmdbH" role="2OEOjV">
+              <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+            </node>
+            <node concept="3cpWs3" id="m8YdCdmdcs" role="a7wSD">
+              <node concept="Xl_RD" id="m8YdCdmdct" role="3uHU7w">
+                <property role="Xl_RC" value="' Unable to fully verify this relationship!" />
+              </node>
+              <node concept="3cpWs3" id="m8YdCdmdcu" role="3uHU7B">
+                <node concept="Xl_RD" id="m8YdCdmdcv" role="3uHU7B">
+                  <property role="Xl_RC" value="Right node is of unknown type '" />
+                </node>
+                <node concept="2OqwBi" id="m8YdCdmdcw" role="3uHU7w">
+                  <node concept="2OqwBi" id="m8YdCdmdcx" role="2Oq$k0">
+                    <node concept="2OqwBi" id="m8YdCdmdcy" role="2Oq$k0">
+                      <node concept="1YBJjd" id="m8YdCdmdcz" role="2Oq$k0">
+                        <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+                      </node>
+                      <node concept="3TrEf2" id="m8YdCdmdc$" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpee:fJuHU4r" resolve="rightExpression" />
+                      </node>
+                    </node>
+                    <node concept="2yIwOk" id="m8YdCdmdc_" role="2OqNvi" />
+                  </node>
+                  <node concept="liA8E" id="m8YdCdmdcA" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="m8YdCdj74U" role="3clFbw">
+          <node concept="2OqwBi" id="m8YdCdj74V" role="3fr31v">
+            <node concept="2OqwBi" id="m8YdCdj74W" role="2Oq$k0">
+              <node concept="1YBJjd" id="m8YdCdj74X" role="2Oq$k0">
+                <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+              </node>
+              <node concept="2qgKlT" id="m8YdCdpZW6" role="2OqNvi">
+                <ref role="37wK5l" to="7w2z:IlMDKrGfn1" resolve="getEntityToRight" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="m8YdCdj74Z" role="2OqNvi">
+              <node concept="chp4Y" id="m8YdCdnaDm" role="cj9EA">
+                <ref role="cht4Q" to="mmsd:m8YdCdn8jA" resolve="IEntityInstance" />
+              </node>
             </node>
           </node>
         </node>
