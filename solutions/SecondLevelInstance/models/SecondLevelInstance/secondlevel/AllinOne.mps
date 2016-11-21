@@ -56,7 +56,7 @@
       <concept id="834796077765259344" name="SecondLevelInstance.structure.BinaryRelationshipInstanceCollection" flags="ng" index="gwVFc">
         <child id="834796077765259480" name="relationshipInstanceExpressions" index="gwVD4" />
       </concept>
-      <concept id="834796077765860061" name="SecondLevelInstance.structure.BinaryRelationShipInstanceReference" flags="ng" index="gy_11">
+      <concept id="834796077765860061" name="SecondLevelInstance.structure.BinaryRelationshipInstanceReference" flags="ng" index="gy_11">
         <reference id="834796077765860076" name="binaryRelationshipInstance" index="gy_1K" />
       </concept>
       <concept id="834796077764833189" name="SecondLevelInstance.structure.BinaryRelationshipInstance" flags="ng" index="gAykT">
@@ -232,6 +232,12 @@
             <node concept="28Lq2g" id="70qrR2ADAMZ" role="3uHU7w">
               <property role="TrG5h" value="order_1" />
               <ref role="28Lq2l" node="70qrR2ADAlT" resolve="Order" />
+              <node concept="28Lq2o" id="vo8P$vaCa_" role="28Lq2r">
+                <ref role="28Lq2v" node="70qrR2ADAma" resolve="totalCost" />
+                <node concept="3cmrfG" id="vo8P$vaCaH" role="28Lq2t">
+                  <property role="3cmrfH" value="22" />
+                </node>
+              </node>
             </node>
             <node concept="gHsPg" id="70qrR2ADAMn" role="3uHU7B">
               <ref role="gHsP7" node="70qrR2ADAxQ" resolve="customer_01" />

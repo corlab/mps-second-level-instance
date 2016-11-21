@@ -22,9 +22,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -43,6 +40,7 @@
         <reference id="7127626337630538492" name="property" index="28Lq2v" />
         <child id="7127626337630538494" name="value" index="28Lq2t" />
       </concept>
+      <concept id="834796077765259344" name="SecondLevelInstance.structure.BinaryRelationshipInstanceCollection" flags="ng" index="gwVFc" />
       <concept id="8299425155407941544" name="SecondLevelInstance.structure.EntityInstanceCollection" flags="ng" index="2n9nis">
         <child id="8299425155407941546" name="entityInstances" index="2n9niu" />
       </concept>
@@ -94,9 +92,6 @@
       </node>
       <node concept="ohMlM" id="4rRUFLv3IzC" role="ohDls">
         <ref role="ohNCg" to="555j:4rRUFLuVZGD" resolve="when" />
-        <node concept="3cmrfG" id="4rRUFLv4J6$" role="ohNE7">
-          <property role="3cmrfH" value="11" />
-        </node>
       </node>
     </node>
     <node concept="ZmHsm" id="4rRUFLuV0jw" role="ZnK92">
@@ -162,6 +157,10 @@
     <ref role="ohrQd" to="555j:4rRUFLuHOY5" resolve="Relationship_C2" />
     <ref role="ZmI8g" node="1LQakf0z0l" resolve="EntityInstance_C2" />
     <ref role="ZmI8k" node="4hbwAHVmxqk" resolve="EntityInstance_C1" />
+  </node>
+  <node concept="gwVFc" id="vo8P$vq$yq">
+    <property role="3GE5qa" value="RelationshipInstance" />
+    <property role="TrG5h" value="BRI_collection" />
   </node>
 </model>
 

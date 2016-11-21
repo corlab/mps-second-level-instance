@@ -941,7 +941,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4rRUFLuGd4W">
-    <property role="3GE5qa" value="Relationships.RelationshipInstance" />
+    <property role="3GE5qa" value="Relationships.Relationship" />
     <ref role="1XX52x" to="mmsd:4rRUFLuGcZe" resolve="RelationshipPropertyInstance" />
     <node concept="3EZMnI" id="4rRUFLuGdhh" role="2wV5jI">
       <node concept="1iCGBv" id="4rRUFLuGdhx" role="3EZMnx">
@@ -1205,7 +1205,7 @@
   </node>
   <node concept="24kQdi" id="IlMDKr7THS">
     <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
-    <ref role="1XX52x" to="mmsd:IlMDKr7TFt" resolve="BinaryRelationShipInstanceReference" />
+    <ref role="1XX52x" to="mmsd:IlMDKr7TFt" resolve="BinaryRelationshipInstanceReference" />
     <node concept="3EZMnI" id="70qrR2AFfYd" role="2wV5jI">
       <node concept="3EZMnI" id="70qrR2AFfYe" role="3EZMnx">
         <node concept="2iRfu4" id="70qrR2AFfYf" role="2iSdaV" />
