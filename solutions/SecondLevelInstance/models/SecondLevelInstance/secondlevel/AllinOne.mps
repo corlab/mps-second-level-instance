@@ -61,12 +61,17 @@
       </concept>
       <concept id="834796077764833189" name="SecondLevelInstance.structure.BinaryRelationshipInstance" flags="ng" index="gAykT">
         <reference id="834796077764836905" name="relationship" index="gAziP" />
+        <child id="834796077764836910" name="propertyInstances" index="gAziM" />
       </concept>
       <concept id="834796077765887948" name="SecondLevelInstance.structure.EntityInstanceReference" flags="ng" index="gHsPg">
         <reference id="834796077765887963" name="binaryEntityInstanceReference" index="gHsP7" />
       </concept>
       <concept id="8299425155407941544" name="SecondLevelInstance.structure.EntityInstanceCollection" flags="ng" index="2n9nis">
         <child id="8299425155407941546" name="entityInstances" index="2n9niu" />
+      </concept>
+      <concept id="5113813996665884622" name="SecondLevelInstance.structure.RelationshipPropertyInstance" flags="ng" index="ohMlM">
+        <reference id="5113813996665884844" name="property" index="ohNCg" />
+        <child id="5113813996665884731" name="value" index="ohNE7" />
       </concept>
       <concept id="5113813996665666281" name="SecondLevelInstance.structure.RelationshipProperty" flags="ng" index="omD1l">
         <child id="5113813996665666287" name="type" index="omD1j" />
@@ -134,6 +139,10 @@
           <node concept="28LgfH" id="70qrR2ADAq_" role="28LgfD">
             <property role="TrG5h" value="id" />
             <node concept="10Oyi0" id="70qrR2ADAqR" role="28LgfK" />
+          </node>
+          <node concept="28LgfH" id="u3mAIo6hWp" role="28LgfD">
+            <property role="TrG5h" value="somethingelse" />
+            <node concept="17QB3L" id="u3mAIo6hWH" role="28LgfK" />
           </node>
           <node concept="28LgfH" id="70qrR2ADAl9" role="28LgfD">
             <property role="TrG5h" value="name" />
@@ -295,15 +304,29 @@
         </node>
         <node concept="gwT_P" id="m8YdCcZOHk" role="gwVD4">
           <property role="TrG5h" value="test2" />
-          <node concept="gAykT" id="m8YdCd1A9J" role="gwTaq">
-            <property role="TrG5h" value="placed_2" />
+          <node concept="gAykT" id="u3mAInSt2a" role="gwTaq">
+            <property role="TrG5h" value="aza" />
             <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
-            <node concept="gy_11" id="m8YdCd2uAJ" role="3uHU7B">
-              <ref role="gy_1K" node="70qrR2ADAMA" resolve="placed_1" />
+            <node concept="gAykT" id="m8YdCd1A9J" role="3uHU7B">
+              <property role="TrG5h" value="placed_2" />
+              <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
+              <node concept="gy_11" id="m8YdCd2uAJ" role="3uHU7B">
+                <ref role="gy_1K" node="70qrR2ADAMA" resolve="placed_1" />
+              </node>
+              <node concept="28Lq2g" id="m8YdCd2uBF" role="3uHU7w">
+                <property role="TrG5h" value="pppp" />
+                <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
+              </node>
+              <node concept="ohMlM" id="u3mAIo5c6U" role="gAziM">
+                <ref role="ohNCg" node="m8YdCcNFYf" resolve="something" />
+                <node concept="Xl_RD" id="u3mAIo5c7j" role="ohNE7">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
             </node>
-            <node concept="28Lq2g" id="m8YdCd2uBF" role="3uHU7w">
-              <property role="TrG5h" value="pppp" />
-              <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
+            <node concept="28Lq2g" id="u3mAIokkoB" role="3uHU7w">
+              <property role="TrG5h" value="anyorder" />
+              <ref role="28Lq2l" node="70qrR2ADAlT" resolve="Order" />
             </node>
           </node>
         </node>

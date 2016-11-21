@@ -22,6 +22,10 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -40,22 +44,20 @@
         <reference id="7127626337630538492" name="property" index="28Lq2v" />
         <child id="7127626337630538494" name="value" index="28Lq2t" />
       </concept>
-      <concept id="834796077765259344" name="SecondLevelInstance.structure.BinaryRelationshipInstanceCollection" flags="ng" index="gwVFc" />
+      <concept id="834796077765252073" name="SecondLevelInstance.structure.BinarySecondLevelInstanceExpression" flags="ng" index="gwT_P">
+        <child id="834796077765253126" name="expression" index="gwTaq" />
+      </concept>
+      <concept id="834796077765259344" name="SecondLevelInstance.structure.BinaryRelationshipInstanceCollection" flags="ng" index="gwVFc">
+        <child id="834796077765259480" name="relationshipInstanceExpressions" index="gwVD4" />
+      </concept>
+      <concept id="834796077764833189" name="SecondLevelInstance.structure.BinaryRelationshipInstance" flags="ng" index="gAykT">
+        <reference id="834796077764836905" name="relationship" index="gAziP" />
+      </concept>
+      <concept id="834796077765887948" name="SecondLevelInstance.structure.EntityInstanceReference" flags="ng" index="gHsPg">
+        <reference id="834796077765887963" name="binaryEntityInstanceReference" index="gHsP7" />
+      </concept>
       <concept id="8299425155407941544" name="SecondLevelInstance.structure.EntityInstanceCollection" flags="ng" index="2n9nis">
         <child id="8299425155407941546" name="entityInstances" index="2n9niu" />
-      </concept>
-      <concept id="5113813996665884622" name="SecondLevelInstance.structure.RelationshipPropertyInstance" flags="ng" index="ohMlM">
-        <reference id="5113813996665884844" name="property" index="ohNCg" />
-        <child id="5113813996665884731" name="value" index="ohNE7" />
-      </concept>
-      <concept id="4921170415970243965" name="SecondLevelInstance.structure.RelationshipInstance" flags="ng" index="ZmHsm">
-        <reference id="5113813996665984817" name="relationship" index="ohrQd" />
-        <reference id="4921170415970246779" name="sourceInstance" index="ZmI8g" />
-        <reference id="4921170415970246783" name="targetInstance" index="ZmI8k" />
-        <child id="5113813996665929696" name="propertyInstances" index="ohDls" />
-      </concept>
-      <concept id="4921170415970450831" name="SecondLevelInstance.structure.RelationshipInstanceCollection" flags="ng" index="ZnZZ$">
-        <child id="4921170415970451497" name="relationshipInstances" index="ZnK92" />
       </concept>
     </language>
   </registry>
@@ -74,37 +76,6 @@
       <node concept="3clFbT" id="1LQakf07pC" role="28Lq2t">
         <property role="3clFbU" value="true" />
       </node>
-    </node>
-  </node>
-  <node concept="ZnZZ$" id="4hbwAHVlCKq">
-    <property role="3GE5qa" value="RelationshipInstance" />
-    <property role="TrG5h" value="RelationshipInstanceCollection" />
-    <node concept="ZmHsm" id="4rRUFLuO$9E" role="ZnK92">
-      <property role="TrG5h" value="RelationshipInstance_C1" />
-      <ref role="ohrQd" to="555j:4rRUFLuOzTg" resolve="Relationship_C1" />
-      <ref role="ZmI8g" node="4hbwAHVlCKp" resolve="EntityInstance_S1" />
-      <ref role="ZmI8k" node="1LQakf0z0l" resolve="EntityInstance_C2" />
-      <node concept="ohMlM" id="4rRUFLv2khY" role="ohDls">
-        <ref role="ohNCg" to="555j:4rRUFLv2kfB" resolve="quaxck" />
-        <node concept="Xl_RD" id="4rRUFLv2kqL" role="ohNE7">
-          <property role="Xl_RC" value="asd" />
-        </node>
-      </node>
-      <node concept="ohMlM" id="4rRUFLv3IzC" role="ohDls">
-        <ref role="ohNCg" to="555j:4rRUFLuVZGD" resolve="when" />
-      </node>
-    </node>
-    <node concept="ZmHsm" id="4rRUFLuV0jw" role="ZnK92">
-      <property role="TrG5h" value="a" />
-      <ref role="ohrQd" to="555j:4rRUFLuOzTg" resolve="Relationship_C1" />
-      <ref role="ZmI8g" node="4hbwAHVlCKp" resolve="EntityInstance_S1" />
-      <ref role="ZmI8k" node="1LQakf0z0l" resolve="EntityInstance_C2" />
-    </node>
-    <node concept="ZmHsm" id="4rRUFLuSlp1" role="ZnK92">
-      <property role="TrG5h" value="asd" />
-      <ref role="ohrQd" to="555j:4rRUFLuHOY5" resolve="Relationship_C2" />
-      <ref role="ZmI8g" node="1LQakf0z0l" resolve="EntityInstance_C2" />
-      <ref role="ZmI8k" node="1HHyIiEFLO8" resolve="EntityInstance_C3" />
     </node>
   </node>
   <node concept="2n9nis" id="4hbwAHVlCM7">
@@ -151,16 +122,52 @@
       <ref role="28Lq2l" to="555j:4hbwAHVf78v" resolve="Entity_C2" />
     </node>
   </node>
-  <node concept="ZmHsm" id="4rRUFLuOTu$">
-    <property role="3GE5qa" value="RelationshipInstance" />
-    <property role="TrG5h" value="RelationshipInstance_S1" />
-    <ref role="ohrQd" to="555j:4rRUFLuHOY5" resolve="Relationship_C2" />
-    <ref role="ZmI8g" node="1LQakf0z0l" resolve="EntityInstance_C2" />
-    <ref role="ZmI8k" node="4hbwAHVmxqk" resolve="EntityInstance_C1" />
-  </node>
   <node concept="gwVFc" id="vo8P$vq$yq">
     <property role="3GE5qa" value="RelationshipInstance" />
     <property role="TrG5h" value="BRI_collection" />
+  </node>
+  <node concept="gwVFc" id="u3mAIoivlC">
+    <property role="3GE5qa" value="RelationshipInstance" />
+    <property role="TrG5h" value="RelationshipInstanceCollection" />
+    <node concept="gwT_P" id="u3mAIoivlD" role="gwVD4">
+      <property role="TrG5h" value="first" />
+      <node concept="gAykT" id="u3mAIoivlL" role="gwTaq">
+        <property role="TrG5h" value="RelationshipInstance_C1" />
+        <ref role="gAziP" to="555j:4rRUFLuOzTg" resolve="Relationship_C1" />
+        <node concept="gHsPg" id="u3mAIoivmo" role="3uHU7w">
+          <ref role="gHsP7" node="1LQakf0z0l" resolve="EntityInstance_C2" />
+        </node>
+        <node concept="gHsPg" id="u3mAIoivm2" role="3uHU7B">
+          <ref role="gHsP7" node="4hbwAHVlCKp" resolve="EntityInstance_S1" />
+        </node>
+      </node>
+    </node>
+    <node concept="gwT_P" id="u3mAIoivmv" role="gwVD4">
+      <property role="TrG5h" value="second" />
+      <node concept="gAykT" id="u3mAIoivmN" role="gwTaq">
+        <property role="TrG5h" value="a" />
+        <ref role="gAziP" to="555j:4rRUFLuOzTg" resolve="Relationship_C1" />
+        <node concept="gHsPg" id="u3mAIoivnp" role="3uHU7w">
+          <ref role="gHsP7" node="1LQakf0z0l" resolve="EntityInstance_C2" />
+        </node>
+        <node concept="gHsPg" id="u3mAIoivn4" role="3uHU7B">
+          <ref role="gHsP7" node="4hbwAHVlCKp" resolve="EntityInstance_S1" />
+        </node>
+      </node>
+    </node>
+    <node concept="gwT_P" id="u3mAIoivnw" role="gwVD4">
+      <property role="TrG5h" value="third" />
+      <node concept="gAykT" id="u3mAIoivo0" role="gwTaq">
+        <property role="TrG5h" value="asd" />
+        <ref role="gAziP" to="555j:4rRUFLuHOY5" resolve="Relationship_C2" />
+        <node concept="gHsPg" id="u3mAIoivos" role="3uHU7w">
+          <ref role="gHsP7" node="1HHyIiEFLO8" resolve="EntityInstance_C3" />
+        </node>
+        <node concept="gHsPg" id="u3mAIoivol" role="3uHU7B">
+          <ref role="gHsP7" node="1LQakf0z0l" resolve="EntityInstance_C2" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
