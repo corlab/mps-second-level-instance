@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,6 +18,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <property id="1156252885376" name="separatorLayoutConstraint" index="Q2I2d" />
+        <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
@@ -1007,14 +1009,15 @@
       </node>
       <node concept="3F0ifn" id="70qrR2A_2nu" role="3EZMnx" />
       <node concept="3F2HdR" id="IlMDKr5B7H" role="3EZMnx">
-        <property role="2czwfO" value="," />
+        <property role="S$F3r" value="false" />
+        <property role="2czwfO" value=" " />
         <ref role="1NtTu8" to="mmsd:IlMDKr5B3o" resolve="relationshipInstanceExpressions" />
         <node concept="tppnM" id="IlMDKr7a_q" role="sWeuL">
           <node concept="ljvvj" id="EIHw1Bollx" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="l2Vlx" id="IlMDKr7kos" role="2czzBx" />
+        <node concept="2iRkQZ" id="1QE547AM3MY" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="70qrR2A$S34" role="3EZMnx" />
     </node>

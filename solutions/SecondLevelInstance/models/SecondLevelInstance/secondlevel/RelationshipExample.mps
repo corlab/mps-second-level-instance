@@ -22,6 +22,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -125,6 +126,44 @@
   <node concept="gwVFc" id="vo8P$vq$yq">
     <property role="3GE5qa" value="RelationshipInstance" />
     <property role="TrG5h" value="BRI_collection" />
+    <node concept="gwT_P" id="1QE547AHZEm" role="gwVD4">
+      <property role="TrG5h" value="q" />
+      <node concept="3cpWs3" id="1QE547AL47e" role="gwTaq">
+        <node concept="28Lq2g" id="1QE547AKZ_l" role="3uHU7w">
+          <property role="TrG5h" value="local_entity" />
+          <ref role="28Lq2l" to="555j:4hbwAHVf6Yr" resolve="Entity_S1" />
+        </node>
+        <node concept="28Lq2g" id="1QE547AKZA7" role="3uHU7B">
+          <property role="TrG5h" value="local_entity_2" />
+          <ref role="28Lq2l" to="555j:4hbwAHVkz41" resolve="Entity_C1" />
+          <node concept="28Lq2o" id="1QE547ARVCk" role="28Lq2r">
+            <ref role="28Lq2v" to="555j:4hbwAHVkz44" resolve="entity_c1_prop_b" />
+            <node concept="3clFbT" id="1QE547ARVCN" role="28Lq2t">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+          <node concept="28Lq2o" id="1QE547AOQLW" role="28Lq2r">
+            <ref role="28Lq2v" to="555j:4hbwAHVkz42" resolve="entity_c1_prop_a" />
+            <node concept="3b6qkQ" id="1QE547AOQRK" role="28Lq2t">
+              <property role="$nhwW" value="3434.23" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="gwT_P" id="1QE547AMAUs" role="gwVD4">
+      <property role="TrG5h" value="q2" />
+      <node concept="gAykT" id="1QE547AKZAq" role="gwTaq">
+        <property role="TrG5h" value="local_relationship" />
+        <ref role="gAziP" to="555j:4rRUFLuOzTg" resolve="Relationship_C1" />
+        <node concept="gHsPg" id="1QE547ALIjs" role="3uHU7B">
+          <ref role="gHsP7" node="1QE547AKZA7" resolve="local_entity_2" />
+        </node>
+        <node concept="gHsPg" id="1QE547ASuLX" role="3uHU7w">
+          <ref role="gHsP7" node="1LQakf0z0l" resolve="EntityInstance_C2" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="gwVFc" id="u3mAIoivlC">
     <property role="3GE5qa" value="RelationshipInstance" />

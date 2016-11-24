@@ -19,9 +19,9 @@
     </language>
     <language id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstance">
       <concept id="7127626337630513541" name="SecondLevelInstance.structure.Entity" flags="ng" index="28LgfA">
-        <child id="7127626337630513546" name="property" index="28LgfD" />
+        <child id="7127626337630513546" name="properties" index="28LgfD" />
       </concept>
-      <concept id="7127626337630513550" name="SecondLevelInstance.structure.EntityPropery" flags="ng" index="28LgfH">
+      <concept id="7127626337630513550" name="SecondLevelInstance.structure.EntityProperty" flags="ng" index="28LgfH">
         <child id="7127626337630513555" name="type" index="28LgfK" />
       </concept>
     </language>
