@@ -380,9 +380,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="IlMDKr3YY_" resolve="BinaryRelationshipInstance" />
     </node>
-    <node concept="PrWs8" id="vo8P$wMaEn" role="PzmwI">
-      <ref role="PrY4T" node="vo8P$wMacm" resolve="IBinaryRelationshipInstance" />
-    </node>
   </node>
   <node concept="1TIwiD" id="IlMDKr80vc">
     <property role="EcuMT" value="834796077765887948" />
@@ -392,7 +389,7 @@
     <node concept="1TJgyj" id="IlMDKr80vr" role="1TKVEi">
       <property role="IQ2ns" value="834796077765887963" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="binaryEntityInstanceReference" />
+      <property role="20kJfa" value="entityInstance" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6bEqAfEbWFN" resolve="EntityInstance" />
     </node>

@@ -56,15 +56,12 @@
       <concept id="834796077765259344" name="SecondLevelInstance.structure.BinaryRelationshipInstanceCollection" flags="ng" index="gwVFc">
         <child id="834796077765259480" name="relationshipInstanceExpressions" index="gwVD4" />
       </concept>
-      <concept id="834796077765860061" name="SecondLevelInstance.structure.BinaryRelationshipInstanceReference" flags="ng" index="gy_11">
-        <reference id="834796077765860076" name="binaryRelationshipInstance" index="gy_1K" />
-      </concept>
       <concept id="834796077764833189" name="SecondLevelInstance.structure.BinaryRelationshipInstance" flags="ng" index="gAykT">
         <reference id="834796077764836905" name="relationship" index="gAziP" />
         <child id="834796077764836910" name="propertyInstances" index="gAziM" />
       </concept>
       <concept id="834796077765887948" name="SecondLevelInstance.structure.EntityInstanceReference" flags="ng" index="gHsPg">
-        <reference id="834796077765887963" name="binaryEntityInstanceReference" index="gHsP7" />
+        <reference id="834796077765887963" name="entityInstance" index="gHsP7" />
       </concept>
       <concept id="8299425155407941544" name="SecondLevelInstance.structure.EntityInstanceCollection" flags="ng" index="2n9nis">
         <child id="8299425155407941546" name="entityInstances" index="2n9niu" />
@@ -208,6 +205,10 @@
             </node>
           </node>
         </node>
+        <node concept="28Lq2g" id="6jkENrCUOUY" role="2n9niu">
+          <property role="TrG5h" value="ordsaaaaaa" />
+          <ref role="28Lq2l" node="70qrR2ADAlT" resolve="Order" />
+        </node>
         <node concept="28Lq2g" id="70qrR2ADAxQ" role="2n9niu">
           <property role="TrG5h" value="customer_01" />
           <ref role="28Lq2l" node="70qrR2ADAmq" resolve="Customer" />
@@ -248,7 +249,7 @@
                 </node>
               </node>
             </node>
-            <node concept="gHsPg" id="70qrR2ADAMn" role="3uHU7B">
+            <node concept="gHsPg" id="6jkENrCUOW9" role="3uHU7B">
               <ref role="gHsP7" node="70qrR2ADAxQ" resolve="customer_01" />
             </node>
           </node>
@@ -310,9 +311,6 @@
             <node concept="gAykT" id="m8YdCd1A9J" role="3uHU7B">
               <property role="TrG5h" value="placed_2" />
               <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
-              <node concept="gy_11" id="m8YdCd2uAJ" role="3uHU7B">
-                <ref role="gy_1K" node="70qrR2ADAMA" resolve="placed_1" />
-              </node>
               <node concept="28Lq2g" id="m8YdCd2uBF" role="3uHU7w">
                 <property role="TrG5h" value="pppp" />
                 <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
@@ -323,10 +321,28 @@
                   <property role="Xl_RC" value="" />
                 </node>
               </node>
+              <node concept="28Lq2g" id="65bdxjR3sOU" role="3uHU7B">
+                <property role="TrG5h" value="aa" />
+                <ref role="28Lq2l" node="70qrR2ADAlT" resolve="Order" />
+              </node>
             </node>
             <node concept="28Lq2g" id="u3mAIokkoB" role="3uHU7w">
               <property role="TrG5h" value="anyorder" />
               <ref role="28Lq2l" node="70qrR2ADAlT" resolve="Order" />
+            </node>
+          </node>
+        </node>
+        <node concept="gwT_P" id="65bdxjR3UVb" role="gwVD4">
+          <property role="TrG5h" value="test3" />
+          <node concept="gAykT" id="65bdxjR5331" role="gwTaq">
+            <property role="TrG5h" value="qqqq" />
+            <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
+            <node concept="28Lq2g" id="6jkENrD5nCi" role="3uHU7w">
+              <property role="TrG5h" value="pp" />
+              <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
+            </node>
+            <node concept="gHsPg" id="6jkENrD52HE" role="3uHU7B">
+              <ref role="gHsP7" node="6jkENrCUOUY" resolve="ordsaaaaaa" />
             </node>
           </node>
         </node>
