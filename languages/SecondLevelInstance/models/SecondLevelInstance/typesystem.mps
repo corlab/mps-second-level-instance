@@ -33,6 +33,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -64,6 +65,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -95,6 +97,11 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
+        <child id="1196350785114" name="quotedNode" index="2c44tc" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -1730,6 +1737,112 @@
     <node concept="1YaCAy" id="IlMDKrvm50" role="1YuTPh">
       <property role="TrG5h" value="binaryRelationshipInstance" />
       <ref role="1YaFvo" to="mmsd:IlMDKr3YY_" resolve="BinaryRelationshipInstance" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="$jtNS1jOWZ">
+    <property role="TrG5h" value="typeof_EntityPropertyOperation" />
+    <property role="3GE5qa" value="Entities.EntityInstance.Operation" />
+    <node concept="3clFbS" id="$jtNS1jOX0" role="18ibNy">
+      <node concept="3SKdUt" id="6MItJgjtXm8" role="3cqZAp">
+        <node concept="3SKdUq" id="6MItJgjtXma" role="3SKWNk">
+          <property role="3SKdUp" value="here we forward the type of the actual referenced property" />
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="$jtNS1jPnC" role="3cqZAp">
+        <node concept="mw_s8" id="$jtNS1jPoy" role="1ZfhKB">
+          <node concept="2OqwBi" id="$jtNS1jQ7i" role="mwGJk">
+            <node concept="2OqwBi" id="$jtNS1jPKt" role="2Oq$k0">
+              <node concept="1YBJjd" id="$jtNS1jPow" role="2Oq$k0">
+                <ref role="1YBMHb" node="$jtNS1jOX2" resolve="entityPropertyOperation" />
+              </node>
+              <node concept="3TrEf2" id="$jtNS1jPSu" role="2OqNvi">
+                <ref role="3Tt5mk" to="mmsd:$jtNS1jORQ" resolve="entityProperty" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="$jtNS1jQhh" role="2OqNvi">
+              <ref role="3Tt5mk" to="mmsd:6bEqAfEbQAj" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="$jtNS1jPnF" role="1ZfhK$">
+          <node concept="1Z2H0r" id="$jtNS1jOX6" role="mwGJk">
+            <node concept="1YBJjd" id="$jtNS1jOZH" role="1Z2MuG">
+              <ref role="1YBMHb" node="$jtNS1jOX2" resolve="entityPropertyOperation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="$jtNS1jOX2" role="1YuTPh">
+      <property role="TrG5h" value="entityPropertyOperation" />
+      <ref role="1YaFvo" to="mmsd:$jtNS1jORP" resolve="EntityPropertyOperation" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4fBalrDz9q6">
+    <property role="TrG5h" value="typeof_EntityInstanceReference" />
+    <property role="3GE5qa" value="Entities.EntityInstance" />
+    <node concept="3clFbS" id="4fBalrDz9q7" role="18ibNy">
+      <node concept="1Z5TYs" id="4fBalrDz9T4" role="3cqZAp">
+        <node concept="mw_s8" id="4fBalrDz9T7" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4fBalrDz9qd" role="mwGJk">
+            <node concept="1YBJjd" id="4fBalrDz9sc" role="1Z2MuG">
+              <ref role="1YBMHb" node="4fBalrDz9q9" resolve="entityInstanceReference" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4fBalrDzbrP" role="1ZfhKB">
+          <node concept="2c44tf" id="4fBalrDzbrL" role="mwGJk">
+            <node concept="3cqZAl" id="4fBalrDzbsq" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4fBalrDz9q9" role="1YuTPh">
+      <property role="TrG5h" value="entityInstanceReference" />
+      <ref role="1YaFvo" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4fBalrDA3My">
+    <property role="TrG5h" value="typeof_Expressionsheet" />
+    <property role="3GE5qa" value="Entities.EntityInstance.Operation" />
+    <node concept="3clFbS" id="4fBalrDA3Mz" role="18ibNy">
+      <node concept="3SKdUt" id="6MItJgjwmEY" role="3cqZAp">
+        <node concept="3SKdUq" id="6MItJgjwmF0" role="3SKWNk">
+          <property role="3SKdUp" value="this is an optional test to check the typesystem" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="6MItJgjwmFm" role="3cqZAp">
+        <node concept="3SKdUq" id="6MItJgjwmFo" role="3SKWNk">
+          <property role="3SKdUp" value="for expressions..." />
+        </node>
+      </node>
+      <node concept="1X3_iC" id="6JeiUjAHkVq" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="1Z5TYs" id="4fBalrDA4CS" role="8Wnug">
+          <node concept="mw_s8" id="4fBalrDA4Ec" role="1ZfhKB">
+            <node concept="2c44tf" id="4fBalrDA4E8" role="mwGJk">
+              <node concept="10P_77" id="4fBalrDA4EL" role="2c44tc" />
+            </node>
+          </node>
+          <node concept="mw_s8" id="4fBalrDA4CV" role="1ZfhK$">
+            <node concept="1Z2H0r" id="4fBalrDA3Nd" role="mwGJk">
+              <node concept="2OqwBi" id="4fBalrDA3Ww" role="1Z2MuG">
+                <node concept="1YBJjd" id="4fBalrDA3NG" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4fBalrDA3M_" resolve="expressionsheet" />
+                </node>
+                <node concept="3TrEf2" id="4fBalrDA4ed" role="2OqNvi">
+                  <ref role="3Tt5mk" to="mmsd:$jtNS1ktf9" resolve="exp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4fBalrDA3M_" role="1YuTPh">
+      <property role="TrG5h" value="expressionsheet" />
+      <ref role="1YaFvo" to="mmsd:$jtNS1krVn" resolve="Expressionsheet" />
     </node>
   </node>
 </model>
