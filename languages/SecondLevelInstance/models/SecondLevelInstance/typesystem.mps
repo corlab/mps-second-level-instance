@@ -1782,17 +1782,26 @@
     <property role="TrG5h" value="typeof_EntityInstanceReference" />
     <property role="3GE5qa" value="Entities.EntityInstance" />
     <node concept="3clFbS" id="4fBalrDz9q7" role="18ibNy">
-      <node concept="1Z5TYs" id="4fBalrDz9T4" role="3cqZAp">
-        <node concept="mw_s8" id="4fBalrDz9T7" role="1ZfhK$">
-          <node concept="1Z2H0r" id="4fBalrDz9qd" role="mwGJk">
-            <node concept="1YBJjd" id="4fBalrDz9sc" role="1Z2MuG">
-              <ref role="1YBMHb" node="4fBalrDz9q9" resolve="entityInstanceReference" />
+      <node concept="3SKdUt" id="6MItJgjyu9u" role="3cqZAp">
+        <node concept="3SKdUq" id="6MItJgjyu9w" role="3SKWNk">
+          <property role="3SKdUp" value="this introduces a bug for EIRs - is it needed?" />
+        </node>
+      </node>
+      <node concept="1X3_iC" id="6MItJgjybgD" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="1Z5TYs" id="4fBalrDz9T4" role="8Wnug">
+          <node concept="mw_s8" id="4fBalrDz9T7" role="1ZfhK$">
+            <node concept="1Z2H0r" id="4fBalrDz9qd" role="mwGJk">
+              <node concept="1YBJjd" id="4fBalrDz9sc" role="1Z2MuG">
+                <ref role="1YBMHb" node="4fBalrDz9q9" resolve="entityInstanceReference" />
+              </node>
             </node>
           </node>
-        </node>
-        <node concept="mw_s8" id="4fBalrDzbrP" role="1ZfhKB">
-          <node concept="2c44tf" id="4fBalrDzbrL" role="mwGJk">
-            <node concept="3cqZAl" id="4fBalrDzbsq" role="2c44tc" />
+          <node concept="mw_s8" id="4fBalrDzbrP" role="1ZfhKB">
+            <node concept="2c44tf" id="4fBalrDzbrL" role="mwGJk">
+              <node concept="3cqZAl" id="4fBalrDzbsq" role="2c44tc" />
+            </node>
           </node>
         </node>
       </node>

@@ -81,9 +81,6 @@
     </node>
     <node concept="1Wc70l" id="6MItJgjwmfV" role="8gEjR">
       <node concept="37vLTI" id="6MItJgjwmAq" role="3uHU7w">
-        <node concept="3clFbT" id="6MItJgjwmBv" role="37vLTx">
-          <property role="3clFbU" value="true" />
-        </node>
         <node concept="2OqwBi" id="6MItJgjwmlx" role="37vLTJ">
           <node concept="gHsPg" id="6MItJgjwmhd" role="2Oq$k0">
             <ref role="gHsP7" node="$jtNS1leDH" resolve="mycustomer" />
@@ -91,6 +88,9 @@
           <node concept="8n3Fb" id="6MItJgjwmnC" role="2OqNvi">
             <ref role="8n3F8" to="ofvd:70qrR2ADAmR" resolve="readyToOrder" />
           </node>
+        </node>
+        <node concept="3clFbT" id="6MItJgjyaZp" role="37vLTx">
+          <property role="3clFbU" value="true" />
         </node>
       </node>
       <node concept="3clFbC" id="6MItJgjwlti" role="3uHU7B">
