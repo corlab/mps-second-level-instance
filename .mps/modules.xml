@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/SecondLevelInstance/SecondLevelInstance.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SecondLevelInstance/sandbox/SecondLevelInstance.firstlevel.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/SecondLevelInstance.build0/SecondLevelInstance.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/SecondLevelInstance/SecondLevelInstance.secondlevel.msd" folder="" />
     </projectModules>
   </component>

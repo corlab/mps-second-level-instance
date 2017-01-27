@@ -332,20 +332,6 @@
             </node>
           </node>
         </node>
-        <node concept="gwT_P" id="65bdxjR3UVb" role="gwVD4">
-          <property role="TrG5h" value="test3" />
-          <node concept="gAykT" id="65bdxjR5331" role="gwTaq">
-            <property role="TrG5h" value="qqqq" />
-            <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
-            <node concept="28Lq2g" id="6jkENrD5nCi" role="3uHU7w">
-              <property role="TrG5h" value="pp" />
-              <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
-            </node>
-            <node concept="gHsPg" id="6jkENrD52HE" role="3uHU7B">
-              <ref role="gHsP7" node="6jkENrCUOUY" resolve="ordsaaaaaa" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>
