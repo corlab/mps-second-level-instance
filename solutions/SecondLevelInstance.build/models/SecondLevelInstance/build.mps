@@ -58,7 +58,9 @@
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
       <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
-      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
+      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
+        <child id="7389400916848144618" name="defaultPath" index="398pKh" />
+      </concept>
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
       </concept>
@@ -339,6 +341,29 @@
     </node>
     <node concept="398rNT" id="7foShycCINp" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
+      <node concept="55IIr" id="20DfnC4IJSM" role="398pKh">
+        <node concept="2Ry0Ak" id="20DfnC4IJT7" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="20DfnC4IJU3" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="20DfnC4IJU_" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="20DfnC4IJV0" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="20DfnC4IJVn" role="2Ry0An">
+                  <property role="2Ry0Am" value="vol" />
+                  <node concept="2Ry0Ak" id="20DfnC4IJVI" role="2Ry0An">
+                    <property role="2Ry0Am" value="mps" />
+                    <node concept="2Ry0Ak" id="20DfnC4IJWe" role="2Ry0An">
+                      <property role="2Ry0Am" value="MPS-3.4.3-generic" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="7foShycCINq" role="1l3spa">
       <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
@@ -353,6 +378,12 @@
         <node concept="2Ry0Ak" id="7foShycCINu" role="iGT6I">
           <property role="2Ry0Am" value="plugins" />
         </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="20DfnC4IRG2" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="20DfnC4IRGj" role="2JcizS">
+        <ref role="398BVh" node="7foShycCINp" resolve="mps_home" />
       </node>
     </node>
     <node concept="1l3spV" id="7foShycCIOh" role="1l3spN">
