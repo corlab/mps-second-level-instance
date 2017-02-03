@@ -52,7 +52,7 @@
       <tarfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" filemode="755" prefix="mpsSecondLevelInstance_${version}/bin" />
       <tarfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz" />
     </tar>
-    <zip destfile="${build.layout}/${mpsSecondLevelInstance.build.number}-windows.zip">
+    <zip destfile="${build.layout}/${mps.build.number}-windows.zip">
       <zipfileset dir="${artifacts.mpsSecondLevelInstance}" prefix="mpsSecondLevelInstance_${version}" />
       <zipfileset file="${mps_home}/bin/mps.vmoptions" prefix="mpsSecondLevelInstance_${version}/bin" />
       <zipfileset file="${mps_home}/bin/mps.exe.vmoptions" prefix="mpsSecondLevelInstance_${version}/bin" />
@@ -120,7 +120,7 @@
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
-    <zip destfile="${build.layout}/${mpsSecondLevelInstance.build.number}-macos.zip">
+    <zip destfile="${build.layout}/${mps.build.number}-macos.zip">
       <zipfileset dir="${artifacts.mpsSecondLevelInstance}" prefix="mpsSecondLevelInstance_${version}.app/Contents" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="mpsSecondLevelInstance_${version}.app/Contents" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="mpsSecondLevelInstance_${version}.app/Contents/Resources" />
