@@ -178,6 +178,10 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-SecondLevelInstance-models" prefix="module/models" />
     </jar>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=0.1</echo>
+    <tar destfile="${build.layout}/secondLevelInstance-language.tar.gz" compression="gzip" longfile="gnu">
+      <tarfileset dir="${basedir}/languages" prefix="languages" />
+      <tarfileset dir="${basedir}/solutions" prefix="solutions" />
+    </tar>
     <mkdir dir="${build.tmp}/default/secondLevelInstance-plugin.zip" />
     <mkdir dir="${build.tmp}/default/secondLevelInstance-plugin.zip/mpsSecondLevelInstance" />
     <mkdir dir="${build.tmp}/default/secondLevelInstance-plugin.zip/mpsSecondLevelInstance/META-INF" />

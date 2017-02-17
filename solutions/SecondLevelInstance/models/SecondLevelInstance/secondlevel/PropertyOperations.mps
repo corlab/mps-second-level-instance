@@ -118,9 +118,6 @@
         </node>
       </node>
       <node concept="3clFbC" id="4v3gMT5HMLi" role="3uHU7w">
-        <node concept="Xl_RD" id="4v3gMT5HMM$" role="3uHU7w">
-          <property role="Xl_RC" value="asd" />
-        </node>
         <node concept="2OqwBi" id="4v3gMT5Hvbm" role="3uHU7B">
           <node concept="gy_11" id="4v3gMT5HuVa" role="2Oq$k0">
             <ref role="gy_1K" node="4v3gMT5xJ8D" resolve="partof1" />
@@ -128,6 +125,9 @@
           <node concept="2l_8F" id="4v3gMT5HMbY" role="2OqNvi">
             <ref role="2l_9U" to="ofvd:m8YdCcNFYf" resolve="something" />
           </node>
+        </node>
+        <node concept="Xl_RD" id="4v3gMT5HMM$" role="3uHU7w">
+          <property role="Xl_RC" value="asd" />
         </node>
       </node>
     </node>

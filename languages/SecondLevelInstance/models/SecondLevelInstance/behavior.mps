@@ -1517,7 +1517,7 @@
   </node>
   <node concept="13h7C7" id="4v3gMT5Bcui">
     <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
-    <ref role="13h7C2" to="mmsd:4v3gMT5_h45" resolve="RelationshipPropertyOperation" />
+    <ref role="13h7C2" to="mmsd:4v3gMT5_h45" resolve="BinaryRelationshipPropertyOperation" />
     <node concept="13i0hz" id="4v3gMT5Bcvh" role="13h7CS">
       <property role="2Ki8OM" value="true" />
       <property role="13i0is" value="false" />

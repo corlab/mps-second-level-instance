@@ -1798,20 +1798,26 @@
           <property role="3SKdUp" value="this introduces a bug for EIRs - is it needed?" />
         </node>
       </node>
-      <node concept="1Z5TYs" id="4fBalrDz9T4" role="3cqZAp">
-        <node concept="mw_s8" id="4fBalrDz9T7" role="1ZfhK$">
-          <node concept="1Z2H0r" id="4fBalrDz9qd" role="mwGJk">
-            <node concept="1YBJjd" id="4fBalrDz9sc" role="1Z2MuG">
-              <ref role="1YBMHb" node="4fBalrDz9q9" resolve="entityInstanceReference" />
+      <node concept="1X3_iC" id="7w8iNMEW8ju" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="1Z5TYs" id="4fBalrDz9T4" role="8Wnug">
+          <node concept="mw_s8" id="4fBalrDz9T7" role="1ZfhK$">
+            <node concept="1Z2H0r" id="4fBalrDz9qd" role="mwGJk">
+              <node concept="1YBJjd" id="4fBalrDz9sc" role="1Z2MuG">
+                <ref role="1YBMHb" node="4fBalrDz9q9" resolve="entityInstanceReference" />
+              </node>
+            </node>
+          </node>
+          <node concept="mw_s8" id="4fBalrDzbrP" role="1ZfhKB">
+            <node concept="2c44tf" id="7_lh_jBvvbB" role="mwGJk">
+              <node concept="2ubWgQ" id="7_lh_jBvvqH" role="2c44tc" />
             </node>
           </node>
         </node>
-        <node concept="mw_s8" id="4fBalrDzbrP" role="1ZfhKB">
-          <node concept="2c44tf" id="7_lh_jBvvbB" role="mwGJk">
-            <node concept="2ubWgQ" id="7_lh_jBvvqH" role="2c44tc" />
-          </node>
-        </node>
       </node>
+      <node concept="3clFbH" id="7w8iNMEW8gd" role="3cqZAp" />
+      <node concept="3clFbH" id="7w8iNMEW8iL" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="4fBalrDz9q9" role="1YuTPh">
       <property role="TrG5h" value="entityInstanceReference" />
@@ -1865,25 +1871,6 @@
     <property role="TrG5h" value="typeof_BinaryRelationshipInstance" />
     <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
     <node concept="3clFbS" id="7_lh_jBucyF" role="18ibNy">
-      <node concept="3SKdUt" id="7_lh_jBuvEJ" role="3cqZAp">
-        <node concept="3SKdUq" id="7_lh_jBuvEL" role="3SKWNk">
-          <property role="3SKdUp" value="unsure, maybe this is actually not needed anywhere? mmhh " />
-        </node>
-      </node>
-      <node concept="1Z5TYs" id="4v3gMT5y00$" role="3cqZAp">
-        <node concept="mw_s8" id="4v3gMT5y01O" role="1ZfhKB">
-          <node concept="2c44tf" id="4v3gMT5y01K" role="mwGJk">
-            <node concept="3cqZAl" id="4v3gMT5y02W" role="2c44tc" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="4v3gMT5y00B" role="1ZfhK$">
-          <node concept="1Z2H0r" id="4v3gMT5xY0J" role="mwGJk">
-            <node concept="1YBJjd" id="4v3gMT5xY1I" role="1Z2MuG">
-              <ref role="1YBMHb" node="7_lh_jBucyH" resolve="binaryRelationshipInstance" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1X3_iC" id="4v3gMT5y03W" role="lGtFl">
         <property role="3V$3am" value="statement" />
         <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -1898,6 +1885,25 @@
               <node concept="1YBJjd" id="7_lh_jBucz_" role="1Z2MuG">
                 <ref role="1YBMHb" node="7_lh_jBucyH" resolve="binaryRelationshipInstance" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3SKdUt" id="7_lh_jBuvEJ" role="3cqZAp">
+        <node concept="3SKdUq" id="7_lh_jBuvEL" role="3SKWNk">
+          <property role="3SKdUp" value="unsure, maybe this is actually not needed anywhere? mmhh " />
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="4v3gMT5y00$" role="3cqZAp">
+        <node concept="mw_s8" id="4v3gMT5y01O" role="1ZfhKB">
+          <node concept="2c44tf" id="4v3gMT5y01K" role="mwGJk">
+            <node concept="3cqZAl" id="4v3gMT5y02W" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4v3gMT5y00B" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4v3gMT5xY0J" role="mwGJk">
+            <node concept="1YBJjd" id="7w8iNMFt$sk" role="1Z2MuG">
+              <ref role="1YBMHb" node="7_lh_jBucyH" resolve="binaryRelationshipInstance" />
             </node>
           </node>
         </node>

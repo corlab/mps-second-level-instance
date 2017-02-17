@@ -16,6 +16,7 @@
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
@@ -220,8 +221,13 @@
           </node>
           <node concept="28Lq2o" id="70qrR2ADA_C" role="28Lq2r">
             <ref role="28Lq2v" node="70qrR2ADAmR" resolve="readyToOrder" />
-            <node concept="3clFbT" id="70qrR2ADA_S" role="28Lq2t">
-              <property role="3clFbU" value="true" />
+            <node concept="3clFbC" id="7w8iNMERtxW" role="28Lq2t">
+              <node concept="3clFbT" id="7w8iNMERtyr" role="3uHU7w">
+                <property role="3clFbU" value="true" />
+              </node>
+              <node concept="3clFbT" id="70qrR2ADA_S" role="3uHU7B">
+                <property role="3clFbU" value="true" />
+              </node>
             </node>
           </node>
           <node concept="28Lq2o" id="70qrR2ADAAq" role="28Lq2r">
@@ -249,21 +255,28 @@
                 </node>
               </node>
             </node>
-            <node concept="gHsPg" id="6jkENrCUOW9" role="3uHU7B">
+            <node concept="gHsPg" id="7w8iNMEWWpm" role="3uHU7B">
               <ref role="gHsP7" node="70qrR2ADAxQ" resolve="customer_01" />
             </node>
           </node>
         </node>
         <node concept="gwT_P" id="70qrR2ADAO7" role="gwVD4">
           <property role="TrG5h" value="whichpizzas1" />
-          <node concept="gAykT" id="70qrR2ADAPn" role="gwTaq">
-            <property role="TrG5h" value="participation" />
+          <node concept="gAykT" id="7w8iNMEWXWX" role="gwTaq">
+            <property role="TrG5h" value="ppoi" />
             <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
-            <node concept="gHsPg" id="m8YdCd2uBv" role="3uHU7B">
-              <ref role="gHsP7" node="70qrR2ADAMZ" resolve="order_1" />
+            <node concept="gHsPg" id="7w8iNMEWXYc" role="3uHU7w">
+              <ref role="gHsP7" node="65bdxjR3sOU" resolve="aa" />
             </node>
-            <node concept="gHsPg" id="m8YdCd2uBw" role="3uHU7w">
-              <ref role="gHsP7" node="70qrR2ADAth" resolve="margherita" />
+            <node concept="gAykT" id="70qrR2ADAPn" role="3uHU7B">
+              <property role="TrG5h" value="participation" />
+              <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
+              <node concept="gHsPg" id="m8YdCd2uBv" role="3uHU7B">
+                <ref role="gHsP7" node="70qrR2ADAMZ" resolve="order_1" />
+              </node>
+              <node concept="gHsPg" id="7w8iNMEWXWs" role="3uHU7w">
+                <ref role="gHsP7" node="70qrR2ADAth" resolve="margherita" />
+              </node>
             </node>
           </node>
         </node>
@@ -272,11 +285,25 @@
           <node concept="gAykT" id="70qrR2ADAQQ" role="gwTaq">
             <property role="TrG5h" value="participation2" />
             <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
-            <node concept="gHsPg" id="70qrR2ADARa" role="3uHU7B">
-              <ref role="gHsP7" node="70qrR2ADAvQ" resolve="vegeterian" />
-            </node>
-            <node concept="gHsPg" id="70qrR2ADARA" role="3uHU7w">
+            <node concept="gHsPg" id="7w8iNMFtR7G" role="3uHU7B">
               <ref role="gHsP7" node="70qrR2ADAMZ" resolve="order_1" />
+            </node>
+            <node concept="gHsPg" id="7w8iNMFilSv" role="3uHU7w">
+              <ref role="gHsP7" node="m8YdCcIPIW" resolve="ccc" />
+            </node>
+          </node>
+        </node>
+        <node concept="gwT_P" id="7w8iNMFehoe" role="gwVD4">
+          <property role="TrG5h" value="whichpizzas2" />
+          <node concept="gAykT" id="7w8iNMFehof" role="gwTaq">
+            <property role="TrG5h" value="participation2" />
+            <ref role="gAziP" node="70qrR2ADAOx" resolve="partOf" />
+            <node concept="gHsPg" id="7w8iNMFehoh" role="3uHU7w">
+              <ref role="gHsP7" node="70qrR2ADAMZ" resolve="order_1" />
+            </node>
+            <node concept="28Lq2g" id="7w8iNMFehqL" role="3uHU7B">
+              <property role="TrG5h" value="something" />
+              <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
             </node>
           </node>
         </node>
@@ -301,6 +328,13 @@
               <property role="TrG5h" value="ccc" />
               <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
             </node>
+          </node>
+        </node>
+        <node concept="gwT_P" id="7w8iNMEFzfD" role="gwVD4">
+          <property role="TrG5h" value="aa" />
+          <node concept="28Lq2g" id="7w8iNMEUyou" role="gwTaq">
+            <property role="TrG5h" value="asdf" />
+            <ref role="28Lq2l" node="70qrR2ADAmq" resolve="Customer" />
           </node>
         </node>
         <node concept="gwT_P" id="m8YdCcZOHk" role="gwVD4">

@@ -324,22 +324,8 @@
     <node concept="3EZMnI" id="6bEqAfEbZd8" role="2wV5jI">
       <node concept="3EZMnI" id="7cHuNj$2592" role="3EZMnx">
         <node concept="3EZMnI" id="7cHuNj$1Kk4" role="3EZMnx">
-          <node concept="3EZMnI" id="3ZBGXo3CX47" role="3EZMnx">
-            <node concept="37jFXN" id="3ZBGXo3FlcG" role="3F10Kt">
-              <property role="37lx6p" value="CENTER" />
-            </node>
-            <node concept="3F0ifn" id="3ZBGXo3CX7s" role="3EZMnx">
-              <node concept="OXEIz" id="3ZBGXo3HGh$" role="P5bDN" />
-            </node>
-            <node concept="2iRfu4" id="3ZBGXo3CX48" role="2iSdaV" />
-            <node concept="3F0ifn" id="1JVY6CxCgGG" role="3EZMnx">
-              <property role="3F0ifm" value="Entity Instance" />
-              <ref role="1k5W1q" node="IlMDKr9u2A" resolve="immutable" />
-              <node concept="VQ3r3" id="1JVY6CxCqna" role="3F10Kt">
-                <property role="2USNnj" value="2" />
-              </node>
-            </node>
-            <node concept="3F0ifn" id="3ZBGXo3CX8c" role="3EZMnx" />
+          <node concept="PMmxH" id="7w8iNMElU$Q" role="3EZMnx">
+            <ref role="PMmxG" node="7w8iNMElUxN" resolve="title" />
           </node>
           <node concept="3EZMnI" id="6bEqAfEbZek" role="3EZMnx">
             <node concept="3F0ifn" id="1JVY6CxCHtL" role="3EZMnx">
@@ -352,7 +338,7 @@
                 <node concept="3F0A7n" id="6bEqAfEbZeL" role="2wV5jI">
                   <property role="1Intyy" value="true" />
                   <property role="1cu_pB" value="0" />
-                  <property role="1$x2rV" value="&lt; choose instance &gt;" />
+                  <property role="1$x2rV" value="choose instance" />
                   <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
                   <node concept="1X3_iC" id="70qrR2ApBzf" role="lGtFl">
                     <property role="3V$3am" value="styleItem" />
@@ -879,6 +865,7 @@
                 <ref role="1k5W1q" node="IlMDKr9u2A" resolve="immutable" />
               </node>
               <node concept="1iCGBv" id="IlMDKr3Zg0" role="3EZMnx">
+                <property role="1cu_pB" value="2" />
                 <ref role="1NtTu8" to="mmsd:IlMDKr3ZSD" resolve="relationship" />
                 <node concept="1sVBvm" id="IlMDKr3Zg1" role="1sWHZn">
                   <node concept="3F0A7n" id="IlMDKr3Zg2" role="2wV5jI">
@@ -1349,7 +1336,7 @@
   </node>
   <node concept="24kQdi" id="4v3gMT5_h5O">
     <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
-    <ref role="1XX52x" to="mmsd:4v3gMT5_h45" resolve="RelationshipPropertyOperation" />
+    <ref role="1XX52x" to="mmsd:4v3gMT5_h45" resolve="BinaryRelationshipPropertyOperation" />
     <node concept="1iCGBv" id="4v3gMT5_h6h" role="2wV5jI">
       <ref role="1NtTu8" to="mmsd:4v3gMT5_h5k" resolve="realtionshipProperty" />
       <node concept="1sVBvm" id="4v3gMT5_h6j" role="1sWHZn">
@@ -1358,6 +1345,28 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7w8iNMElUxN">
+    <property role="3GE5qa" value="Entities.EntityInstance" />
+    <property role="TrG5h" value="title" />
+    <ref role="1XX52x" to="mmsd:6bEqAfEbWFN" resolve="EntityInstance" />
+    <node concept="3EZMnI" id="7w8iNMElUBj" role="2wV5jI">
+      <node concept="37jFXN" id="7w8iNMElUBk" role="3F10Kt">
+        <property role="37lx6p" value="CENTER" />
+      </node>
+      <node concept="3F0ifn" id="7w8iNMElUBl" role="3EZMnx">
+        <node concept="OXEIz" id="7w8iNMElUBm" role="P5bDN" />
+      </node>
+      <node concept="2iRfu4" id="7w8iNMElUBn" role="2iSdaV" />
+      <node concept="3F0ifn" id="7w8iNMElUBo" role="3EZMnx">
+        <property role="3F0ifm" value="Entity Instance" />
+        <ref role="1k5W1q" node="IlMDKr9u2A" resolve="immutable" />
+        <node concept="VQ3r3" id="7w8iNMElUBp" role="3F10Kt">
+          <property role="2USNnj" value="2" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7w8iNMElUBq" role="3EZMnx" />
     </node>
   </node>
 </model>
