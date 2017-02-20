@@ -524,6 +524,48 @@
         </node>
       </node>
     </node>
+    <node concept="Um2eU" id="3nR1F$jWoyr" role="1kkKnR">
+      <node concept="3clFbS" id="3nR1F$jWoys" role="2VODD2">
+        <node concept="3SKdUt" id="3nR1F$jWqZF" role="3cqZAp">
+          <node concept="3SKdUq" id="3nR1F$jWqZG" role="3SKWNk">
+            <property role="3SKdUp" value="avoids that we can do EIs / BRIs within the property definition" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3nR1F$jWqZH" role="3cqZAp">
+          <node concept="22lmx$" id="3nR1F$jWqZI" role="3clFbw">
+            <node concept="2OqwBi" id="3nR1F$jWqZJ" role="3uHU7w">
+              <node concept="otxO1" id="3nR1F$jWqZK" role="2Oq$k0" />
+              <node concept="2Zo12i" id="3nR1F$jWqZL" role="2OqNvi">
+                <node concept="chp4Y" id="3nR1F$jWqZM" role="2Zo12j">
+                  <ref role="cht4Q" to="mmsd:m8YdCdn8jA" resolve="IEntityInstance" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3nR1F$jWqZN" role="3uHU7B">
+              <node concept="otxO1" id="3nR1F$jWqZO" role="2Oq$k0" />
+              <node concept="2Zo12i" id="3nR1F$jWqZP" role="2OqNvi">
+                <node concept="chp4Y" id="3nR1F$jWqZQ" role="2Zo12j">
+                  <ref role="cht4Q" to="mmsd:vo8P$wMacm" resolve="IBinaryRelationshipInstance" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="3nR1F$jWqZR" role="3clFbx">
+            <node concept="3clFbH" id="3nR1F$jWqZS" role="3cqZAp" />
+            <node concept="3cpWs6" id="3nR1F$jWqZT" role="3cqZAp">
+              <node concept="3clFbT" id="3nR1F$jWqZU" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3nR1F$jWqZV" role="3cqZAp">
+          <node concept="3clFbT" id="3nR1F$jWqZW" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="4hbwAHVlCTj">
     <property role="3GE5qa" value="Entities.EntityInstance" />
@@ -1656,6 +1698,11 @@
     </node>
     <node concept="Um2eU" id="3nR1F$jVFcE" role="1kkKnR">
       <node concept="3clFbS" id="3nR1F$jVFcF" role="2VODD2">
+        <node concept="3SKdUt" id="3nR1F$jWqwd" role="3cqZAp">
+          <node concept="3SKdUq" id="3nR1F$jWqwf" role="3SKWNk">
+            <property role="3SKdUp" value="avoids that we can do EIs / BRIs within the property definition" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="3nR1F$jVFQB" role="3cqZAp">
           <node concept="22lmx$" id="3nR1F$jVU6$" role="3clFbw">
             <node concept="2OqwBi" id="3nR1F$jVUAI" role="3uHU7w">
@@ -4032,7 +4079,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="4v3gMT5_$z8">
-    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
+    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance.Operation" />
     <ref role="1M2myG" to="mmsd:4v3gMT5_h45" resolve="BinaryRelationshipPropertyOperation" />
     <node concept="1N5Pfh" id="4v3gMT5_$z$" role="1Mr941">
       <ref role="1N5Vy1" to="mmsd:4v3gMT5_h5k" resolve="realtionshipProperty" />

@@ -2010,7 +2010,7 @@
   </node>
   <node concept="1YbPZF" id="4v3gMT5_zlG">
     <property role="TrG5h" value="typeof_BinaryRelationshipPropertyOperation" />
-    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
+    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance.Operation" />
     <node concept="3clFbS" id="4v3gMT5_zlH" role="18ibNy">
       <node concept="1Z5TYs" id="4v3gMT5_zJ5" role="3cqZAp">
         <node concept="mw_s8" id="4v3gMT5_zJJ" role="1ZfhKB">

@@ -545,7 +545,7 @@
   </node>
   <node concept="1TIwiD" id="4v3gMT5_h45">
     <property role="EcuMT" value="5171050663166415109" />
-    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
+    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance.Operation" />
     <property role="TrG5h" value="BinaryRelationshipPropertyOperation" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />

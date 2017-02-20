@@ -1169,7 +1169,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4v3gMT5_h5O">
-    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
+    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance.Operation" />
     <ref role="1XX52x" to="mmsd:4v3gMT5_h45" resolve="BinaryRelationshipPropertyOperation" />
     <node concept="1iCGBv" id="4v3gMT5_h6h" role="2wV5jI">
       <ref role="1NtTu8" to="mmsd:4v3gMT5_h5k" resolve="realtionshipProperty" />
