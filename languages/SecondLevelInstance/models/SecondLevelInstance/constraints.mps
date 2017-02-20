@@ -3382,101 +3382,31 @@
     <ref role="1M2myG" to="mmsd:$jtNS1izqX" resolve="OperationOnEntityInstance" />
     <node concept="nKS2y" id="$jtNS1izFJ" role="1MLUbF">
       <node concept="3clFbS" id="$jtNS1izFK" role="2VODD2">
-        <node concept="1X3_iC" id="6MItJgjuwSy" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="6JeiUjAIUvW" role="8Wnug">
-            <property role="35gtTG" value="info" />
-            <node concept="3cpWs3" id="6JeiUjAJgA7" role="34bqiv">
-              <node concept="3cpWs3" id="6JeiUjAM4Ny" role="3uHU7B">
-                <node concept="Xl_RD" id="6JeiUjAM54I" role="3uHU7w">
-                  <property role="Xl_RC" value=" || " />
-                </node>
-                <node concept="3cpWs3" id="6JeiUjAJdu5" role="3uHU7B">
-                  <node concept="3cpWs3" id="6JeiUjAM2FC" role="3uHU7B">
-                    <node concept="Xl_RD" id="6JeiUjAM2XE" role="3uHU7w">
-                      <property role="Xl_RC" value=" -&gt; will return  " />
-                    </node>
-                    <node concept="3cpWs3" id="6JeiUjAIYcs" role="3uHU7B">
-                      <node concept="Xl_RD" id="6JeiUjAIUvY" role="3uHU7B">
-                        <property role="Xl_RC" value=" low level dot operation check: " />
-                      </node>
-                      <node concept="nLn13" id="6JeiUjAIYpG" role="3uHU7w" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="6JeiUjAMoNl" role="3uHU7w">
-                    <node concept="2OqwBi" id="6JeiUjAMoNm" role="2Oq$k0">
-                      <node concept="1PxgMI" id="6JeiUjAMoNn" role="2Oq$k0">
-                        <property role="1BlNFB" value="true" />
-                        <ref role="1m5ApE" to="tpee:hqOqwz4" resolve="DotExpression" />
-                        <node concept="nLn13" id="6JeiUjAMoNo" role="1m5AlR" />
-                      </node>
-                      <node concept="3TrEf2" id="6JeiUjAMoNp" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:hqOq$gm" resolve="operand" />
-                      </node>
-                    </node>
-                    <node concept="1mIQ4w" id="6JeiUjAMoNq" role="2OqNvi">
-                      <node concept="chp4Y" id="6JeiUjAMoNr" role="cj9EA">
-                        <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6JeiUjAJgUf" role="3uHU7w">
-                <node concept="2OqwBi" id="6JeiUjAJgUg" role="2Oq$k0">
-                  <node concept="1PxgMI" id="6JeiUjAJgUh" role="2Oq$k0">
-                    <property role="1BlNFB" value="true" />
-                    <ref role="1m5ApE" to="tpee:hqOqwz4" resolve="DotExpression" />
-                    <node concept="nLn13" id="6JeiUjAJgUi" role="1m5AlR" />
-                  </node>
-                  <node concept="3TrEf2" id="6JeiUjAJgUj" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpee:hqOq$gm" resolve="operand" />
-                  </node>
-                </node>
-                <node concept="1mIQ4w" id="6JeiUjAJgUk" role="2OqNvi">
-                  <node concept="chp4Y" id="6JeiUjAMpdc" role="cj9EA">
-                    <ref role="cht4Q" to="mmsd:6bEqAfEbWFN" resolve="EntityInstance" />
-                  </node>
-                </node>
-              </node>
-            </node>
+        <node concept="3SKdUt" id="3nR1F$jqSJr" role="3cqZAp">
+          <node concept="3SKdUq" id="3nR1F$jqSJt" role="3SKWNk">
+            <property role="3SKdUp" value="only list properties when being applied to a reference" />
           </node>
         </node>
-        <node concept="3clFbF" id="$jtNS1izN3" role="3cqZAp">
-          <node concept="22lmx$" id="4fBalrDDSTu" role="3clFbG">
-            <node concept="2OqwBi" id="$jtNS1jeMJ" role="3uHU7B">
-              <node concept="2OqwBi" id="$jtNS1jdVu" role="2Oq$k0">
-                <node concept="1PxgMI" id="$jtNS1jdzk" role="2Oq$k0">
-                  <property role="1BlNFB" value="true" />
-                  <ref role="1m5ApE" to="tpee:hqOqwz4" resolve="DotExpression" />
-                  <node concept="nLn13" id="$jtNS1izN2" role="1m5AlR" />
-                </node>
-                <node concept="3TrEf2" id="$jtNS1jemQ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tpee:hqOq$gm" resolve="operand" />
-                </node>
+        <node concept="3SKdUt" id="3nR1F$jqTm5" role="3cqZAp">
+          <node concept="3SKdUq" id="3nR1F$jqTm7" role="3SKWNk">
+            <property role="3SKdUp" value="(indirectly forbids property access on new instances themselves...)" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3nR1F$jpc_r" role="3cqZAp">
+          <node concept="2OqwBi" id="3nR1F$jpc_u" role="3clFbG">
+            <node concept="2OqwBi" id="3nR1F$jpc_v" role="2Oq$k0">
+              <node concept="1PxgMI" id="3nR1F$jpc_w" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <ref role="1m5ApE" to="tpee:hqOqwz4" resolve="DotExpression" />
+                <node concept="nLn13" id="3nR1F$jpc_x" role="1m5AlR" />
               </node>
-              <node concept="1mIQ4w" id="$jtNS1jf2L" role="2OqNvi">
-                <node concept="chp4Y" id="$jtNS1jfeh" role="cj9EA">
-                  <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
-                </node>
+              <node concept="3TrEf2" id="3nR1F$jpc_y" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:hqOq$gm" resolve="operand" />
               </node>
             </node>
-            <node concept="2OqwBi" id="4fBalrDDTMx" role="3uHU7w">
-              <node concept="2OqwBi" id="4fBalrDDTMy" role="2Oq$k0">
-                <node concept="1PxgMI" id="4fBalrDDTMz" role="2Oq$k0">
-                  <property role="1BlNFB" value="true" />
-                  <ref role="1m5ApE" to="tpee:hqOqwz4" resolve="DotExpression" />
-                  <node concept="nLn13" id="4fBalrDDTM$" role="1m5AlR" />
-                </node>
-                <node concept="3TrEf2" id="4fBalrDDTM_" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tpee:hqOq$gm" resolve="operand" />
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="4fBalrDDTMA" role="2OqNvi">
-                <node concept="chp4Y" id="4fBalrDDU6v" role="cj9EA">
-                  <ref role="cht4Q" to="mmsd:6bEqAfEbWFN" resolve="EntityInstance" />
-                </node>
+            <node concept="1mIQ4w" id="3nR1F$jpc_z" role="2OqNvi">
+              <node concept="chp4Y" id="3nR1F$jpc_$" role="cj9EA">
+                <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
               </node>
             </node>
           </node>

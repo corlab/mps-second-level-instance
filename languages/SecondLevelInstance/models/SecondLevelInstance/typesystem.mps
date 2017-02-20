@@ -163,6 +163,7 @@
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1756,7 +1757,7 @@
     <node concept="3clFbS" id="$jtNS1jOX0" role="18ibNy">
       <node concept="3SKdUt" id="6MItJgjtXm8" role="3cqZAp">
         <node concept="3SKdUq" id="6MItJgjtXma" role="3SKWNk">
-          <property role="3SKdUp" value="here we forward the type of the actual referenced property" />
+          <property role="3SKdUp" value="here we forward the type of the actual referenced property type" />
         </node>
       </node>
       <node concept="1Z5TYs" id="$jtNS1jPnC" role="3cqZAp">
@@ -1961,6 +1962,46 @@
     <node concept="1YaCAy" id="4v3gMT5_zlJ" role="1YuTPh">
       <property role="TrG5h" value="binaryRelationshipPropertyOperation" />
       <ref role="1YaFvo" to="mmsd:4v3gMT5_h45" resolve="BinaryRelationshipPropertyOperation" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3nR1F$jw13P">
+    <property role="TrG5h" value="notdotexpression_EntityInstance" />
+    <property role="3GE5qa" value="Entities.EntityInstance" />
+    <node concept="3clFbS" id="3nR1F$jw13Q" role="18ibNy">
+      <node concept="3clFbJ" id="3nR1F$jw13Z" role="3cqZAp">
+        <node concept="2OqwBi" id="3nR1F$jw1Eu" role="3clFbw">
+          <node concept="2OqwBi" id="3nR1F$jw1f8" role="2Oq$k0">
+            <node concept="1YBJjd" id="3nR1F$jw14e" role="2Oq$k0">
+              <ref role="1YBMHb" node="3nR1F$jw13S" resolve="entityInstance" />
+            </node>
+            <node concept="1mfA1w" id="3nR1F$jw1p4" role="2OqNvi" />
+          </node>
+          <node concept="1mIQ4w" id="3nR1F$jw1JI" role="2OqNvi">
+            <node concept="chp4Y" id="3nR1F$jw1Lz" role="cj9EA">
+              <ref role="cht4Q" to="tpee:hqOqwz4" resolve="DotExpression" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="3nR1F$jw141" role="3clFbx">
+          <node concept="3SKdUt" id="3nR1F$jwGMi" role="3cqZAp">
+            <node concept="3SKdUq" id="3nR1F$jwGMk" role="3SKWNk">
+              <property role="3SKdUp" value="this is a hack actually. I dont know how to enforce the scoping" />
+            </node>
+          </node>
+          <node concept="2MkqsV" id="3nR1F$jw1PO" role="3cqZAp">
+            <node concept="Xl_RD" id="3nR1F$jw1Q3" role="2MkJ7o">
+              <property role="Xl_RC" value="Dot-Access is not possible on new instances" />
+            </node>
+            <node concept="1YBJjd" id="3nR1F$jw1RZ" role="2OEOjV">
+              <ref role="1YBMHb" node="3nR1F$jw13S" resolve="entityInstance" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3nR1F$jw13S" role="1YuTPh">
+      <property role="TrG5h" value="entityInstance" />
+      <ref role="1YaFvo" to="mmsd:6bEqAfEbWFN" resolve="EntityInstance" />
     </node>
   </node>
 </model>
