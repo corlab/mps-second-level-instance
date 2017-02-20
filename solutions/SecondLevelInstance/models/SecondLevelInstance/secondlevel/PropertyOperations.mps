@@ -65,9 +65,14 @@
       </concept>
       <concept id="834796077764833189" name="SecondLevelInstance.structure.BinaryRelationshipInstance" flags="ng" index="gAykT">
         <reference id="834796077764836905" name="relationship" index="gAziP" />
+        <child id="834796077764836910" name="propertyInstances" index="gAziM" />
       </concept>
       <concept id="834796077765887948" name="SecondLevelInstance.structure.EntityInstanceReference" flags="ng" index="gHsPg">
         <reference id="834796077765887963" name="entityInstance" index="gHsP7" />
+      </concept>
+      <concept id="5113813996665884622" name="SecondLevelInstance.structure.RelationshipPropertyInstance" flags="ng" index="ohMlM">
+        <reference id="5113813996665884844" name="property" index="ohNCg" />
+        <child id="5113813996665884731" name="value" index="ohNE7" />
       </concept>
     </language>
   </registry>
@@ -140,6 +145,12 @@
     <node concept="gAykT" id="4v3gMT5xJ8D" role="2hCze">
       <property role="TrG5h" value="partof1" />
       <ref role="gAziP" to="ofvd:70qrR2ADAOx" resolve="partOf" />
+      <node concept="ohMlM" id="3nR1F$jUULN" role="gAziM">
+        <ref role="ohNCg" to="ofvd:m8YdCcNFYf" resolve="something" />
+        <node concept="Xl_RD" id="3nR1F$jUVzJ" role="ohNE7">
+          <property role="Xl_RC" value="sdz;" />
+        </node>
+      </node>
       <node concept="28Lq2g" id="4v3gMT5xJ9F" role="3uHU7w">
         <property role="TrG5h" value="ordaa" />
         <ref role="28Lq2l" to="ofvd:70qrR2ADAlT" resolve="Order" />
