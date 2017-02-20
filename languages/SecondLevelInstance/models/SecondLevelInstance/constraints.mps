@@ -450,6 +450,78 @@
         </node>
       </node>
     </node>
+    <node concept="osYL8" id="3nR1F$jnAR8" role="1MLXOK">
+      <node concept="3clFbS" id="3nR1F$jnAR9" role="2VODD2">
+        <node concept="3clFbH" id="3nR1F$joRjZ" role="3cqZAp" />
+        <node concept="3SKdUt" id="3nR1F$joR_P" role="3cqZAp">
+          <node concept="3SKdUq" id="3nR1F$joR_R" role="3SKWNk">
+            <property role="3SKdUp" value="todo: this is a hack until the typesystem is correctly implemented..." />
+          </node>
+        </node>
+        <node concept="3clFbH" id="3nR1F$joRkZ" role="3cqZAp" />
+        <node concept="3SKdUt" id="3nR1F$joS5f" role="3cqZAp">
+          <node concept="3SKdUq" id="3nR1F$joS5h" role="3SKWNk">
+            <property role="3SKdUp" value="remove all our own types from the list of childrens" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3nR1F$jnvv4" role="3cqZAp">
+          <node concept="22lmx$" id="3nR1F$jo01A" role="3clFbw">
+            <node concept="22lmx$" id="3nR1F$jnKGU" role="3uHU7B">
+              <node concept="22lmx$" id="3nR1F$jnYWx" role="3uHU7B">
+                <node concept="2OqwBi" id="3nR1F$jnZqU" role="3uHU7B">
+                  <node concept="otxO1" id="3nR1F$jnZ5H" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="3nR1F$jnZFX" role="2OqNvi">
+                    <node concept="chp4Y" id="3nR1F$jnZQn" role="2Zo12j">
+                      <ref role="cht4Q" to="mmsd:6bEqAfEbWFN" resolve="EntityInstance" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3nR1F$jnw4T" role="3uHU7w">
+                  <node concept="otxO1" id="3nR1F$jnvPP" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="3nR1F$jnwjn" role="2OqNvi">
+                    <node concept="chp4Y" id="3nR1F$jnwtk" role="2Zo12j">
+                      <ref role="cht4Q" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3nR1F$jo0ul" role="3uHU7w">
+                <node concept="otxO1" id="3nR1F$jo0eI" role="2Oq$k0" />
+                <node concept="2Zo12i" id="3nR1F$jo0JC" role="2OqNvi">
+                  <node concept="chp4Y" id="3nR1F$jo0RZ" role="2Zo12j">
+                    <ref role="cht4Q" to="mmsd:IlMDKr3YY_" resolve="BinaryRelationshipInstance" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3nR1F$jnL7n" role="3uHU7w">
+              <node concept="otxO1" id="3nR1F$jnKS8" role="2Oq$k0" />
+              <node concept="2Zo12i" id="3nR1F$jnMbd" role="2OqNvi">
+                <node concept="chp4Y" id="3nR1F$jnMja" role="2Zo12j">
+                  <ref role="cht4Q" to="mmsd:IlMDKr7TFt" resolve="BinaryRelationshipInstanceReference" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="3nR1F$jnvv6" role="3clFbx">
+            <node concept="3cpWs6" id="3nR1F$jnvLH" role="3cqZAp">
+              <node concept="3clFbT" id="3nR1F$jnvLV" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="3nR1F$jnvAu" role="9aQIa">
+            <node concept="3clFbS" id="3nR1F$jnvAv" role="9aQI4">
+              <node concept="3cpWs6" id="3nR1F$jnvEb" role="3cqZAp">
+                <node concept="3clFbT" id="3nR1F$jnvEp" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="4hbwAHVlCTj">
     <property role="3GE5qa" value="Entities.EntityInstance" />
