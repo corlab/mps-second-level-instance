@@ -383,6 +383,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="IlMDKr3YY_" resolve="BinaryRelationshipInstance" />
     </node>
+    <node concept="PrWs8" id="3nR1F$jVGYC" role="PzmwI">
+      <ref role="PrY4T" node="vo8P$wMacm" resolve="IBinaryRelationshipInstance" />
+    </node>
   </node>
   <node concept="1TIwiD" id="IlMDKr80vc">
     <property role="EcuMT" value="834796077765887948" />

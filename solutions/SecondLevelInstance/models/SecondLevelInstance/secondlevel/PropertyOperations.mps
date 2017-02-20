@@ -147,8 +147,8 @@
       <ref role="gAziP" to="ofvd:70qrR2ADAOx" resolve="partOf" />
       <node concept="ohMlM" id="3nR1F$jUULN" role="gAziM">
         <ref role="ohNCg" to="ofvd:m8YdCcNFYf" resolve="something" />
-        <node concept="Xl_RD" id="3nR1F$jUVzJ" role="ohNE7">
-          <property role="Xl_RC" value="sdz;" />
+        <node concept="Xl_RD" id="3nR1F$jVYNH" role="ohNE7">
+          <property role="Xl_RC" value="test" />
         </node>
       </node>
       <node concept="28Lq2g" id="4v3gMT5xJ9F" role="3uHU7w">

@@ -181,9 +181,11 @@
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="6738154313879680265" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childNode" flags="nn" index="2H4GUG" />
+      <concept id="7855321458717464197" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="Um2eU" />
       <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="7852712695066883424" name="canBeAncestor" index="1kkKnR" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
         <child id="1213106463729" name="canBeChild" index="1MLUbF" />
@@ -1648,6 +1650,43 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Um2eU" id="3nR1F$jVFcE" role="1kkKnR">
+      <node concept="3clFbS" id="3nR1F$jVFcF" role="2VODD2">
+        <node concept="3clFbJ" id="3nR1F$jVFQB" role="3cqZAp">
+          <node concept="22lmx$" id="3nR1F$jVU6$" role="3clFbw">
+            <node concept="2OqwBi" id="3nR1F$jVUAI" role="3uHU7w">
+              <node concept="otxO1" id="3nR1F$jVUhI" role="2Oq$k0" />
+              <node concept="2Zo12i" id="3nR1F$jVUR$" role="2OqNvi">
+                <node concept="chp4Y" id="3nR1F$jVV1L" role="2Zo12j">
+                  <ref role="cht4Q" to="mmsd:m8YdCdn8jA" resolve="IEntityInstance" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3nR1F$jVGAx" role="3uHU7B">
+              <node concept="otxO1" id="3nR1F$jVGk3" role="2Oq$k0" />
+              <node concept="2Zo12i" id="3nR1F$jVGOP" role="2OqNvi">
+                <node concept="chp4Y" id="3nR1F$jVGYV" role="2Zo12j">
+                  <ref role="cht4Q" to="mmsd:vo8P$wMacm" resolve="IBinaryRelationshipInstance" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="3nR1F$jVFQD" role="3clFbx">
+            <node concept="3clFbH" id="3nR1F$jVVcD" role="3cqZAp" />
+            <node concept="3cpWs6" id="3nR1F$jVH9p" role="3cqZAp">
+              <node concept="3clFbT" id="3nR1F$jVHoe" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3nR1F$jVGfY" role="3cqZAp">
+          <node concept="3clFbT" id="3nR1F$jVGgj" role="3cqZAk">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
