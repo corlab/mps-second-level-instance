@@ -1332,6 +1332,9 @@
           <node concept="VPM3Z" id="3nR1F$jMjUo" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
+          <node concept="37jFXN" id="3nR1F$jZdjr" role="3F10Kt">
+            <property role="37lx6p" value="CENTER" />
+          </node>
           <node concept="3F0ifn" id="3nR1F$jMjUp" role="3EZMnx">
             <property role="3F0ifm" value=" " />
             <ref role="1k5W1q" node="IlMDKr9u2A" resolve="immutable" />
@@ -1361,6 +1364,9 @@
           <node concept="2iRfu4" id="3nR1F$jMjU_" role="2iSdaV" />
         </node>
         <node concept="2iRkQZ" id="3nR1F$jMjUA" role="2iSdaV" />
+        <node concept="37jFXN" id="3nR1F$jYYB1" role="3F10Kt">
+          <property role="37lx6p" value="CENTER" />
+        </node>
       </node>
       <node concept="2iRkQZ" id="3nR1F$jMjTB" role="2iSdaV" />
     </node>
@@ -1414,13 +1420,11 @@
           <ref role="1k5W1q" node="IlMDKr9u2A" resolve="immutable" />
         </node>
         <node concept="1iCGBv" id="3nR1F$jPQRX" role="3EZMnx">
-          <property role="1cu_pB" value="2" />
+          <property role="1$x2rV" value="pick relationship" />
           <ref role="1NtTu8" to="mmsd:IlMDKr3ZSD" resolve="relationship" />
           <node concept="1sVBvm" id="3nR1F$jPQRY" role="1sWHZn">
             <node concept="3F0A7n" id="3nR1F$jPQRZ" role="2wV5jI">
               <property role="1Intyy" value="true" />
-              <property role="1cu_pB" value="1" />
-              <property role="1$x2rV" value="&lt; choose instance &gt;" />
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
               <node concept="1X3_iC" id="3nR1F$jPQS0" role="lGtFl">
                 <property role="3V$3am" value="styleItem" />

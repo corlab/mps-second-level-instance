@@ -93,59 +93,72 @@
         </node>
       </node>
     </node>
-    <node concept="22lmx$" id="4v3gMT5AOJ2" role="8gEjR">
-      <node concept="22lmx$" id="3nR1F$jxoBs" role="3uHU7B">
-        <node concept="1Wc70l" id="6MItJgjwmfV" role="3uHU7w">
-          <node concept="3clFbC" id="6MItJgjwlti" role="3uHU7B">
-            <node concept="2OqwBi" id="3nR1F$jvZIf" role="3uHU7B">
-              <node concept="gHsPg" id="3nR1F$jvZFi" role="2Oq$k0">
-                <ref role="gHsP7" node="4v3gMT5xso2" resolve="mycustomer" />
-              </node>
-              <node concept="8n3Fb" id="3nR1F$jvZJr" role="2OqNvi">
-                <ref role="8n3F8" to="ofvd:70qrR2ADAnv" resolve="arrival" />
-              </node>
+    <node concept="gAykT" id="3eCNlmNmPaO" role="8gEjR">
+      <property role="TrG5h" value="pof" />
+      <ref role="gAziP" to="ofvd:70qrR2ADAOx" resolve="partOf" />
+      <node concept="22lmx$" id="4v3gMT5AOJ2" role="3uHU7w">
+        <node concept="3clFbC" id="4v3gMT5HMLi" role="3uHU7w">
+          <node concept="2OqwBi" id="4v3gMT5Hvbm" role="3uHU7B">
+            <node concept="gy_11" id="4v3gMT5HuVa" role="2Oq$k0">
+              <ref role="gy_1K" node="4v3gMT5xJ8D" resolve="partof1" />
             </node>
-            <node concept="2$xPTn" id="6MItJgjwlxe" role="3uHU7w">
-              <property role="2$xPTl" value="33.2f" />
+            <node concept="2l_8F" id="4v3gMT5HMbY" role="2OqNvi">
+              <ref role="2l_9U" to="ofvd:m8YdCcNFYf" resolve="something" />
             </node>
           </node>
-          <node concept="3clFbC" id="4v3gMT5BwwK" role="3uHU7w">
-            <node concept="2OqwBi" id="6MItJgjwmlx" role="3uHU7B">
-              <node concept="gHsPg" id="6MItJgjwmhd" role="2Oq$k0">
-                <ref role="gHsP7" node="4v3gMT5xso2" resolve="mycustomer" />
-              </node>
-              <node concept="8n3Fb" id="3nR1F$jrbyT" role="2OqNvi">
-                <ref role="8n3F8" to="ofvd:70qrR2ADAmR" resolve="readyToOrder" />
-              </node>
-            </node>
-            <node concept="3clFbT" id="6MItJgjyaZp" role="3uHU7w">
-              <property role="3clFbU" value="true" />
-            </node>
+          <node concept="Xl_RD" id="4v3gMT5HMM$" role="3uHU7w">
+            <property role="Xl_RC" value="asd" />
           </node>
         </node>
-        <node concept="28Lq2g" id="3nR1F$js8Od" role="3uHU7B">
-          <property role="TrG5h" value="ordd" />
-          <ref role="28Lq2l" to="ofvd:70qrR2ADAlT" resolve="Order" />
-          <node concept="28Lq2o" id="3nR1F$jWmiN" role="28Lq2r">
-            <ref role="28Lq2v" to="ofvd:70qrR2ADAqX" resolve="when" />
-            <node concept="3cmrfG" id="3nR1F$jWJfb" role="28Lq2t">
-              <property role="3cmrfH" value="33" />
+        <node concept="22lmx$" id="3nR1F$jxoBs" role="3uHU7B">
+          <node concept="1Wc70l" id="6MItJgjwmfV" role="3uHU7w">
+            <node concept="3clFbC" id="6MItJgjwlti" role="3uHU7B">
+              <node concept="2OqwBi" id="3nR1F$jvZIf" role="3uHU7B">
+                <node concept="gHsPg" id="3nR1F$jvZFi" role="2Oq$k0">
+                  <ref role="gHsP7" node="4v3gMT5xso2" resolve="mycustomer" />
+                </node>
+                <node concept="8n3Fb" id="3nR1F$jvZJr" role="2OqNvi">
+                  <ref role="8n3F8" to="ofvd:70qrR2ADAnv" resolve="arrival" />
+                </node>
+              </node>
+              <node concept="2$xPTn" id="6MItJgjwlxe" role="3uHU7w">
+                <property role="2$xPTl" value="33.2f" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="4v3gMT5BwwK" role="3uHU7w">
+              <node concept="2OqwBi" id="6MItJgjwmlx" role="3uHU7B">
+                <node concept="gHsPg" id="6MItJgjwmhd" role="2Oq$k0">
+                  <ref role="gHsP7" node="4v3gMT5xso2" resolve="mycustomer" />
+                </node>
+                <node concept="8n3Fb" id="3nR1F$jrbyT" role="2OqNvi">
+                  <ref role="8n3F8" to="ofvd:70qrR2ADAmR" resolve="readyToOrder" />
+                </node>
+              </node>
+              <node concept="3clFbT" id="6MItJgjyaZp" role="3uHU7w">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="22lmx$" id="3eCNlmNmP3i" role="3uHU7B">
+            <node concept="28Lq2g" id="3nR1F$js8Od" role="3uHU7w">
+              <property role="TrG5h" value="ordd" />
+              <ref role="28Lq2l" to="ofvd:70qrR2ADAlT" resolve="Order" />
+              <node concept="28Lq2o" id="3nR1F$jWmiN" role="28Lq2r">
+                <ref role="28Lq2v" to="ofvd:70qrR2ADAqX" resolve="when" />
+                <node concept="3cmrfG" id="3nR1F$jWJfb" role="28Lq2t">
+                  <property role="3cmrfH" value="33" />
+                </node>
+              </node>
+            </node>
+            <node concept="28Lq2g" id="3eCNlmNnS5p" role="3uHU7B">
+              <property role="TrG5h" value="QQQQ" />
+              <ref role="28Lq2l" to="ofvd:70qrR2ADAmq" resolve="Customer" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3clFbC" id="4v3gMT5HMLi" role="3uHU7w">
-        <node concept="2OqwBi" id="4v3gMT5Hvbm" role="3uHU7B">
-          <node concept="gy_11" id="4v3gMT5HuVa" role="2Oq$k0">
-            <ref role="gy_1K" node="4v3gMT5xJ8D" resolve="partof1" />
-          </node>
-          <node concept="2l_8F" id="4v3gMT5HMbY" role="2OqNvi">
-            <ref role="2l_9U" to="ofvd:m8YdCcNFYf" resolve="something" />
-          </node>
-        </node>
-        <node concept="Xl_RD" id="4v3gMT5HMM$" role="3uHU7w">
-          <property role="Xl_RC" value="asd" />
-        </node>
+      <node concept="gHsPg" id="3eCNlmNmPx_" role="3uHU7B">
+        <ref role="gHsP7" node="4v3gMT5xJ9F" resolve="ordaa" />
       </node>
     </node>
     <node concept="gAykT" id="4v3gMT5xJ8D" role="2hCze">

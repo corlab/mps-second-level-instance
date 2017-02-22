@@ -1453,6 +1453,38 @@
               <node concept="17RvpY" id="m8YdCcJgd5" role="2OqNvi" />
             </node>
           </node>
+          <node concept="1X3_iC" id="5J5WH$NUU9Z" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="a7r0C" id="3eCNlmNn4P9" role="8Wnug">
+              <node concept="3cpWs3" id="3eCNlmNn4Pb" role="a7wSD">
+                <node concept="37vLTw" id="3eCNlmNn4Pc" role="3uHU7w">
+                  <ref role="3cqZAo" node="IlMDKrGQeg" resolve="actual_right_target" />
+                </node>
+                <node concept="3cpWs3" id="3eCNlmNn4Pd" role="3uHU7B">
+                  <node concept="3cpWs3" id="3eCNlmNn4Pe" role="3uHU7B">
+                    <node concept="3cpWs3" id="3eCNlmNn4Pf" role="3uHU7B">
+                      <node concept="Xl_RD" id="3eCNlmNn4Pg" role="3uHU7B">
+                        <property role="Xl_RC" value="(((((((((((((((((((( " />
+                      </node>
+                      <node concept="37vLTw" id="3eCNlmNn4Ph" role="3uHU7w">
+                        <ref role="3cqZAo" node="IlMDKrBnwc" resolve="actual_left" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="3eCNlmNn4Pi" role="3uHU7w">
+                      <ref role="3cqZAo" node="IlMDKrGRHY" resolve="actual_left_target" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="3eCNlmNn4Pj" role="3uHU7w">
+                    <ref role="3cqZAo" node="IlMDKrGOB0" resolve="actual_right" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1YBJjd" id="3eCNlmNn4Pk" role="2OEOjV">
+                <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="m8YdCcJrod" role="3cqZAp">
             <node concept="3clFbS" id="m8YdCcJrof" role="3clFbx">
               <node concept="3clFbJ" id="m8YdCcJsom" role="3cqZAp">
@@ -1644,19 +1676,23 @@
         </node>
       </node>
       <node concept="3clFbH" id="u3mAIolVYp" role="3cqZAp" />
-      <node concept="34ab3g" id="3nR1F$jNbQY" role="3cqZAp">
-        <property role="35gtTG" value="info" />
-        <node concept="3cpWs3" id="3nR1F$jNc_4" role="34bqiv">
-          <node concept="2OqwBi" id="3nR1F$jNcNS" role="3uHU7w">
-            <node concept="1YBJjd" id="3nR1F$jNc_s" role="2Oq$k0">
-              <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+      <node concept="1X3_iC" id="5J5WH$NUTuK" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="34ab3g" id="3nR1F$jNbQY" role="8Wnug">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="3nR1F$jNc_4" role="34bqiv">
+            <node concept="2OqwBi" id="3nR1F$jNcNS" role="3uHU7w">
+              <node concept="1YBJjd" id="3nR1F$jNc_s" role="2Oq$k0">
+                <ref role="1YBMHb" node="IlMDKrvm50" resolve="binaryRelationshipInstance" />
+              </node>
+              <node concept="2qgKlT" id="3nR1F$jNV6y" role="2OqNvi">
+                <ref role="37wK5l" to="7w2z:m8YdCcG$1t" resolve="getEntityToLeftName" />
+              </node>
             </node>
-            <node concept="2qgKlT" id="3nR1F$jNV6y" role="2OqNvi">
-              <ref role="37wK5l" to="7w2z:m8YdCcG$1t" resolve="getEntityToLeftName" />
+            <node concept="Xl_RD" id="3nR1F$jNbR0" role="3uHU7B">
+              <property role="Xl_RC" value="adfkljaslkdjaslkdjaskljdasjkl " />
             </node>
-          </node>
-          <node concept="Xl_RD" id="3nR1F$jNbR0" role="3uHU7B">
-            <property role="Xl_RC" value="adfkljaslkdjaslkdjaskljdasjkl " />
           </node>
         </node>
       </node>
@@ -1973,18 +2009,52 @@
           <property role="3SKdUp" value="unsure, maybe this is actually not needed anywhere? mmhh " />
         </node>
       </node>
-      <node concept="1Z5TYs" id="4v3gMT5y00$" role="3cqZAp">
-        <node concept="mw_s8" id="4v3gMT5y01O" role="1ZfhKB">
-          <node concept="2c44tf" id="4v3gMT5y01K" role="mwGJk">
-            <node concept="3cqZAl" id="4v3gMT5y02W" role="2c44tc" />
+      <node concept="3clFbH" id="5J5WH$NPtBZ" role="3cqZAp" />
+      <node concept="3SKdUt" id="5J5WH$NPtDc" role="3cqZAp">
+        <node concept="3SKdUq" id="5J5WH$NPtDe" role="3SKWNk">
+          <property role="3SKdUp" value="todo: changed from this..." />
+        </node>
+      </node>
+      <node concept="1X3_iC" id="3eCNlmNmH9k" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="1Z5TYs" id="4v3gMT5y00$" role="8Wnug">
+          <node concept="mw_s8" id="4v3gMT5y01O" role="1ZfhKB">
+            <node concept="2c44tf" id="4v3gMT5y01K" role="mwGJk">
+              <node concept="3cqZAl" id="4v3gMT5y02W" role="2c44tc" />
+            </node>
+          </node>
+          <node concept="mw_s8" id="4v3gMT5y00B" role="1ZfhK$">
+            <node concept="1Z2H0r" id="4v3gMT5xY0J" role="mwGJk">
+              <node concept="1YBJjd" id="7w8iNMFt$sk" role="1Z2MuG">
+                <ref role="1YBMHb" node="7_lh_jBucyH" resolve="binaryRelationshipInstance" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="mw_s8" id="4v3gMT5y00B" role="1ZfhK$">
-          <node concept="1Z2H0r" id="4v3gMT5xY0J" role="mwGJk">
-            <node concept="1YBJjd" id="7w8iNMFt$sk" role="1Z2MuG">
+      </node>
+      <node concept="3SKdUt" id="5J5WH$NPtBr" role="3cqZAp">
+        <node concept="3SKdUq" id="5J5WH$NPtBt" role="3SKWNk">
+          <property role="3SKdUp" value="...to this:" />
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="3eCNlmNmH7u" role="3cqZAp">
+        <node concept="mw_s8" id="3eCNlmNmH7v" role="1ZfhKB">
+          <node concept="2c44tf" id="3eCNlmNmH7w" role="mwGJk">
+            <node concept="10P_77" id="3eCNlmNmHbM" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3eCNlmNmH7y" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3eCNlmNmH7z" role="mwGJk">
+            <node concept="1YBJjd" id="3eCNlmNmH7$" role="1Z2MuG">
               <ref role="1YBMHb" node="7_lh_jBucyH" resolve="binaryRelationshipInstance" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3SKdUt" id="5J5WH$NPtEB" role="3cqZAp">
+        <node concept="3SKdUq" id="5J5WH$NPtED" role="3SKWNk">
+          <property role="3SKdUp" value="to allow using BRIs in where clauses as a match mechanism" />
         </node>
       </node>
     </node>
