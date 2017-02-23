@@ -7,7 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="mmsd" ref="r:9484be06-7105-4e31-8b3b-25c055bd5c2a(SecondLevelInstance.structure)" implicit="true" />
+    <import index="mmsd" ref="r:9484be06-7105-4e31-8b3b-25c055bd5c2a(SecondLevelInstance.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -1143,8 +1143,12 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="$jtNS1l8d6" role="2iSdaV" />
-      <node concept="3F1sOY" id="$jtNS1ktgh" role="3EZMnx">
+      <node concept="3F2HdR" id="5J5WH$OH1mA" role="3EZMnx">
         <ref role="1NtTu8" to="mmsd:$jtNS1ktf9" resolve="exp" />
+        <node concept="l2Vlx" id="5J5WH$OH1n_" role="2czzBx" />
+        <node concept="pj6Ft" id="5J5WH$OH1nF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
@@ -1265,7 +1269,7 @@
           <property role="37lx6p" value="CENTER" />
         </node>
         <node concept="3F0A7n" id="3nR1F$jMjTW" role="3EZMnx">
-          <property role="1$x2rV" value="&lt; set name &gt;" />
+          <property role="1$x2rV" value="&lt; instance name &gt;" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
           <node concept="1X3_iC" id="3nR1F$jMjTX" role="lGtFl">
@@ -1358,7 +1362,7 @@
             <ref role="1NtTu8" to="mmsd:6bEqAfEbWFS" resolve="propertyInstaces" />
             <node concept="2iRkQZ" id="3nR1F$jMjUz" role="2czzBx" />
             <node concept="3F0ifn" id="3nR1F$jMjU$" role="2czzBI">
-              <property role="ilYzB" value="&lt; add property &gt;" />
+              <property role="ilYzB" value="&lt; no property &gt;" />
             </node>
           </node>
           <node concept="2iRfu4" id="3nR1F$jMjU_" role="2iSdaV" />

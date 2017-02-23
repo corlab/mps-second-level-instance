@@ -526,6 +526,7 @@
       <property role="IQ2ns" value="653997479092671433" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="exp" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
