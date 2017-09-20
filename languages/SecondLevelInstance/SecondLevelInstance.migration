@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:ce74d822-d445-4883-a0d6-88330895c84f(migrationData)">
+  <persistence version="9" />
+  <languages />
+  <imports>
+    <import index="mmsd" ref="r:9484be06-7105-4e31-8b3b-25c055bd5c2a(SecondLevelInstance.structure)" implicit="true" />
+    <import index="gxc1" ref="r:d0c2a3bb-1122-47d5-a3cb-d35ce9c1b3f3(SecondLevelInstance.editor)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="3017733173184487099" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationDataEntity" flags="ng" index="ZsZFI">
+        <reference id="3017733173184487105" name="generatedMenu" index="ZsZEk" />
+        <reference id="3017733173184487102" name="conceptNode" index="ZsZFF" />
+      </concept>
+      <concept id="3017733173184487098" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationData" flags="ng" index="ZsZFJ">
+        <child id="3017733173184487121" name="entities" index="ZsZE4" />
+      </concept>
+    </language>
+    <language id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util">
+      <concept id="7417095922908669705" name="jetbrains.mps.lang.migration.util.structure.StepData" flags="ng" index="2z5JpS">
+        <property id="1973338949477451252" name="script" index="3qqn2_" />
+        <child id="7417095922908725798" name="data" index="2z5Xdn" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2z5JpS" id="7qzHYPU_16i">
+    <property role="3qqn2_" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)/8" />
+    <node concept="ZsZFJ" id="7qzHYPU_12f" role="2z5Xdn">
+      <node concept="ZsZFI" id="7qzHYPU_12P" role="ZsZE4">
+        <ref role="ZsZFF" to="mmsd:6bEqAfEbWFN" resolve="EntityInstance" />
+        <ref role="ZsZEk" to="gxc1:7qzHYPU_12J" resolve="EntityInstance_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7qzHYPU_13c" role="ZsZE4">
+        <ref role="ZsZFF" to="mmsd:$jtNS1jORP" resolve="EntityPropertyOperation" />
+        <ref role="ZsZEk" to="gxc1:7qzHYPU_136" resolve="EntityPropertyOperation_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7qzHYPU_13_" role="ZsZE4">
+        <ref role="ZsZFF" to="mmsd:6bEqAfEbWFV" resolve="EntityPropertyInstance" />
+        <ref role="ZsZEk" to="gxc1:7qzHYPU_13v" resolve="EntityPropertyInstance_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7qzHYPU_13Y" role="ZsZE4">
+        <ref role="ZsZFF" to="mmsd:4rRUFLuGcZe" resolve="RelationshipPropertyInstance" />
+        <ref role="ZsZEk" to="gxc1:7qzHYPU_13S" resolve="RelationshipPropertyInstance_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7qzHYPU_15n" role="ZsZE4">
+        <ref role="ZsZFF" to="mmsd:IlMDKr7TFt" resolve="BinaryRelationshipInstanceReference" />
+        <ref role="ZsZEk" to="gxc1:7qzHYPU_15h" resolve="BinaryRelationshipInstanceReference_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7qzHYPU_15U" role="ZsZE4">
+        <ref role="ZsZFF" to="mmsd:IlMDKr80vc" resolve="EntityInstanceReference" />
+        <ref role="ZsZEk" to="gxc1:7qzHYPU_15O" resolve="EntityInstanceReference_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7qzHYPU_16h" role="ZsZE4">
+        <ref role="ZsZFF" to="mmsd:4v3gMT5_h45" resolve="BinaryRelationshipPropertyOperation" />
+        <ref role="ZsZEk" to="gxc1:7qzHYPU_16b" resolve="BinaryRelationshipPropertyOperation_SmartReference" />
+      </node>
+    </node>
+  </node>
+</model>
+

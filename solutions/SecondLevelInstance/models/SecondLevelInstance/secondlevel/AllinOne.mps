@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstance" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
   </languages>
   <imports />
   <registry>
@@ -102,6 +102,7 @@
       <property role="TrG5h" value="myPizzaDeliveryDeclaration" />
       <node concept="28L0aF" id="70qrR2ADAhB" role="2LDv1m">
         <property role="TrG5h" value="pizzaDeliveryEntities" />
+        <node concept="28LgfA" id="7FwC2dfhECQ" role="28LuXQ" />
         <node concept="28LgfA" id="70qrR2ADAmq" role="28LuXQ">
           <property role="TrG5h" value="Customer" />
           <node concept="28LgfH" id="70qrR2ADAmR" role="28LgfD">
@@ -205,10 +206,6 @@
               <property role="Xl_RC" value="Margherita" />
             </node>
           </node>
-        </node>
-        <node concept="28Lq2g" id="6jkENrCUOUY" role="2n9niu">
-          <property role="TrG5h" value="ordsaaaaaa" />
-          <ref role="28Lq2l" node="70qrR2ADAlT" resolve="Order" />
         </node>
         <node concept="28Lq2g" id="70qrR2ADAxQ" role="2n9niu">
           <property role="TrG5h" value="customer_01" />
