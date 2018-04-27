@@ -4,11 +4,29 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
   <registry>
+    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
+        <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
+      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
+        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
+        <child id="1622293396948928802" name="content" index="3o6s8t" />
+      </concept>
+      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
+        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
+        <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
+        <property id="1622293396948953704" name="value" index="3o6i5n" />
+      </concept>
+    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
@@ -132,11 +150,13 @@
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
+        <child id="1359186315025500371" name="xml" index="20twgj" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -196,6 +216,7 @@
   <node concept="1l3spW" id="7foShycCINg">
     <property role="TrG5h" value="mpsSecondLevelInstance" />
     <property role="2DA0ip" value="../../" />
+    <property role="turDy" value="legacy-plugin-mps.xml" />
     <node concept="10PD9b" id="7foShycCINh" role="10PD9s" />
     <node concept="3b7kt6" id="7foShycCINi" role="10PD9s" />
     <node concept="1zClus" id="7foShycCINv" role="3989C9">
@@ -614,7 +635,7 @@
   </node>
   <node concept="1l3spW" id="7foShycCIPi">
     <property role="TrG5h" value="mpsSecondLevelInstanceDistribution" />
-    <property role="turDy" value="buildDistribution.xml" />
+    <property role="turDy" value="legacyDistribution.xml" />
     <property role="2DA0ip" value="../../" />
     <node concept="2sgV4H" id="7foShycCIPj" role="1l3spa">
       <ref role="1l3spb" node="7foShycCINg" resolve="mpsSecondLevelInstance" />
@@ -1409,6 +1430,160 @@
           <node concept="3Mxwew" id="7foShycCIPp" role="3MwsjC">
             <property role="3MwjfP" value="3.4.3" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1l3spW" id="5FdNKq2Xvl$">
+    <property role="TrG5h" value="de.citec.domainGraphDescription" />
+    <property role="2DA0ip" value="../../" />
+    <property role="turDy" value="build-plugin-mps.xml" />
+    <node concept="10PD9b" id="5FdNKq2Xvl_" role="10PD9s" />
+    <node concept="3b7kt6" id="5FdNKq2XvlA" role="10PD9s" />
+    <node concept="398rNT" id="5FdNKq2XvlB" role="1l3spd">
+      <property role="TrG5h" value="mps_home" />
+    </node>
+    <node concept="2kB4xC" id="7$T_6mLQSkl" role="1l3spd">
+      <property role="TrG5h" value="current_version" />
+      <node concept="aVJcg" id="7$T_6mLQSmY" role="aVJcv">
+        <node concept="NbPM2" id="7$T_6mLQSmX" role="aVJcq">
+          <node concept="3Mxwew" id="7$T_6mLQSmW" role="3MwsjC">
+            <property role="3MwjfP" value="1.0.0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="5FdNKq2XvlC" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="5FdNKq2XvlD" role="2JcizS">
+        <ref role="398BVh" node="5FdNKq2XvlB" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="1l3spV" id="5FdNKq2XvlU" role="1l3spN">
+      <node concept="3981dG" id="5FdNKq2XvlV" role="39821P">
+        <node concept="3_J27D" id="5FdNKq2XvlW" role="Nbhlr">
+          <node concept="3Mxwew" id="5FdNKq2XvlX" role="3MwsjC">
+            <property role="3MwjfP" value="de.citec.domainGraphDescription-" />
+          </node>
+          <node concept="3Mxwey" id="5FdNKq2XvqL" role="3MwsjC">
+            <ref role="3Mxwex" node="7$T_6mLQSkl" resolve="current_version" />
+          </node>
+          <node concept="3Mxwew" id="5FdNKq2XvqK" role="3MwsjC">
+            <property role="3MwjfP" value="--" />
+          </node>
+          <node concept="3Mxwey" id="5FdNKq2XvrV" role="3MwsjC">
+            <ref role="3Mxwex" to="ffeo:d_WKSiP3Fm" resolve="idea.platform.build.number" />
+          </node>
+          <node concept="3Mxwew" id="5FdNKq2Xvsu" role="3MwsjC">
+            <property role="3MwjfP" value="-" />
+          </node>
+          <node concept="3Mxwey" id="5FdNKq2Xvrh" role="3MwsjC">
+            <ref role="3Mxwex" to="ffeo:5HVSRHdVf2d" resolve="version" />
+          </node>
+          <node concept="3Mxwew" id="5FdNKq2Xvrg" role="3MwsjC">
+            <property role="3MwjfP" value=".zip" />
+          </node>
+        </node>
+        <node concept="m$_wl" id="5FdNKq2XvlY" role="39821P">
+          <ref role="m_rDy" node="5FdNKq2XvlL" resolve="de.citec.domainGraphDescription" />
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="5FdNKq2XvlL" role="3989C9">
+      <property role="m$_wk" value="de.citec.domainGraphDescription" />
+      <node concept="2pNNFK" id="7$T_6mLSRto" role="20twgj">
+        <property role="2pNNFO" value="idea-version" />
+        <node concept="2pNUuL" id="7$T_6mLSRtp" role="2pNNFR">
+          <property role="2pNUuO" value="until-build" />
+          <node concept="2pMdtt" id="7$T_6mLSRtq" role="2pMdts">
+            <property role="2pMdty" value="181.4445" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="7$T_6mLSRtr" role="2pNNFR">
+          <property role="2pNUuO" value="since-build" />
+          <node concept="2pMdtt" id="7$T_6mLSRts" role="2pMdts">
+            <property role="2pMdty" value="181.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2pNNFK" id="7$T_6mLTbPm" role="20twgj">
+        <property role="2pNNFO" value="vendor" />
+        <node concept="2pNUuL" id="7$T_6mLTbPn" role="2pNNFR">
+          <property role="2pNUuO" value="email" />
+          <node concept="2pMdtt" id="7$T_6mLTbPo" role="2pMdts">
+            <property role="2pMdty" value="nkoester@techfak.uni-bielefeld.de" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="7$T_6mLTbPp" role="2pNNFR">
+          <property role="2pNUuO" value="url" />
+          <node concept="2pMdtt" id="7$T_6mLTbPq" role="2pMdts">
+            <property role="2pMdty" value="https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=45612304" />
+          </node>
+        </node>
+        <node concept="3o6iSG" id="7$T_6mLTbPr" role="3o6s8t">
+          <property role="3o6i5n" value="nkoester" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="5FdNKq2XvlM" role="m$_yQ">
+        <node concept="3Mxwew" id="5FdNKq2XvlN" role="3MwsjC">
+          <property role="3MwjfP" value="de.citec.domainGraphDescription" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="5FdNKq2XvlO" role="m$_w8">
+        <node concept="3Mxwey" id="5FdNKq2XvpZ" role="3MwsjC">
+          <ref role="3Mxwex" node="7$T_6mLQSkl" resolve="current_version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="5FdNKq2XvlQ" role="m$_yh">
+        <ref role="m$f5T" node="5FdNKq2XvlK" resolve="de.citec.domainGraphDescription" />
+      </node>
+      <node concept="m$_yC" id="5FdNKq2XvlR" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="3_J27D" id="5FdNKq2XvlS" role="m_cZH">
+        <node concept="3Mxwew" id="5FdNKq2XvlT" role="3MwsjC">
+          <property role="3MwjfP" value="de.citec.domainGraphDescription" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="5FdNKq2XvpM" role="3s6cr7">
+        <node concept="3Mxwew" id="5FdNKq2XvpO" role="3MwsjC">
+          <property role="3MwjfP" value="Allows to describe a domain as a graph composed of nodes and relationships." />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="5FdNKq2XvlK" role="3989C9">
+      <property role="TrG5h" value="de.citec.domainGraphDescription" />
+      <node concept="1E1JtD" id="5FdNKq2XvlJ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="SecondLevelInstance" />
+        <property role="3LESm3" value="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="5FdNKq2XvlE" role="3LF7KH">
+          <node concept="2Ry0Ak" id="5FdNKq2XvlF" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="5FdNKq2XvlG" role="2Ry0An">
+              <property role="2Ry0Am" value="SecondLevelInstance" />
+              <node concept="2Ry0Ak" id="5FdNKq2XvlH" role="2Ry0An">
+                <property role="2Ry0Am" value="SecondLevelInstance.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5FdNKq2XvlZ" role="3bR37C">
+          <node concept="3bR9La" id="5FdNKq2Xvm0" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5FdNKq2Xvm1" role="3bR37C">
+          <node concept="1Busua" id="5FdNKq2Xvm2" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="5FdNKq2Xvm3" role="1TViLv">
+          <property role="TrG5h" value="SecondLevelInstance#2050020079228502782" />
+          <property role="3LESm3" value="51a9323e-3ef2-40bf-8991-e73256558c29" />
+          <property role="2GAjPV" value="false" />
         </node>
       </node>
     </node>
