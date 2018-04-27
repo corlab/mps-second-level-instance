@@ -70,11 +70,11 @@
         <logo url="/splash.png" textcolor="002387" />
         <about url="/about.png" />
         <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
-        <dialogs-image url="/dialogImage.png" />
         <package code="code" />
         <names product="mpsSecondLevelInstance" fullname="mpsSecondLevelInstance" />
         
         <welcome-screen logo-url="/logo.png" />
+        
         
         
         
@@ -86,13 +86,12 @@
       <fileset file="${basedir}/solutions/SecondLevelInstance.build/icons/logo.png" />
       <fileset file="${basedir}/solutions/SecondLevelInstance.build/icons/splash.png" />
       <fileset file="${basedir}/solutions/SecondLevelInstance.build/icons/about.png" />
-      <fileset file="${basedir}/solutions/SecondLevelInstance.build/icons/dialogImage.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>
     <mkdir dir="${build.layout}/plugins" />
     <mkdir dir="${build.layout}/plugins/svn4idea" />
     <copy todir="${build.layout}/plugins/svn4idea">
-      <fileset dir="${artifacts.mpsStandalone}/plugins/svn4idea" />
+      <fileset dir="${artifacts.mps}/plugins/svn4idea" />
     </copy>
     <mkdir dir="${build.layout}/plugins/cvsIntegration" />
     <copy todir="${build.layout}/plugins/cvsIntegration">
@@ -100,7 +99,7 @@
     </copy>
     <mkdir dir="${build.layout}/plugins/git4idea" />
     <copy todir="${build.layout}/plugins/git4idea">
-      <fileset dir="${artifacts.mpsStandalone}/plugins/git4idea" />
+      <fileset dir="${artifacts.mps}/plugins/git4idea" />
     </copy>
     <mkdir dir="${build.layout}/plugins/mps-core" />
     <copy todir="${build.layout}/plugins/mps-core">
@@ -109,7 +108,7 @@
     <mkdir dir="${build.layout}/plugins/mpsSecondLevelInstance" />
     <mkdir dir="${build.layout}/plugins/mpsSecondLevelInstance/META-INF" />
     <echoxml file="${build.layout}/plugins/mpsSecondLevelInstance/META-INF/plugin.xml">
-      <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>mpsSecondLevelInstance</id>
         <name>SecondLevelInstance</name>
         <version>0.1</version>
@@ -135,13 +134,13 @@
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
-          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="SecondLevelInstance-src.jar" descriptor="SecondLevelInstance.mpl" />
       </module>
     </echoxml>
@@ -151,8 +150,20 @@
       <fileset dir="${basedir}/languages/SecondLevelInstance/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/SecondLevelInstance.jar" />
     </jar>
+    <mkdir dir="${build.tmp}/default/SecondLevelInstance-generator.jar" />
+    <mkdir dir="${build.tmp}/default/SecondLevelInstance-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/SecondLevelInstance-generator.jar/META-INF/module.xml">
+      <module namespace="SecondLevelInstance#2050020079228502782" type="generator" uuid="51a9323e-3ef2-40bf-8991-e73256558c29">
+        <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="SecondLevelInstance-src.jar" descriptor="SecondLevelInstance.mpl" />
+      </module>
+    </echoxml>
     <jar destfile="${build.layout}/plugins/mpsSecondLevelInstance/languages/mpsSecondLevelInstance/SecondLevelInstance-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/SecondLevelInstance#7127626337630447811" />
+      <fileset dir="${build.tmp}/java/out/SecondLevelInstance#2050020079228502782" />
+      <fileset dir="${build.tmp}/default/SecondLevelInstance-generator.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-SecondLevelInstance-generator-template">
       <fileset dir="${basedir}/languages/SecondLevelInstance/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
@@ -187,7 +198,7 @@
     <mkdir dir="${build.tmp}/default/secondLevelInstance-plugin.zip/mpsSecondLevelInstance" />
     <mkdir dir="${build.tmp}/default/secondLevelInstance-plugin.zip/mpsSecondLevelInstance/META-INF" />
     <echoxml file="${build.tmp}/default/secondLevelInstance-plugin.zip/mpsSecondLevelInstance/META-INF/plugin.xml">
-      <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>mpsSecondLevelInstance</id>
         <name>SecondLevelInstance</name>
         <version>0.1</version>
@@ -213,13 +224,13 @@
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
-          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
         <sources jar="SecondLevelInstance-src.jar" descriptor="SecondLevelInstance.mpl" />
       </module>
     </echoxml>
@@ -229,8 +240,20 @@
       <fileset dir="${basedir}/languages/SecondLevelInstance/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/SecondLevelInstance.jar1" />
     </jar>
+    <mkdir dir="${build.tmp}/default/SecondLevelInstance-generator.jar1" />
+    <mkdir dir="${build.tmp}/default/SecondLevelInstance-generator.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/SecondLevelInstance-generator.jar1/META-INF/module.xml">
+      <module namespace="SecondLevelInstance#2050020079228502782" type="generator" uuid="51a9323e-3ef2-40bf-8991-e73256558c29">
+        <dependencies />
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="SecondLevelInstance-src.jar" descriptor="SecondLevelInstance.mpl" />
+      </module>
+    </echoxml>
     <jar destfile="${build.tmp}/default/secondLevelInstance-plugin.zip/mpsSecondLevelInstance/languages/mpsSecondLevelInstance/SecondLevelInstance-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/SecondLevelInstance#7127626337630447811" />
+      <fileset dir="${build.tmp}/java/out/SecondLevelInstance#2050020079228502782" />
+      <fileset dir="${build.tmp}/default/SecondLevelInstance-generator.jar1" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-SecondLevelInstance-generator-template1">
       <fileset dir="${basedir}/languages/SecondLevelInstance/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
@@ -272,7 +295,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.SecondLevelInstance, java.compile.SecondLevelInstance#7127626337630447811" />
+  <target name="compileJava" depends="java.compile.SecondLevelInstance, java.compile.SecondLevelInstance#2050020079228502782" />
   
   <target name="processResources" />
   
@@ -301,46 +324,44 @@
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.bootstrap-languages.devkit" />
-      <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.general-purpose.devkit" />
-      <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.language-design.devkit" />
+      <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.aspect.constraints.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.aspect.structure.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.aspect.typesystem.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.general-purpose.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.language-descriptor.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.baseLanguage.lightweightdsl.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.aspect.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.analyzers.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.intentions.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.migration.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.migration.runtime.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.plugin.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.quotation.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.refactoring.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.resources.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.query.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.refactoring.participant.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.facet.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.script.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
@@ -386,35 +407,31 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.8.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.SecondLevelInstance#7127626337630447811" depends="java.compile.SecondLevelInstance, fetchDependencies">
+  <target name="java.compile.SecondLevelInstance#2050020079228502782" depends="java.compile.SecondLevelInstance, fetchDependencies">
     <mkdir dir="${basedir}/languages/SecondLevelInstance/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/SecondLevelInstance#7127626337630447811" />
-    <javac destdir="${build.tmp}/java/out/SecondLevelInstance#7127626337630447811" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <mkdir dir="${build.tmp}/java/out/SecondLevelInstance#2050020079228502782" />
+    <javac destdir="${build.tmp}/java/out/SecondLevelInstance#2050020079228502782" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/SecondLevelInstance/generator/source_gen" />
@@ -431,27 +448,21 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <pathelement path="${build.tmp}/java/out/SecondLevelInstance" />
-        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.8.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.5.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>

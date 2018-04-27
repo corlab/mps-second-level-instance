@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="1fe642fd-97b4-4d26-b1cc-e6d0d72431a9" name="SecondLevelInstance" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
   </languages>
   <imports />
   <registry>
@@ -102,7 +102,9 @@
       <property role="TrG5h" value="myPizzaDeliveryDeclaration" />
       <node concept="28L0aF" id="70qrR2ADAhB" role="2LDv1m">
         <property role="TrG5h" value="pizzaDeliveryEntities" />
-        <node concept="28LgfA" id="7FwC2dfhECQ" role="28LuXQ" />
+        <node concept="28LgfA" id="7FwC2dfhECQ" role="28LuXQ">
+          <property role="TrG5h" value="Customer" />
+        </node>
         <node concept="28LgfA" id="70qrR2ADAmq" role="28LuXQ">
           <property role="TrG5h" value="Customer" />
           <node concept="28LgfH" id="70qrR2ADAmR" role="28LgfD">
@@ -178,10 +180,10 @@
         <node concept="28Lq2g" id="70qrR2ADAvQ" role="2n9niu">
           <property role="TrG5h" value="vegeterian" />
           <ref role="28Lq2l" node="70qrR2ADAl4" resolve="Pizza" />
-          <node concept="28Lq2o" id="70qrR2ADAwf" role="28Lq2r">
+          <node concept="28Lq2o" id="5FdNKq2WqFx" role="28Lq2r">
             <ref role="28Lq2v" node="70qrR2ADAq_" resolve="id" />
-            <node concept="3cmrfG" id="70qrR2ADAwm" role="28Lq2t">
-              <property role="3cmrfH" value="0" />
+            <node concept="3cmrfG" id="5FdNKq2WqFH" role="28Lq2t">
+              <property role="3cmrfH" value="22" />
             </node>
           </node>
           <node concept="28Lq2o" id="70qrR2ADAwK" role="28Lq2r">

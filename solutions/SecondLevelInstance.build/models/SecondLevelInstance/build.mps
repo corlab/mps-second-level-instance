@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -76,6 +76,9 @@
         <child id="5617550519002745378" name="macros" index="1l3spd" />
         <child id="5617550519002745372" name="layout" index="1l3spN" />
       </concept>
+      <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
+        <property id="8654221991637384184" name="pattern" index="3qWCbO" />
+      </concept>
       <concept id="8577651205286814211" name="jetbrains.mps.build.structure.BuildLayout_Tar" flags="ng" index="1tmT9g">
         <property id="1979010778009209128" name="compression" index="AB_bT" />
       </concept>
@@ -98,6 +101,10 @@
       </concept>
       <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
         <property id="5248329904288051101" name="pattern" index="3LWZYw" />
+      </concept>
+      <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
+        <child id="5248329904287794598" name="dir" index="3LXTmr" />
+        <child id="5248329904287794679" name="selectors" index="3LXTna" />
       </concept>
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
@@ -143,17 +150,20 @@
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
+        <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
+      </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
         <property id="3497141547781541444" name="major" index="2OjLBL" />
-        <child id="8108467228800445684" name="dialogImage" index="2t3ecf" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
@@ -292,20 +302,6 @@
           </node>
         </node>
       </node>
-      <node concept="55IIr" id="7foShycCQC3" role="2t3ecf">
-        <node concept="2Ry0Ak" id="7foShycCQC4" role="iGT6I">
-          <property role="2Ry0Am" value="solutions" />
-          <node concept="2Ry0Ak" id="7foShycCQC5" role="2Ry0An">
-            <property role="2Ry0Am" value="SecondLevelInstance.build" />
-            <node concept="2Ry0Ak" id="7foShycCQC6" role="2Ry0An">
-              <property role="2Ry0Am" value="icons" />
-              <node concept="2Ry0Ak" id="7foShycCQCl" role="2Ry0An">
-                <property role="2Ry0Am" value="dialogImage.png" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="55IIr" id="7foShycCQDg" role="3vi$VU">
         <node concept="2Ry0Ak" id="7foShycCQDh" role="iGT6I">
           <property role="2Ry0Am" value="solutions" />
@@ -429,19 +425,19 @@
             </node>
           </node>
           <node concept="1zDrgl" id="7foShycCIOJ" role="39821P">
-            <ref role="1zDrgn" node="7foShycCINv" resolve="mpsSecondLevelInstance" />
+            <ref role="1zDrgn" node="7foShycCINv" resolve="mpsSecondLevelInstance 0.1" />
           </node>
         </node>
       </node>
       <node concept="398223" id="7foShycCIOK" role="39821P">
         <node concept="3_I8Xc" id="7foShycCIOL" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1diLdO26H81" resolve="svn4idea" />
+          <ref role="3_I8Xa" to="ffeo:3nGzrDEfcNJ" resolve="svn4idea" />
         </node>
         <node concept="3_I8Xc" id="7foShycCIOM" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1diLdO26H7T" resolve="cvsIntegration" />
         </node>
         <node concept="3_I8Xc" id="7foShycCION" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1diLdO26H8a" resolve="git4idea" />
+          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
         </node>
         <node concept="3_I8Xc" id="7foShycCIOO" role="39821P">
           <ref role="3_I8Xa" to="ffeo:ymnOULBdbM" resolve="mps-core" />
@@ -594,9 +590,24 @@
           </node>
         </node>
         <node concept="1yeLz9" id="7foShycCIP8" role="1TViLv">
-          <property role="TrG5h" value="SecondLevelInstance#7127626337630447811" />
+          <property role="TrG5h" value="SecondLevelInstance#2050020079228502782" />
           <property role="3LESm3" value="51a9323e-3ef2-40bf-8991-e73256558c29" />
           <property role="2GAjPV" value="false" />
+        </node>
+        <node concept="3rtmxn" id="5FdNKq2Tm2Q" role="3bR31x">
+          <node concept="3LXTmp" id="5FdNKq2Tm2R" role="3rtmxm">
+            <node concept="3qWCbU" id="5FdNKq2Tm2S" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="5FdNKq2Tm2T" role="3LXTmr">
+              <node concept="2Ry0Ak" id="5FdNKq2Tm2U" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="5FdNKq2Tm2V" role="2Ry0An">
+                  <property role="2Ry0Am" value="SecondLevelInstance" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
