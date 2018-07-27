@@ -133,7 +133,7 @@
     <node concept="1TJgyj" id="6bEqAfEbWFS" role="1TKVEi">
       <property role="IQ2ns" value="7127626337630538488" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="propertyInstaces" />
+      <property role="20kJfa" value="propertyInstances" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6bEqAfEbWFV" resolve="EntityPropertyInstance" />
     </node>

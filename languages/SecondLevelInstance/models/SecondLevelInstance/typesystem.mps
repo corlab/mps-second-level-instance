@@ -383,7 +383,7 @@
                   <ref role="1YBMHb" node="7cYVBOT0jLX" resolve="entityInstance" />
                 </node>
                 <node concept="3Tsc0h" id="7cYVBOSZKPP" role="2OqNvi">
-                  <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstaces" />
+                  <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstances" />
                 </node>
               </node>
               <node concept="13MTOL" id="7cYVBOSZT2X" role="2OqNvi">
@@ -992,7 +992,7 @@
               <ref role="1YBMHb" node="4rRUFLv5100" resolve="entityInstance" />
             </node>
             <node concept="3Tsc0h" id="4rRUFLv520_" role="2OqNvi">
-              <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstaces" />
+              <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstances" />
             </node>
           </node>
           <node concept="2es0OD" id="4rRUFLv564$" role="2OqNvi">

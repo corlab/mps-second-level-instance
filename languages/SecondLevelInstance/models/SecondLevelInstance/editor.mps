@@ -2039,7 +2039,7 @@
                 <node concept="2OqwBi" id="3nR1F$jMjU8" role="2Oq$k0">
                   <node concept="pncrf" id="3nR1F$jMjU9" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="3nR1F$jMjUa" role="2OqNvi">
-                    <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstaces" />
+                    <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstances" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="3nR1F$jMjUb" role="2OqNvi" />
@@ -2061,7 +2061,7 @@
                   <node concept="2OqwBi" id="3nR1F$jMjUj" role="2Oq$k0">
                     <node concept="pncrf" id="3nR1F$jMjUk" role="2Oq$k0" />
                     <node concept="3Tsc0h" id="3nR1F$jMjUl" role="2OqNvi">
-                      <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstaces" />
+                      <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstances" />
                     </node>
                   </node>
                   <node concept="3GX2aA" id="3nR1F$jMjUm" role="2OqNvi" />
@@ -2087,7 +2087,7 @@
                     <node concept="2OqwBi" id="3nR1F$jMjUu" role="2Oq$k0">
                       <node concept="pncrf" id="3nR1F$jMjUv" role="2Oq$k0" />
                       <node concept="3Tsc0h" id="3nR1F$jMjUw" role="2OqNvi">
-                        <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstaces" />
+                        <ref role="3TtcxE" to="mmsd:6bEqAfEbWFS" resolve="propertyInstances" />
                       </node>
                     </node>
                     <node concept="3GX2aA" id="3nR1F$jMjUx" role="2OqNvi" />
@@ -2097,7 +2097,7 @@
             </node>
           </node>
           <node concept="3F2HdR" id="3nR1F$jMjUy" role="3EZMnx">
-            <ref role="1NtTu8" to="mmsd:6bEqAfEbWFS" resolve="propertyInstaces" />
+            <ref role="1NtTu8" to="mmsd:6bEqAfEbWFS" resolve="propertyInstances" />
             <node concept="2iRkQZ" id="3nR1F$jMjUz" role="2czzBx" />
             <node concept="3F0ifn" id="3nR1F$jMjU$" role="2czzBI">
               <property role="ilYzB" value="&lt; no property &gt;" />
