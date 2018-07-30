@@ -140,8 +140,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
@@ -1437,11 +1447,11 @@
   <node concept="1l3spW" id="5FdNKq2Xvl$">
     <property role="TrG5h" value="de.citec.domainGraphDescription" />
     <property role="2DA0ip" value="../../" />
-    <property role="turDy" value="build-plugin-mps.xml" />
+    <property role="turDy" value="build-plugin-dgd-mps.xml" />
     <node concept="10PD9b" id="5FdNKq2Xvl_" role="10PD9s" />
     <node concept="3b7kt6" id="5FdNKq2XvlA" role="10PD9s" />
     <node concept="398rNT" id="5FdNKq2XvlB" role="1l3spd">
-      <property role="TrG5h" value="mps_home" />
+      <property role="TrG5h" value="path__mps" />
     </node>
     <node concept="2kB4xC" id="7$T_6mLQSkl" role="1l3spd">
       <property role="TrG5h" value="current_version" />
@@ -1456,36 +1466,53 @@
     <node concept="2sgV4H" id="5FdNKq2XvlC" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5FdNKq2XvlD" role="2JcizS">
-        <ref role="398BVh" node="5FdNKq2XvlB" resolve="mps_home" />
+        <ref role="398BVh" node="5FdNKq2XvlB" resolve="path__mps" />
       </node>
     </node>
     <node concept="1l3spV" id="5FdNKq2XvlU" role="1l3spN">
-      <node concept="3981dG" id="5FdNKq2XvlV" role="39821P">
-        <node concept="3_J27D" id="5FdNKq2XvlW" role="Nbhlr">
-          <node concept="3Mxwew" id="5FdNKq2XvlX" role="3MwsjC">
-            <property role="3MwjfP" value="de.citec.domainGraphDescription-" />
+      <node concept="3981dG" id="2gfpbpDPony" role="39821P">
+        <node concept="3_J27D" id="2gfpbpDPonz" role="Nbhlr">
+          <node concept="3Mxwew" id="2gfpbpDPon$" role="3MwsjC">
+            <property role="3MwjfP" value="de.citec.domainGraphDescription-mps" />
           </node>
-          <node concept="3Mxwey" id="5FdNKq2XvqL" role="3MwsjC">
-            <ref role="3Mxwex" node="7$T_6mLQSkl" resolve="current_version" />
-          </node>
-          <node concept="3Mxwew" id="5FdNKq2XvqK" role="3MwsjC">
-            <property role="3MwjfP" value="--" />
-          </node>
-          <node concept="3Mxwey" id="5FdNKq2XvrV" role="3MwsjC">
-            <ref role="3Mxwex" to="ffeo:d_WKSiP3Fm" resolve="idea.platform.build.number" />
-          </node>
-          <node concept="3Mxwew" id="5FdNKq2Xvsu" role="3MwsjC">
-            <property role="3MwjfP" value="-" />
-          </node>
-          <node concept="3Mxwey" id="5FdNKq2Xvrh" role="3MwsjC">
-            <ref role="3Mxwex" to="ffeo:5HVSRHdVf2d" resolve="version" />
-          </node>
-          <node concept="3Mxwew" id="5FdNKq2Xvrg" role="3MwsjC">
+          <node concept="3Mxwew" id="2gfpbpDPonE" role="3MwsjC">
             <property role="3MwjfP" value=".zip" />
           </node>
         </node>
-        <node concept="m$_wl" id="5FdNKq2XvlY" role="39821P">
+        <node concept="m$_wl" id="2gfpbpDPonF" role="39821P">
           <ref role="m_rDy" node="5FdNKq2XvlL" resolve="de.citec.domainGraphDescription" />
+        </node>
+      </node>
+      <node concept="1X3_iC" id="2gfpbpDPogo" role="lGtFl">
+        <property role="3V$3am" value="children" />
+        <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />
+        <node concept="3981dG" id="5FdNKq2XvlV" role="8Wnug">
+          <node concept="3_J27D" id="5FdNKq2XvlW" role="Nbhlr">
+            <node concept="3Mxwew" id="5FdNKq2XvlX" role="3MwsjC">
+              <property role="3MwjfP" value="de.citec.domainGraphDescription-" />
+            </node>
+            <node concept="3Mxwey" id="5FdNKq2XvqL" role="3MwsjC">
+              <ref role="3Mxwex" node="7$T_6mLQSkl" resolve="current_version" />
+            </node>
+            <node concept="3Mxwew" id="5FdNKq2XvqK" role="3MwsjC">
+              <property role="3MwjfP" value="--" />
+            </node>
+            <node concept="3Mxwey" id="5FdNKq2XvrV" role="3MwsjC">
+              <ref role="3Mxwex" to="ffeo:d_WKSiP3Fm" resolve="idea.platform.build.number" />
+            </node>
+            <node concept="3Mxwew" id="5FdNKq2Xvsu" role="3MwsjC">
+              <property role="3MwjfP" value="-" />
+            </node>
+            <node concept="3Mxwey" id="5FdNKq2Xvrh" role="3MwsjC">
+              <ref role="3Mxwex" to="ffeo:5HVSRHdVf2d" resolve="version" />
+            </node>
+            <node concept="3Mxwew" id="5FdNKq2Xvrg" role="3MwsjC">
+              <property role="3MwjfP" value=".zip" />
+            </node>
+          </node>
+          <node concept="m$_wl" id="5FdNKq2XvlY" role="39821P">
+            <ref role="m_rDy" node="5FdNKq2XvlL" resolve="de.citec.domainGraphDescription" />
+          </node>
         </node>
       </node>
     </node>
@@ -1496,7 +1523,7 @@
         <node concept="2pNUuL" id="7$T_6mLSRtp" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
           <node concept="2pMdtt" id="7$T_6mLSRtq" role="2pMdts">
-            <property role="2pMdty" value="181.1254" />
+            <property role="2pMdty" value="181.1469" />
           </node>
         </node>
         <node concept="2pNUuL" id="7$T_6mLSRtr" role="2pNNFR">
