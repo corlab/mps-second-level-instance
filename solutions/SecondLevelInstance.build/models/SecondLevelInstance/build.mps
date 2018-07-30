@@ -1451,7 +1451,7 @@
     <node concept="10PD9b" id="5FdNKq2Xvl_" role="10PD9s" />
     <node concept="3b7kt6" id="5FdNKq2XvlA" role="10PD9s" />
     <node concept="398rNT" id="5FdNKq2XvlB" role="1l3spd">
-      <property role="TrG5h" value="path__mps" />
+      <property role="TrG5h" value="mps_home" />
     </node>
     <node concept="2kB4xC" id="7$T_6mLQSkl" role="1l3spd">
       <property role="TrG5h" value="current_version" />
@@ -1466,7 +1466,7 @@
     <node concept="2sgV4H" id="5FdNKq2XvlC" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="5FdNKq2XvlD" role="2JcizS">
-        <ref role="398BVh" node="5FdNKq2XvlB" resolve="path__mps" />
+        <ref role="398BVh" node="5FdNKq2XvlB" resolve="mps_home" />
       </node>
     </node>
     <node concept="1l3spV" id="5FdNKq2XvlU" role="1l3spN">

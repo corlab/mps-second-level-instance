@@ -3,9 +3,9 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/de.citec.domainGraphDescription" />
   <property name="build.layout" location="${build.dir}/artifacts/de.citec.domainGraphDescription" />
-  <property name="path__mps" location="" />
+  <property name="mps_home" location="" />
   <property name="current_version" value="1.0.0" />
-  <property name="artifacts.mps" location="${path__mps}" />
+  <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -211,7 +211,7 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
-      <macro name="path__mps" path="${path__mps}" />
+      <macro name="mps_home" path="${mps_home}" />
     </generate>
   </target>
   
