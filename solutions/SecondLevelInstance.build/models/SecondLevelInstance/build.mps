@@ -1458,7 +1458,7 @@
       <node concept="aVJcg" id="7$T_6mLQSmY" role="aVJcv">
         <node concept="NbPM2" id="7$T_6mLQSmX" role="aVJcq">
           <node concept="3Mxwew" id="7$T_6mLQSmW" role="3MwsjC">
-            <property role="3MwjfP" value="1.0.0" />
+            <property role="3MwjfP" value="2018.2" />
           </node>
         </node>
       </node>
@@ -1470,66 +1470,66 @@
       </node>
     </node>
     <node concept="1l3spV" id="5FdNKq2XvlU" role="1l3spN">
-      <node concept="3981dG" id="2gfpbpDPony" role="39821P">
-        <node concept="3_J27D" id="2gfpbpDPonz" role="Nbhlr">
-          <node concept="3Mxwew" id="2gfpbpDPon$" role="3MwsjC">
-            <property role="3MwjfP" value="de.citec.domainGraphDescription-mps" />
-          </node>
-          <node concept="3Mxwew" id="2gfpbpDPonE" role="3MwsjC">
-            <property role="3MwjfP" value=".zip" />
-          </node>
-        </node>
-        <node concept="m$_wl" id="2gfpbpDPonF" role="39821P">
-          <ref role="m_rDy" node="5FdNKq2XvlL" resolve="de.citec.domainGraphDescription" />
-        </node>
-      </node>
-      <node concept="1X3_iC" id="2gfpbpDPogo" role="lGtFl">
+      <node concept="1X3_iC" id="4D1RxWXqNt9" role="lGtFl">
         <property role="3V$3am" value="children" />
         <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />
-        <node concept="3981dG" id="5FdNKq2XvlV" role="8Wnug">
-          <node concept="3_J27D" id="5FdNKq2XvlW" role="Nbhlr">
-            <node concept="3Mxwew" id="5FdNKq2XvlX" role="3MwsjC">
-              <property role="3MwjfP" value="de.citec.domainGraphDescription-" />
+        <node concept="3981dG" id="2gfpbpDPony" role="8Wnug">
+          <node concept="3_J27D" id="2gfpbpDPonz" role="Nbhlr">
+            <node concept="3Mxwew" id="2gfpbpDPon$" role="3MwsjC">
+              <property role="3MwjfP" value="de.citec.domainGraphDescription-mps" />
             </node>
-            <node concept="3Mxwey" id="5FdNKq2XvqL" role="3MwsjC">
-              <ref role="3Mxwex" node="7$T_6mLQSkl" resolve="current_version" />
-            </node>
-            <node concept="3Mxwew" id="5FdNKq2XvqK" role="3MwsjC">
-              <property role="3MwjfP" value="--" />
-            </node>
-            <node concept="3Mxwey" id="5FdNKq2XvrV" role="3MwsjC">
-              <ref role="3Mxwex" to="ffeo:d_WKSiP3Fm" resolve="idea.platform.build.number" />
-            </node>
-            <node concept="3Mxwew" id="5FdNKq2Xvsu" role="3MwsjC">
-              <property role="3MwjfP" value="-" />
-            </node>
-            <node concept="3Mxwey" id="5FdNKq2Xvrh" role="3MwsjC">
-              <ref role="3Mxwex" to="ffeo:5HVSRHdVf2d" resolve="version" />
-            </node>
-            <node concept="3Mxwew" id="5FdNKq2Xvrg" role="3MwsjC">
+            <node concept="3Mxwew" id="2gfpbpDPonE" role="3MwsjC">
               <property role="3MwjfP" value=".zip" />
             </node>
           </node>
-          <node concept="m$_wl" id="5FdNKq2XvlY" role="39821P">
+          <node concept="m$_wl" id="2gfpbpDPonF" role="39821P">
             <ref role="m_rDy" node="5FdNKq2XvlL" resolve="de.citec.domainGraphDescription" />
           </node>
+        </node>
+      </node>
+      <node concept="3981dG" id="5FdNKq2XvlV" role="39821P">
+        <node concept="3_J27D" id="5FdNKq2XvlW" role="Nbhlr">
+          <node concept="3Mxwew" id="5FdNKq2XvlX" role="3MwsjC">
+            <property role="3MwjfP" value="de.citec.domainGraphDescription-" />
+          </node>
+          <node concept="3Mxwey" id="5FdNKq2XvqL" role="3MwsjC">
+            <ref role="3Mxwex" node="7$T_6mLQSkl" resolve="current_version" />
+          </node>
+          <node concept="3Mxwew" id="5FdNKq2XvqK" role="3MwsjC">
+            <property role="3MwjfP" value="--" />
+          </node>
+          <node concept="3Mxwey" id="5FdNKq2XvrV" role="3MwsjC">
+            <ref role="3Mxwex" to="ffeo:d_WKSiP3Fm" resolve="idea.platform.build.number" />
+          </node>
+          <node concept="3Mxwew" id="5FdNKq2Xvsu" role="3MwsjC">
+            <property role="3MwjfP" value="-" />
+          </node>
+          <node concept="3Mxwey" id="5FdNKq2Xvrh" role="3MwsjC">
+            <ref role="3Mxwex" to="ffeo:5HVSRHdVf2d" resolve="version" />
+          </node>
+          <node concept="3Mxwew" id="5FdNKq2Xvrg" role="3MwsjC">
+            <property role="3MwjfP" value=".zip" />
+          </node>
+        </node>
+        <node concept="m$_wl" id="5FdNKq2XvlY" role="39821P">
+          <ref role="m_rDy" node="5FdNKq2XvlL" resolve="de.citec.domainGraphDescription" />
         </node>
       </node>
     </node>
     <node concept="m$_wf" id="5FdNKq2XvlL" role="3989C9">
       <property role="m$_wk" value="de.citec.domainGraphDescription" />
-      <node concept="2pNNFK" id="7$T_6mLSRto" role="20twgj">
+      <node concept="2pNNFK" id="7hyLc6Vva35" role="20twgj">
         <property role="2pNNFO" value="idea-version" />
-        <node concept="2pNUuL" id="7$T_6mLSRtp" role="2pNNFR">
+        <node concept="2pNUuL" id="7hyLc6Vva36" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
-          <node concept="2pMdtt" id="7$T_6mLSRtq" role="2pMdts">
-            <property role="2pMdty" value="181.1469" />
+          <node concept="2pMdtt" id="7hyLc6Vva37" role="2pMdts">
+            <property role="2pMdty" value="183.0" />
           </node>
         </node>
-        <node concept="2pNUuL" id="7$T_6mLSRtr" role="2pNNFR">
+        <node concept="2pNUuL" id="7hyLc6Vva38" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
-          <node concept="2pMdtt" id="7$T_6mLSRts" role="2pMdts">
-            <property role="2pMdty" value="181.0" />
+          <node concept="2pMdtt" id="7hyLc6Vva39" role="2pMdts">
+            <property role="2pMdty" value="182.0" />
           </node>
         </node>
       </node>
