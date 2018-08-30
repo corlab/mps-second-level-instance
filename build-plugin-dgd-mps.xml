@@ -27,10 +27,10 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip" />
-    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip/de.citec.domainGraphDescription" />
-    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip/de.citec.domainGraphDescription/META-INF" />
-    <echoxml file="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip/de.citec.domainGraphDescription/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip/de.citec.domainGraphDescription" />
+    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip/de.citec.domainGraphDescription/META-INF" />
+    <echoxml file="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip/de.citec.domainGraphDescription/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.citec.domainGraphDescription</id>
         <name>de.citec.domainGraphDescription</name>
@@ -45,8 +45,8 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip/de.citec.domainGraphDescription/languages" />
-    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip/de.citec.domainGraphDescription/languages/de.citec.domainGraphDescription" />
+    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip/de.citec.domainGraphDescription/languages" />
+    <mkdir dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip/de.citec.domainGraphDescription/languages/de.citec.domainGraphDescription" />
     <mkdir dir="${build.tmp}/default/SecondLevelInstance.jar" />
     <mkdir dir="${build.tmp}/default/SecondLevelInstance.jar/META-INF" />
     <echoxml file="${build.tmp}/default/SecondLevelInstance.jar/META-INF/module.xml">
@@ -70,7 +70,7 @@
         <sources jar="SecondLevelInstance-src.jar" descriptor="SecondLevelInstance.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip/de.citec.domainGraphDescription/languages/de.citec.domainGraphDescription/SecondLevelInstance.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip/de.citec.domainGraphDescription/languages/de.citec.domainGraphDescription/SecondLevelInstance.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/SecondLevelInstance" />
       <fileset dir="${basedir}/languages/SecondLevelInstance/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/SecondLevelInstance.jar" />
@@ -86,7 +86,7 @@
         <sources jar="SecondLevelInstance-src.jar" descriptor="SecondLevelInstance.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip/de.citec.domainGraphDescription/languages/de.citec.domainGraphDescription/SecondLevelInstance-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip/de.citec.domainGraphDescription/languages/de.citec.domainGraphDescription/SecondLevelInstance-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/SecondLevelInstance#2050020079228502782" />
       <fileset dir="${build.tmp}/default/SecondLevelInstance-generator.jar" />
     </jar>
@@ -96,7 +96,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-SecondLevelInstance-models">
       <fileset dir="${basedir}/languages/SecondLevelInstance/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip/de.citec.domainGraphDescription/languages/de.citec.domainGraphDescription/SecondLevelInstance-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip/de.citec.domainGraphDescription/languages/de.citec.domainGraphDescription/SecondLevelInstance-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/SecondLevelInstance/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -113,8 +113,8 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-SecondLevelInstance-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-SecondLevelInstance-models" prefix="module/models" />
     </jar>
-    <zip destfile="${build.layout}/de.citec.domainGraphDescription-${current_version}--${mps.idea.platform.build.number}-${mpsBootstrapCore.version}.zip">
-      <fileset dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_current_version_rbrace_--_dl__lbrace_idea.platform.build.number_rbrace_-_dl__lbrace_version_rbrace_.zip" />
+    <zip destfile="${build.layout}/de.citec.domainGraphDescription-${mpsBootstrapCore.version}--${mps.build.number}.zip">
+      <fileset dir="${build.tmp}/default/de.citec.domainGraphDescription-_dl__lbrace_version_rbrace_--_dl__lbrace_build.number_rbrace_.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">de.citec.domainGraphDescription.current_version=${current_version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>

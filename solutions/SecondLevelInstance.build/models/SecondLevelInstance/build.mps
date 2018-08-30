@@ -1493,19 +1493,13 @@
             <property role="3MwjfP" value="de.citec.domainGraphDescription-" />
           </node>
           <node concept="3Mxwey" id="5FdNKq2XvqL" role="3MwsjC">
-            <ref role="3Mxwex" node="7$T_6mLQSkl" resolve="current_version" />
+            <ref role="3Mxwex" to="ffeo:5HVSRHdVf2d" resolve="version" />
           </node>
           <node concept="3Mxwew" id="5FdNKq2XvqK" role="3MwsjC">
             <property role="3MwjfP" value="--" />
           </node>
           <node concept="3Mxwey" id="5FdNKq2XvrV" role="3MwsjC">
-            <ref role="3Mxwex" to="ffeo:d_WKSiP3Fm" resolve="idea.platform.build.number" />
-          </node>
-          <node concept="3Mxwew" id="5FdNKq2Xvsu" role="3MwsjC">
-            <property role="3MwjfP" value="-" />
-          </node>
-          <node concept="3Mxwey" id="5FdNKq2Xvrh" role="3MwsjC">
-            <ref role="3Mxwex" to="ffeo:5HVSRHdVf2d" resolve="version" />
+            <ref role="3Mxwex" to="ffeo:3IKDaVZnAxg" resolve="build.number" />
           </node>
           <node concept="3Mxwew" id="5FdNKq2Xvrg" role="3MwsjC">
             <property role="3MwjfP" value=".zip" />
