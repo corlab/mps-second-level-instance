@@ -564,5 +564,10 @@
       <ref role="20lvS9" node="4rRUFLuFnFD" resolve="RelationshipProperty" />
     </node>
   </node>
+  <node concept="PlHQZ" id="1tMDxDywe$a">
+    <property role="EcuMT" value="1689595442469333258" />
+    <property role="3GE5qa" value="Relationships.BinaryRelationshipInstance" />
+    <property role="TrG5h" value="IBRIextension" />
+  </node>
 </model>
 
